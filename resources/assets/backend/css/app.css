@@ -1,0 +1,89 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import '../../../../node_modules/admin-lte/plugins/fontawesome-free/css/all.min.css';
+@import '../../../../node_modules/admin-lte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css';
+@import '../../../../node_modules/admin-lte/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css';
+@import '../../../../node_modules/admin-lte/plugins/datatables-responsive/css/responsive.bootstrap4.min.css';
+@import '../../../../node_modules/admin-lte/plugins/datatables-responsive/css/responsive.bootstrap4.min.css';
+
+@import '../../../../node_modules/admin-lte/plugins/daterangepicker/daterangepicker.css';
+@import '../../../../node_modules/admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css';
+@import '../../../../node_modules/admin-lte/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css';
+@import '../../../../node_modules/admin-lte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css';
+@import '../../../../node_modules/admin-lte/plugins/select2/css/select2.min.css';
+@import '../../../../node_modules/admin-lte/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css';
+@import '../../../../node_modules/admin-lte/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css';
+@import '../../../../node_modules/admin-lte/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css';
+@import '../../../../node_modules/admin-lte/plugins/toastr/toastr.min.css';
+
+@import '../../../../node_modules/admin-lte/dist/css/adminlte.min.css';
+
+@import '../../../../node_modules/pikaday/css/pikaday.css';
+
+a.action, button.action {
+    color: #fff;
+}
+
+
+
+/* For other boilerplate styles, see: /docs/general-configuration-guide/boilerplate-content-css/ */
+/*
+* For rendering images inserted using the image plugin.
+* Includes image captions using the HTML5 figure element.
+*/
+
+figure.image {
+    display: inline-block;
+    border: 1px solid gray;
+    margin: 0 2px 0 1px;
+    background: #f5f2f0;
+  }
+  
+  figure.align-left {
+    float: left;
+  }
+  
+  figure.align-right {
+    float: right;
+  }
+  
+  figure.image img {
+    margin: 8px 8px 0 8px;
+  }
+  
+  figure.image figcaption {
+    margin: 6px 8px 6px 8px;
+    text-align: center;
+  }
+  
+  
+  /*
+   Alignment using classes rather than inline styles
+   check out the "formats" option
+  */
+  
+  img.align-left {
+    float: left;
+  }
+  
+  img.align-right {
+    float: right;
+  }
+  
+  /* Basic styles for Table of Contents plugin (toc) */
+  .mce-toc {
+    border: 1px solid gray;
+  }
+  
+  .mce-toc h2 {
+    margin: 4px;
+  }
+  
+  .mce-toc li {
+    list-style-type: none;
+  }
+  
+  
+  
