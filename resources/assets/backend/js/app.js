@@ -10,6 +10,8 @@ require('./bootstrap');
 |
 */
 
+bsCustomFileInput.init();
+
 // Datatable
 $('.admin-data-table').DataTable({
     paging: true,
