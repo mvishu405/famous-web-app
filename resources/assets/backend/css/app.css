@@ -26,6 +26,9 @@ a.action, button.action {
     color: #fff;
 }
 
+table tr th {
+    white-space: nowrap;
+}
 
 
 /* For other boilerplate styles, see: /docs/general-configuration-guide/boilerplate-content-css/ */

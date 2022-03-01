@@ -41,6 +41,7 @@ mix.js('resources/assets/backend/js/app.js', 'public/backend/js').postCss('resou
     'node_modules/tinymce/tinymce.min.js',
     'node_modules/pikaday/pikaday.js',
     'node_modules/pikaday/plugins/pikaday.jquery.js',
+    'node_modules/admin-lte/plugins/bs-custom-file-input/bs-custom-file-input.min.js',
     'node_modules/admin-lte/dist/js/adminlte.min.js',
 ], 'public/backend/js/vendor.js')
 .copyDirectory('./node_modules/admin-lte/plugins/fontawesome-free/webfonts', './public/backend/webfonts')

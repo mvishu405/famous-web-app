@@ -2068,8 +2068,9 @@ __webpack_require__(/*! ./bootstrap */ "./resources/assets/backend/js/bootstrap.
 |--------------------------------------------------------------------------
 |
 */
-// Datatable
 
+
+bsCustomFileInput.init(); // Datatable
 
 $('.admin-data-table').DataTable({
   paging: true,
