@@ -92,6 +92,28 @@
                     </a>
                 </li>
 
+
+                <li class="nav-item">
+                    <a href="{{ route('backend.news.index') }}"
+                        class="nav-link {{ request()->routeIs('backend.news.*') ? 'active' : '' }}">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>
+                            News
+                        </p>
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="{{ route('backend.homepage-sliders.index') }}"
+                        class="nav-link {{ request()->routeIs('backend.homepage-sliders.*') ? 'active' : '' }}">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>
+                            Homepage Slider
+                        </p>
+                    </a>
+                </li>
+
                 {{-- <li class="nav-item has-treeview menu-open">
                     <a href="#" class="nav-link active">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
