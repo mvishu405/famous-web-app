@@ -22,4 +22,6 @@ Route::namespace ('App\Http\Controllers\Backend')->prefix('backend')->name('back
 
     Route::resource('homepage-sliders', HomepageSliderController::class);
 
+    Route::resource('blogs', BlogController::class);
+
 });
