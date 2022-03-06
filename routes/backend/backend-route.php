@@ -18,4 +18,8 @@ Route::namespace ('App\Http\Controllers\Backend')->prefix('backend')->name('back
 
     Route::get('works-gallery-delete/{id}', 'WorkController@deleteWorkGallery')->name('work-gallery.delete');
 
+    Route::resource('news', NewsController::class);
+
+    Route::resource('homepage-sliders', HomepageSliderController::class);
+
 });
