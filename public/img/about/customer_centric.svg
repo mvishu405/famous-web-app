@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="94.27" height="49.345" viewBox="0 0 94.27 49.345">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.418" cy="0.341" r="0.497" gradientTransform="translate(0.546 -0.155) rotate(56.31)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#009ee3"/>
+    </radialGradient>
+  </defs>
+  <g id="customer_centric" transform="translate(-1268.73 -4544)">
+    <path id="Union_2" data-name="Union 2" d="M18814.307-3428.312H18761c0-7.458,2.6-15.714,13.92-15.714a17.762,17.762,0,0,1,4.428.512c4.063-9.83,12.623-17.27,26.752-17.27,12.18,0,20.213,5.53,24.791,13.355a19.794,19.794,0,0,1,2.895-.212,19.4,19.4,0,0,1,19.484,19.33Z" transform="translate(-17491.271 8020.656)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+    <circle id="Ellipse_22" data-name="Ellipse 22" cx="10" cy="10" r="10" transform="translate(1342 4544)" fill="url(#radial-gradient)"/>
+  </g>
+</svg>

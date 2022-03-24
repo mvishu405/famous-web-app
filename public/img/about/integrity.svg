@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="74" viewBox="0 0 74 74">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.582" cy="0.341" r="0.497" gradientTransform="matrix(-0.555, 0.832, 0.832, 0.555, 0.545, -0.292)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#009ee3"/>
+    </radialGradient>
+  </defs>
+  <g id="integrity" transform="translate(-728 -4782)">
+    <g id="Ellipse_21" data-name="Ellipse 21" transform="translate(740 4794)" fill="none" stroke="#fff" stroke-width="2">
+      <circle cx="25" cy="25" r="25" stroke="none"/>
+      <circle cx="25" cy="25" r="24" fill="none"/>
+    </g>
+    <g id="Ellipse_20" data-name="Ellipse 20" transform="translate(728 4782)" fill="none" stroke="#fff" stroke-width="2">
+      <circle cx="37" cy="37" r="37" stroke="none"/>
+      <circle cx="37" cy="37" r="36" fill="none"/>
+    </g>
+    <circle id="Ellipse_18" data-name="Ellipse 18" cx="10" cy="10" r="10" transform="translate(755 4809)" fill="url(#radial-gradient)"/>
+  </g>
+</svg>
