@@ -43,8 +43,7 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label>Description</label>
-                                <textarea class="form-control tmce" name="description" cols="30"
-                                    rows="10">{{ $news->description }}</textarea>
+                                <textarea class="form-control tmce" name="description" cols="30" rows="10">{{ $news->description }}</textarea>
                                 @if ($errors->has('description'))
                                     <div class="text-danger">{{ $errors->first('description') }}</div>
                                 @endif
@@ -64,6 +63,17 @@
                             </div>
                             <div class="form-group">
                                 <img src="{{ viewFile($news->news_logo) }}" style="width: 50px; height: 50px;" />
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label>News Link</label>
+                                <input type="text" class="form-control" name="news_link"
+                                    value="{{ $news->news_link }}">
+                                @if ($errors->has('news_link'))
+                                    <div class="text-danger">{{ $errors->first('news_link') }}</div>
+                                @endif
                             </div>
                         </div>
 

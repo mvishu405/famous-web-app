@@ -19,6 +19,7 @@
                             <th>News Date</th>
                             <th>Description</th>
                             <th>News Logo</th>
+                            <th>News Link</th>
                             <th>Order</th>
                             <th>Published</th>
                             <th>Action</th>
@@ -40,6 +41,7 @@
                                     <img src="{{ viewFile($news->news_logo) }}" alt=""
                                         style="width:50px; height: 50px;">
                                 </td>
+                                <td>{{ $news->news_link }}</td>
                                 <td>{{ $news->order_column }}</td>
                                 <td>{{ isset($news->published_at) ? 'enabled' : 'disabled' }}</td>
                                 <td>

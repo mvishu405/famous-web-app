@@ -38,8 +38,7 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label>Description</label>
-                                <textarea class="form-control tmce" name="description" cols="30"
-                                    rows="10">{{ old('description') }}</textarea>
+                                <textarea class="form-control tmce" name="description" cols="30" rows="10">{{ old('description') }}</textarea>
                                 @if ($errors->has('description'))
                                     <div class="text-danger">{{ $errors->first('description') }}</div>
                                 @endif
@@ -55,6 +54,17 @@
                                 </div>
                                 @if ($errors->has('news_logo'))
                                     <div class="text-danger">{{ $errors->first('news_logo') }}</div>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label>News Link</label>
+                                <input type="text" class="form-control" name="news_link"
+                                    value="{{ old('news_link') }}">
+                                @if ($errors->has('news_link'))
+                                    <div class="text-danger">{{ $errors->first('news_link') }}</div>
                                 @endif
                             </div>
                         </div>
