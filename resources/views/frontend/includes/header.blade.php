@@ -25,7 +25,7 @@
                         <a class="menu-link" href="blog.php">Blogs</a>
                     </li>
                     <li class="menu-item">
-                        <a class="menu-link" href="news.php">News</a>
+                        <a class="menu-link" href="{{ route('frontend.news.index') }}">News</a>
                     </li>
                     <li class="menu-item">
                         <a class="menu-link" href="careers.php">Careers</a>
