@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Models\News;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-use Carbon\Carbon;
-use App\Models\News;
 
 class NewsController extends Controller
 {
@@ -92,6 +92,7 @@ class NewsController extends Controller
         if ($data->hasFile('news_logo')) {
             $news->news_logo = Storage::putFile(config('constants.uploads.image'), $data->news_logo);
         }
+        $news->news_link = $data->news_link;
         $news->order_column = $data->order_column;
         if ($data->has('published_at')) {
             $news->published_at = Carbon::now();

@@ -32,25 +32,25 @@
                 <div class="tab_section_inner">
                     <ul class="service_tabs">
                         <!-- <li class="active">
-                                <a href="javascript:void(0)">All</a>
-                            </li>
-                            <li class="">
-                                <a href="javascript:void(0)">Famous Studio</a>
-                            </li>
-                            <li class="">
-                                <a href="javascript:void(0)">Famous House of artists</a>
-                            </li>
-                            <li class="">
-                                <a href="javascript:void(0)">Famous Working Company</a>
-                            </li>
-                            <li class="">
-                                <a href="javascript:void(0)">Awards</a>
-                            </li> -->
+                                        <a href="javascript:void(0)">All</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="javascript:void(0)">Famous Studio</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="javascript:void(0)">Famous House of artists</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="javascript:void(0)">Famous Working Company</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="javascript:void(0)">Awards</a>
+                                    </li> -->
                     </ul>
                     <div class="filter">
                         <select name="latest" id="latest">
-                            <option value="Latest">Latest</option>
-                            <option value="Oldest">Oldest</option>
+                            <option value="">Latest</option>
+                            <option value="sort_by_asc" {{ request()->has('sort_by_asc') ? 'selected' : '' }}>Oldest</option>
                         </select>
                     </div>
                 </div>
@@ -59,231 +59,31 @@
         <section class="news_section">
             <div class="container">
                 <div class="news_wrap">
-                    <div class="news_item fade_in col-md-4">
-                        <a href="https://www.thehindubusinessline.com/catalyst/famous-studios-reinvents-itself-for-the-ott-generation/article34804968.ece"
-                            class="news_item_inner" target="_blank">
-                            <div class="news_image">
-                                <img src="img/news/img_1.jpg" alt="" class="img-responsive">
-                            </div>
-                            <div class="news_content">
-                                <div class="blog_header">
-                                    <div class="date_min_read text_xs">
-                                        <span class="date">November 2021</span>
-                                        <span class="dot"></span>
-                                        <span class="min_read">Work</span>
-                                    </div>
+                    @foreach ($news as $ns)
+                        <div class="news_item fade_in col-md-4">
+                            <a href="{{ $ns->news_link }}" class="news_item_inner" target="_blank">
+                                <div class="news_image">
+                                    <img src="{{ viewFile($ns->preview_image) }}" alt="" class="img-responsive">
                                 </div>
-                                <h2 class="blog_title text_sm">Famous Studios keeps pace with the
-                                    moving screens.
-                                    How Mumbai’s Famous Studios, set up in pre-Partition days,
-                                    is reinventing itself
-                                    for the streaming entertainment sector.</h2>
-                            </div>
-                            <div class="news_source">
-                                <img src="img/home/news_source.png" alt="" class="img-responsive">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="news_item fade_in col-md-4">
-                        <a href="https://www.thehindubusinessline.com/catalyst/famous-studios-reinvents-itself-for-the-ott-generation/article34804968.ece"
-                            class="news_item_inner" target="_blank">
-                            <div class="news_image">
-                                <img src="img/news/img_3.jpg" alt="" class="img-responsive">
-                            </div>
-                            <div class="news_content">
-                                <div class="blog_header">
-                                    <div class="date_min_read text_xs">
-                                        <span class="date">November 2021</span>
-                                        <span class="dot"></span>
-                                        <span class="min_read">Work</span>
+                                <div class="news_content">
+                                    <div class="blog_header">
+                                        <div class="date_min_read text_xs">
+                                            <span
+                                                class="date">{{ Carbon\Carbon::parse($ns->news_date)?->toFormattedDateString() }}</span>
+                                            <span class="dot"></span>
+                                            <span class="min_read">Work</span>
+                                        </div>
                                     </div>
+                                    <h2 class="blog_title text_sm">
+                                        {!! $ns->description !!}
+                                    </h2>
                                 </div>
-                                <h2 class="blog_title text_sm">Famous Studios keeps pace with the
-                                    moving screens.
-                                    How Mumbai’s Famous Studios, set up in pre-Partition days,
-                                    is reinventing itself
-                                    for the streaming entertainment sector.</h2>
-                            </div>
-                            <div class="news_source">
-                                <img src="img/home/news_source.png" alt="" class="img-responsive">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="news_item fade_in col-md-4">
-                        <a href="https://www.thehindubusinessline.com/catalyst/famous-studios-reinvents-itself-for-the-ott-generation/article34804968.ece"
-                            class="news_item_inner" target="_blank">
-                            <div class="news_image">
-                                <img src="img/news/img_4.jpg" alt="" class="img-responsive">
-                            </div>
-                            <div class="news_content">
-                                <div class="blog_header">
-                                    <div class="date_min_read text_xs">
-                                        <span class="date">November 2021</span>
-                                        <span class="dot"></span>
-                                        <span class="min_read">Work</span>
-                                    </div>
+                                <div class="news_source">
+                                    <img src="{{ viewFile($ns->news_logo) }}" alt="" class="img-responsive">
                                 </div>
-                                <h2 class="blog_title text_sm">Famous Studios keeps pace with the
-                                    moving screens.
-                                    How Mumbai’s Famous Studios, set up in pre-Partition days,
-                                    is reinventing itself
-                                    for the streaming entertainment sector.</h2>
-                            </div>
-                            <div class="news_source">
-                                <img src="img/home/news_source.png" alt="" class="img-responsive">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="news_item fade_in col-md-4">
-                        <a href="https://www.thehindubusinessline.com/catalyst/famous-studios-reinvents-itself-for-the-ott-generation/article34804968.ece"
-                            class="news_item_inner" target="_blank">
-                            <div class="news_image">
-                                <img src="img/news/img_5.jpg" alt="" class="img-responsive">
-                            </div>
-                            <div class="news_content">
-                                <div class="blog_header">
-                                    <div class="date_min_read text_xs">
-                                        <span class="date">November 2021</span>
-                                        <span class="dot"></span>
-                                        <span class="min_read">Work</span>
-                                    </div>
-                                </div>
-                                <h2 class="blog_title text_sm">Famous Studios keeps pace with the
-                                    moving screens.
-                                    How Mumbai’s Famous Studios, set up in pre-Partition days,
-                                    is reinventing itself
-                                    for the streaming entertainment sector.</h2>
-                            </div>
-                            <div class="news_source">
-                                <img src="img/home/news_source.png" alt="" class="img-responsive">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="news_item fade_in col-md-4">
-                        <a href="https://www.thehindubusinessline.com/catalyst/famous-studios-reinvents-itself-for-the-ott-generation/article34804968.ece"
-                            class="news_item_inner" target="_blank">
-                            <div class="news_image">
-                                <img src="img/news/img_6.jpg" alt="" class="img-responsive">
-                            </div>
-                            <div class="news_content">
-                                <div class="blog_header">
-                                    <div class="date_min_read text_xs">
-                                        <span class="date">November 2021</span>
-                                        <span class="dot"></span>
-                                        <span class="min_read">Work</span>
-                                    </div>
-                                </div>
-                                <h2 class="blog_title text_sm">Famous Studios keeps pace with the
-                                    moving screens.
-                                    How Mumbai’s Famous Studios, set up in pre-Partition days,
-                                    is reinventing itself
-                                    for the streaming entertainment sector.</h2>
-                            </div>
-                            <div class="news_source">
-                                <img src="img/home/news_source.png" alt="" class="img-responsive">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="news_item fade_in col-md-4">
-                        <a href="https://www.thehindubusinessline.com/catalyst/famous-studios-reinvents-itself-for-the-ott-generation/article34804968.ece"
-                            class="news_item_inner" target="_blank">
-                            <div class="news_image">
-                                <img src="img/news/img_7.jpg" alt="" class="img-responsive">
-                            </div>
-                            <div class="news_content">
-                                <div class="blog_header">
-                                    <div class="date_min_read text_xs">
-                                        <span class="date">November 2021</span>
-                                        <span class="dot"></span>
-                                        <span class="min_read">Work</span>
-                                    </div>
-                                </div>
-                                <h2 class="blog_title text_sm">Famous Studios keeps pace with the
-                                    moving screens.
-                                    How Mumbai’s Famous Studios, set up in pre-Partition days,
-                                    is reinventing itself
-                                    for the streaming entertainment sector.</h2>
-                            </div>
-                            <div class="news_source">
-                                <img src="img/home/news_source.png" alt="" class="img-responsive">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="news_item fade_in col-md-4">
-                        <a href="https://www.thehindubusinessline.com/catalyst/famous-studios-reinvents-itself-for-the-ott-generation/article34804968.ece"
-                            class="news_item_inner" target="_blank">
-                            <div class="news_image">
-                                <img src="img/news/img_1.jpg" alt="" class="img-responsive">
-                            </div>
-                            <div class="news_content">
-                                <div class="blog_header">
-                                    <div class="date_min_read text_xs">
-                                        <span class="date">November 2021</span>
-                                        <span class="dot"></span>
-                                        <span class="min_read">Work</span>
-                                    </div>
-                                </div>
-                                <h2 class="blog_title text_sm">Famous Studios keeps pace with the
-                                    moving screens.
-                                    How Mumbai’s Famous Studios, set up in pre-Partition days,
-                                    is reinventing itself
-                                    for the streaming entertainment sector.</h2>
-                            </div>
-                            <div class="news_source">
-                                <img src="img/home/news_source.png" alt="" class="img-responsive">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="news_item fade_in col-md-4">
-                        <a href="https://www.thehindubusinessline.com/catalyst/famous-studios-reinvents-itself-for-the-ott-generation/article34804968.ece"
-                            class="news_item_inner" target="_blank">
-                            <div class="news_image">
-                                <img src="img/news/img_3.jpg" alt="" class="img-responsive">
-                            </div>
-                            <div class="news_content">
-                                <div class="blog_header">
-                                    <div class="date_min_read text_xs">
-                                        <span class="date">November 2021</span>
-                                        <span class="dot"></span>
-                                        <span class="min_read">Work</span>
-                                    </div>
-                                </div>
-                                <h2 class="blog_title text_sm">Famous Studios keeps pace with the
-                                    moving screens.
-                                    How Mumbai’s Famous Studios, set up in pre-Partition days,
-                                    is reinventing itself
-                                    for the streaming entertainment sector.</h2>
-                            </div>
-                            <div class="news_source">
-                                <img src="img/home/news_source.png" alt="" class="img-responsive">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="news_item fade_in col-md-4">
-                        <a href="https://www.thehindubusinessline.com/catalyst/famous-studios-reinvents-itself-for-the-ott-generation/article34804968.ece"
-                            class="news_item_inner" target="_blank">
-                            <div class="news_image">
-                                <img src="img/news/img_4.jpg" alt="" class="img-responsive">
-                            </div>
-                            <div class="news_content">
-                                <div class="blog_header">
-                                    <div class="date_min_read text_xs">
-                                        <span class="date">November 2021</span>
-                                        <span class="dot"></span>
-                                        <span class="min_read">Work</span>
-                                    </div>
-                                </div>
-                                <h2 class="blog_title text_sm">Famous Studios keeps pace with the
-                                    moving screens.
-                                    How Mumbai’s Famous Studios, set up in pre-Partition days,
-                                    is reinventing itself
-                                    for the streaming entertainment sector.</h2>
-                            </div>
-                            <div class="news_source">
-                                <img src="img/home/news_source.png" alt="" class="img-responsive">
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </section>
@@ -297,4 +97,13 @@
 @endsection
 
 @push('scripts')
+    <script>
+        $('select#latest').on('change', function(e) {
+            var optionSelected = $("option:selected", this);
+            var valueSelected = this.value;
+//             console.log(optionSelected, valueSelected, location.protocol + '//' + location.host + location.pathname
+// );
+            window.location.href = location.protocol + '//' + location.host + location.pathname+'?'+valueSelected;
+        });
+    </script>
 @endpush
