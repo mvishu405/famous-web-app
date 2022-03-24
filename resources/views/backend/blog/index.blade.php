@@ -20,6 +20,7 @@
                             <th>Cover Image</th>
                             <th>Blog Date</th>
                             <th>Read Time</th>
+                            <th>Description</th>
                             <th>Meta Title</th>
                             <th>Meta Keywords</th>
                             <th>Meta Image</th>
@@ -57,6 +58,7 @@
                                 </td>
                                 <td>{{ $blog->blog_date }}</td>
                                 <td>{{ $blog->read_time }}</td>
+                                <td>{{ Str::limit($blog->description, 50, '...') }}</td>
                                 <td>{{ $blog->meta_title }}</td>
                                 <td>{{ $blog->meta_keywords }}</td>
                                 <td>

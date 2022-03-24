@@ -412,86 +412,35 @@
                 <div class="blog_area col-sm-12 col-md-5 no_pad">
                     <h2 class=" section_title fade_in">blogs</h2>
                     <div class="blog_wrap">
-                        <div class="blog_item fade_in">
-                            <div class="blog_content">
-                                <div class="blog_header">
-                                    <div class="date_min_read text_xs">
-                                        <span class="date">Sep 2021</span>
-                                        <span class="dot"></span>
-                                        <span class="min_read">2min read</span>
-                                    </div>
-                                    <div class="social_icon">
-                                        <div class="social_links_area">
-                                            <a href="#"><img src="img/blog_inside/facebook-icon.png" alt=""></a>
-                                            <a href="#"><img src="img/blog_inside/twitter-icon.png" alt=""></a>
-                                            <a href="#"><img src="img/blog_inside/linkedin-icon.png" alt=""></a>
-                                            <a href="#"><img src="img/blog_inside/feather-icon.png" alt=""></a>
+                        @foreach ($blogs as $blog)
+                            <div class="blog_item fade_in">
+                                <div class="blog_content">
+                                    <div class="blog_header">
+                                        <div class="date_min_read text_xs">
+                                            <span class="date">{{ Carbon\Carbon::parse($blog->blog_date)->toFormattedDateString() }}</span>
+                                            <span class="dot"></span>
+                                            <span class="min_read">{{ $blog->read_time }}</span>
                                         </div>
-                                        <a href="#" class="share-icon">
-                                            <img src="img/blog_inside/share-icon.png" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <h2 class="blog_title text_sm">Lorem ipsum dolor sit amet, consetetur
-                                    sadipscing elitr.</h2>
-                                <a class="continue_reading text_xs" target="_blank">Continue Reading
-                                    +</a>
-                            </div>
-                        </div>
-                        <div class="blog_item fade_in">
-                            <div class="blog_content">
-                                <div class="blog_header">
-                                    <div class="date_min_read text_xs">
-                                        <span class="date">Sep 2021</span>
-                                        <span class="dot"></span>
-                                        <span class="min_read">2min read</span>
-                                    </div>
-                                    <div class="social_icon">
-                                        <div class="social_links_area">
-                                            <a href="#"><img src="img/blog_inside/facebook-icon.png" alt=""></a>
-                                            <a href="#"><img src="img/blog_inside/twitter-icon.png" alt=""></a>
-                                            <a href="#"><img src="img/blog_inside/linkedin-icon.png" alt=""></a>
-                                            <a href="#"><img src="img/blog_inside/feather-icon.png" alt=""></a>
+                                        <div class="social_icon">
+                                            <div class="social_links_area">
+                                                <a href="#"><img src="img/blog_inside/facebook-icon.png" alt=""></a>
+                                                <a href="#"><img src="img/blog_inside/twitter-icon.png" alt=""></a>
+                                                <a href="#"><img src="img/blog_inside/linkedin-icon.png" alt=""></a>
+                                                <a href="#"><img src="img/blog_inside/feather-icon.png" alt=""></a>
+                                            </div>
+                                            <a href="#" class="share-icon">
+                                                <img src="img/blog_inside/share-icon.png" alt="">
+                                            </a>
                                         </div>
-                                        <a href="#" class="share-icon">
-                                            <img src="img/blog_inside/share-icon.png" alt="">
-                                        </a>
                                     </div>
+                                    <h2 class="blog_title text_sm">{{ $blog->title }}</h2>
+                                    <a class="continue_reading text_xs" href="{{ route('frontend.blogs.inside', ['slug' => $blog->slug]) }}">Continue Reading
+                                        +</a>
                                 </div>
-                                <h2 class="blog_title text_sm">Lorem ipsum dolor sit amet, consetetur
-                                    sadipscing elitr.</h2>
-                                <a class="continue_reading text_xs" target="_blank">Continue Reading
-                                    +</a>
                             </div>
-                        </div>
-                        <div class="blog_item fade_in">
-                            <div class="blog_content">
-                                <div class="blog_header">
-                                    <div class="date_min_read text_xs">
-                                        <span class="date">Sep 2021</span>
-                                        <span class="dot"></span>
-                                        <span class="min_read">2min read</span>
-                                    </div>
-                                    <div class="social_icon">
-                                        <div class="social_links_area">
-                                            <a href="#"><img src="img/blog_inside/facebook-icon.png" alt=""></a>
-                                            <a href="#"><img src="img/blog_inside/twitter-icon.png" alt=""></a>
-                                            <a href="#"><img src="img/blog_inside/linkedin-icon.png" alt=""></a>
-                                            <a href="#"><img src="img/blog_inside/feather-icon.png" alt=""></a>
-                                        </div>
-                                        <a href="#" class="share-icon">
-                                            <img src="img/blog_inside/share-icon.png" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <h2 class="blog_title text_sm">Lorem ipsum dolor sit amet, consetetur
-                                    sadipscing elitr.</h2>
-                                <a class="continue_reading text_xs" target="_blank">Continue Reading
-                                    +</a>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
-                    <a href="blog.php" class="btn_default fade_in rem_link_style">Read more</a>
+                    <a href="{{ route('frontend.blogs.index') }}" class="btn_default fade_in rem_link_style">Read more</a>
                 </div>
                 <div class="news_area col-sm-12 col-md-7">
                     <h2 class=" section_title fade_in">in the news</h2>
@@ -532,7 +481,8 @@
                         @endforelse
 
                     </div>
-                    <a href="{{ route('frontend.news.index') }}" class="btn_default fade_in rem_link_style">Read more</a>
+                    <a href="{{ route('frontend.news.index') }}" class="btn_default fade_in rem_link_style">Read
+                        more</a>
                 </div>
             </div>
         </section>
@@ -545,7 +495,7 @@
                             <div class="mot_left">
                                 <h2 class="section_title fade_in">meet our talent</h2>
                                 <!-- <a href="about.php" class="btn_default fade_in rem_link_style hidden_xs">Know Them
-                                                                better</a> -->
+                                                                    better</a> -->
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-8">

@@ -71,6 +71,33 @@
 
                         <div class="col-sm-12">
                             <div class="form-group">
+                                <label>Description</label>
+                                <textarea class="form-control tmce" name="description" cols="30" rows="10">{{ old('description') }}</textarea>
+                                @if ($errors->has('description'))
+                                    <div class="text-danger">{{ $errors->first('description') }}</div>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="related_blog_ids">Related Blogs </label>
+                                <select class="form-control select2 select2-related-blogs" name="related_blog_ids[]"
+                                    id="related_blog_ids" multiple>
+                                    @foreach ($related_blogs as $key => $related_blog)
+                                        <option value="{{ $related_blog->id }}"
+                                            {{ $related_blog->id == old('related_blog_ids') ? 'selected' : '' }}>
+                                            {{ $related_blog->title }}</option>
+                                    @endforeach
+                                </select>
+                                @if ($errors->has('related_blog_ids'))
+                                    <div class="text-danger">{{ $errors->first('related_blog_ids') }}</div>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="form-group">
                                 <label>Meta Title</label>
                                 <input type="text" class="form-control" name="meta_title"
                                     value="{{ old('meta_title') }}">
@@ -174,8 +201,7 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label>Og Description</label>
-                                <textarea class="form-control tmce" name="og_description" cols="30"
-                                    rows="10">{{ old('og_description') }}</textarea>
+                                <textarea class="form-control tmce" name="og_description" cols="30" rows="10">{{ old('og_description') }}</textarea>
                                 @if ($errors->has('og_description'))
                                     <div class="text-danger">{{ $errors->first('og_description') }}</div>
                                 @endif
