@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="77" height="80" viewBox="0 0 77 80">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.418" cy="0.341" r="0.497" gradientTransform="translate(0.546 -0.155) rotate(56.31)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#009ee3"/>
+    </radialGradient>
+  </defs>
+  <g id="innovation_icon" transform="translate(-810 -4516.157)">
+    <g id="Ellipse_14" data-name="Ellipse 14" transform="translate(810 4532.157)" fill="none" stroke="#fff" stroke-width="2">
+      <circle cx="32" cy="32" r="32" stroke="none"/>
+      <circle cx="32" cy="32" r="31" fill="none"/>
+    </g>
+    <circle id="Ellipse_15" data-name="Ellipse 15" cx="10" cy="10" r="10" transform="translate(867 4516.157)" fill="url(#radial-gradient)"/>
+  </g>
+</svg>

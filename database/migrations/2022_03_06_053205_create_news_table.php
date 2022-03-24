@@ -19,6 +19,7 @@ class CreateNewsTable extends Migration
             $table->dateTime('news_date')->nullable();
             $table->longText('description')->nullable();
             $table->string('news_logo')->nullable();
+            $table->mediumText('news_link')->nullable();
 
             $table->bigInteger('order_column')->nullable();
             $table->dateTime('published_at')->nullable();
