@@ -7,4 +7,5 @@ Route::namespace('App\Http\Controllers\Frontend')
     ->group(function () {
         Route::get('/', 'FrontendConroller@index')->name('homepage');
         Route::get('news', 'NewsController@index')->name('news.index');
+        Route::get('blog', 'BlogController@index')->name('news.index');
     });

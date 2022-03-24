@@ -109,7 +109,7 @@
                         class="nav-link {{ request()->routeIs('backend.homepage-sliders.*') ? 'active' : '' }}">
                         <i class="far fa-circle nav-icon"></i>
                         <p>
-                            Homepage Slider
+                            Testimonial Slider
                         </p>
                     </a>
                 </li>

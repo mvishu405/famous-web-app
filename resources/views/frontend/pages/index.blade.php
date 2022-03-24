@@ -20,30 +20,16 @@
         <section id="banner_section" class="">
             <div class="banner_bg_image" style="background-image:url(img/home/banner.jpg)">
                 <div class="video_slider">
-                    <div class="video_slider_item">
-                        <video width="100%" height="100%" autoplay loop playsinline muted>
-                            <source src="videos/Unacademy_1280x720.webm" data-desktop-src="Unacademy_1280x720.webm"
-                                type="video/webm">
-                            <source src="videos/Unacademy_1280x720.mp4" data-desktop-src="Unacademy_1280x720.mp4"
-                                type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="video_slider_item">
-                        <video width="100%" height="100%" autoplay loop playsinline muted>
-                            <source src="videos/Yardley_1280x720.webm" data-desktop-src="Yardley_1280x720.webm"
-                                type="video/webm">
-                            <source src="videos/Yardley_1280x720.mp4" data-desktop-src="Yardley_1280x720.mp4"
-                                type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="video_slider_item">
-                        <video width="100%" height="100%" autoplay loop playsinline muted>
-                            <source src="videos/Bajaj-Almond-Oil-1280x720.webm"
-                                data-desktop-src="videos/Bajaj-Almond-Oil-1280x720.webm" type="video/webm">
-                            <source src="videos/Bajaj-Almond-Oil-1280x720.mp4"
-                                data-desktop-src="videos/Bajaj-Almond-Oil-1280x720.mp4" type=" video/mp4">
-                        </video>
-                    </div>
+                    @foreach ($homepageBanners as $homepageBanner)
+                        <div class="video_slider_item">
+                            <video width="100%" height="100%" autoplay loop playsinline muted>
+                                <source src="{{ viewFile($homepageBanner->video_webm) }}"
+                                    data-desktop-src="{{ viewFile($homepageBanner->video_webm) }}" type="video/webm">
+                                <source src="{{ viewFile($homepageBanner->video_mp4) }}"
+                                    data-desktop-src="{{ viewFile($homepageBanner->video_mp4) }}" type="video/mp4">
+                            </video>
+                        </div>
+                    @endforeach
                 </div>
                 <div class="grid_lines">
                     <div class="grid_line_item"></div>
@@ -364,21 +350,12 @@
 
         <section id="testimonial_section" class="section_spacing">
             <div class="thumb_imgs">
-                <div class="thumb_img_item">
-                    <img data-lazy-src="img/home/testi_img1.jpg" alt="" class="img_responsive">
-                </div>
-                <div class="thumb_img_item">
-                    <img data-lazy-src="img/home/testi_img2.jpg" alt="" class="img_responsive">
-                </div>
-                <div class="thumb_img_item">
-                    <img data-lazy-src="img/home/testi_img3.jpg" alt="" class="img_responsive">
-                </div>
-                <div class="thumb_img_item">
-                    <img data-lazy-src="img/home/testi_img1.jpg" alt="" class="img_responsive">
-                </div>
-                <div class="thumb_img_item">
-                    <img data-lazy-src="img/home/testi_img2.jpg" alt="" class="img_responsive">
-                </div>
+                @foreach ($testimonials->take(5) as $testimonial)
+                    <div class="thumb_img_item">
+                        <img data-lazy-src="{{ viewFile($testimonial->image) }}" alt="" class="img_responsive">
+                    </div>
+                @endforeach
+
             </div>
             <div class="ts_inner">
                 <div class="container">
@@ -392,108 +369,27 @@
                                 <div class="row">
                                     <div class="col-sm-12 col-md-5">
                                         <div id="testi_image_slider" class="testi_image">
-                                            <div class="testi_image_item">
-                                                <img src="img/home/cc_img1.jpg" alt="" class="img-responsive">
-                                            </div>
-                                            <div class="testi_image_item">
-                                                <img src="img/home/cc_img2.jpg" alt="" class="img-responsive">
-                                            </div>
-                                            <div class="testi_image_item">
-                                                <img src="img/home/cc_img3.jpg" alt="" class="img-responsive">
-                                            </div>
-                                            <div class="testi_image_item">
-                                                <img src="img/home/cc_img1.jpg" alt="" class="img-responsive">
-                                            </div>
-                                            <div class="testi_image_item">
-                                                <img src="img/home/cc_img2.jpg" alt="" class="img-responsive">
-                                            </div>
+                                            @foreach ($testimonials as $testimonial)
+                                                <div class="testi_image_item">
+                                                    <img src="{{ viewFile($testimonial->image) }}" alt=""
+                                                        class="img-responsive">
+                                                </div>
+                                            @endforeach
                                         </div>
                                     </div>
                                     <div class="col-sm-12 col-md-7">
                                         <div id="testi_content_slider" class="testi_content">
-                                            <div class="testi_content_item">
-                                                <div class="testi_desc">
-                                                    <p>1 Lorem ipsum dolor sit amet, consetetur
-                                                        sadipscing elitr, sed diam nonumy eirmod
-                                                        tempor invidunt ut labore et dolore magna
-                                                        aliquyam erat, sed diam voluptua. At vero
-                                                        eos et accusam et justo duo
-                                                        dolores et ea.</p>
+                                            @foreach ($testimonials as $testimonial)
+                                                <div class="testi_content_item">
+                                                    <div class="testi_desc">
+                                                        {!! $testimonial->description !!}
+                                                    </div>
+                                                    <h3 class="testi_name text_md text_700">{{ $testimonial->name }}</h3>
+                                                    <span
+                                                        class="testi_desg text_sm text_itatic">{{ $testimonial->designation }}</span>
                                                 </div>
-                                                <h3 class="testi_name text_md text_700">Larissa D'sa
-                                                </h3>
-                                                <span class="testi_desg text_sm text_itatic">Loreal
-                                                    Paris Ad film shoot</span>
-                                            </div>
-                                            <div class="testi_content_item">
-                                                <div class="testi_desc">
-                                                    <p>2 Lorem ipsum dolor sit amet, consetetur
-                                                        sadipscing elitr, sed diam nonumy eirmod
-                                                        tempor invidunt ut labore et dolore magna
-                                                        aliquyam erat, sed diam voluptua. At vero
-                                                        eos et accusam et justo duo dsdas
-                                                        dasdasdas sadsadasdsa sadsdsad
-                                                        dfsafdasd sadsa bddsad sadasda sdasd
-                                                        dolores et ea.</p>
-                                                </div>
-                                                <h3 class="testi_name text_md text_700">Larissa D'sa
-                                                </h3>
-                                                <span class="testi_desg text_sm text_itatic">Loreal
-                                                    Paris Ad film shoot</span>
-                                            </div>
-                                            <div class="testi_content_item">
-                                                <div class="testi_desc">
-                                                    <p>3 Lorem ipsum dolor sit amet, consetetur
-                                                        sadipscing elitr, sed diam nonumy eirmod
-                                                        tempor invidunt ut labore et dolore magna
-                                                        aliquyam erat, sed diam voluptua. At vero
-                                                        eos et accusam et justo duo
-                                                        dolores et ea.</p>
-                                                </div>
-                                                <h3 class="testi_name text_md text_700">Larissa D'sa
-                                                </h3>
-                                                <span class="testi_desg text_sm text_itatic">Loreal
-                                                    Paris Ad film shoot</span>
-                                            </div>
-                                            <div class="testi_content_item">
-                                                <div class="testi_desc">
-                                                    <p>4 Lorem ipsum dolor sit amet, consetetur
-                                                        sadipscing elitr, sed diam nonumy eirmod
-                                                        tempor invidunt ut labore et dolore magna
-                                                        aliquyam erat, sed diam voluptua. At vero
-                                                        eos et accusam et justo duo dsdas
-                                                        dasdasdas sadsadasdsa sadsdsad
-                                                        dfsafdasd sadsa bddsad sadasda sdasd
-                                                        dolores et ea.</p>
-                                                </div>
-                                                <h3 class="testi_name text_md text_700">Larissa D'sa
-                                                </h3>
-                                                <span class="testi_desg text_sm text_itatic">Loreal
-                                                    Paris Ad film shoot</span>
-                                            </div>
-                                            <div class="testi_content_item">
-                                                <div class="testi_desc">
-                                                    <p>5 Lorem ipsum dolor sit amet, consetetur
-                                                        sadipscing elitr, sed diam nonumy eirmod
-                                                        tempor invidunt ut labore et dolore magna
-                                                        aliquyam erat, sed diam voluptua. At vero
-                                                        eos et accusam et justo duo
-                                                        dolores et ea.</p>
-                                                </div>
-                                                <h3 class="testi_name text_md text_700">Larissa D'sa
-                                                </h3>
-                                                <span class="testi_desg text_sm text_itatic">Loreal
-                                                    Paris Ad film shoot</span>
-                                            </div>
+                                            @endforeach
                                         </div>
-                                        <!-- <div class="custom_slider_arrows" data-slider="#testi_content_slider">
-                                                <div class="cs_arrows arrow_left">
-                                                    <img data-lazy-src="img/arrow_left.svg" alt="" class="img-responsive">
-                                                </div>
-                                                <div class="cs_arrows arrow_right">
-                                                    <img data-lazy-src="img/arrow_right.svg" alt="" class="img-responsive">
-                                                </div>
-                                            </div> -->
                                         <div class="arrow_wrap">
                                             <div class="arrow_item arrow_left">
                                                 <img data-lazy-src="img/arrow_left.svg" alt="" class="img-responsive">
@@ -600,60 +496,43 @@
                 <div class="news_area col-sm-12 col-md-7">
                     <h2 class=" section_title fade_in">in the news</h2>
                     <div class="news_wrap row">
-                        <div class="news_item col-sm-6 fade_in">
-                            <div class="news_item_inner">
-                                <div class="news_image">
-                                    <img data-lazy-src="img/home/news1.jpg" alt="" class="img-responsive">
-                                </div>
-                                <div class="news_content">
-                                    <div class="blog_header">
-                                        <div class="date_min_read text_xs">
-                                            <span class="date">November 2021</span>
-                                            <span class="dot"></span>
-                                            <span class="min_read">Work</span>
+                        @forelse ($news as $ns)
+                            <div class="news_item col-sm-6 fade_in">
+                                <a href="{{ $ns->news_link }}" class="news_item_inner" target="_blank">
+                                    <div class="news_item_inner">
+                                        <div class="news_image">
+                                            <img data-lazy-src="{{ viewFile($ns->preview_image) }}" alt=""
+                                                class="img-responsive">
                                         </div>
-                                        <a href="javascript:void(0)" class="share_icon">
+                                        <div class="news_content">
+                                            <div class="blog_header">
+                                                <div class="date_min_read text_xs">
+                                                    <span
+                                                        class="date">{{ Carbon\Carbon::parse($ns->news_date)?->toFormattedDateString() }}</span>
+                                                    <span class="dot"></span>
+                                                    <span class="min_read">Press</span>
+                                                </div>
+                                                {{-- <a href="javascript:void(0)" class="share_icon">
                                             <img data-lazy-src="img/share_icon.svg" alt="" class="img-responsive">
-                                        </a>
-                                    </div>
-                                    <h2 class="blog_title text_sm">Famous Studios keeps pace with the
-                                        moving screens.
-                                        How Mumbai’s Famous Studios, set up in pre-Partition days,
-                                        is reinventing itself
-                                        for the streaming entertainment sector.</h2>
-                                </div>
-                                <div class="news_source">
-                                    <img data-lazy-src="img/home/news_source.png" alt="" class="img-responsive">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="news_item col-sm-6 fade_in">
-                            <div class="news_item_inner">
-                                <div class="news_image">
-                                    <img data-lazy-src="img/home/news2.jpg" alt="" class="img-responsive">
-                                </div>
-                                <div class="news_content">
-                                    <div class="blog_header">
-                                        <div class="date_min_read text_xs">
-                                            <span class="date">November 2021</span>
-                                            <span class="dot"></span>
-                                            <span class="min_read">Press</span>
+                                        </a> --}}
+                                            </div>
+                                            <h2 class="blog_title text_sm">
+                                                {!! $ns->description !!}
+                                            </h2>
                                         </div>
-                                        <a href="javascript:void(0)" class="share_icon">
-                                            <img data-lazy-src="img/share_icon.svg" alt="" class="img-responsive">
-                                        </a>
+                                        <div class="news_source">
+                                            <img data-lazy-src="{{ viewFile($ns->news_logo) }}" alt=""
+                                                class="img-responsive">
+                                        </div>
                                     </div>
-                                    <h2 class="blog_title text_sm">Anant Roongta, Managing Director at
-                                        Famous Studios,
-                                        on the Way Forward in Entertainment.</h2>
-                                </div>
-                                <div class="news_source">
-                                    <img data-lazy-src="img/home/news_source.png" alt="" class="img-responsive">
-                                </div>
+                                </a>
                             </div>
-                        </div>
+
+                        @empty
+                        @endforelse
+
                     </div>
-                    <a href="news.php" class="btn_default fade_in rem_link_style">Read more</a>
+                    <a href="{{ route('frontend.news.index') }}" class="btn_default fade_in rem_link_style">Read more</a>
                 </div>
             </div>
         </section>
@@ -666,7 +545,7 @@
                             <div class="mot_left">
                                 <h2 class="section_title fade_in">meet our talent</h2>
                                 <!-- <a href="about.php" class="btn_default fade_in rem_link_style hidden_xs">Know Them
-                                        better</a> -->
+                                                                better</a> -->
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-8">

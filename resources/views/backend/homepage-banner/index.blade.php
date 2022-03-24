@@ -18,6 +18,8 @@
                             <th>#</th>
                             <th>Desktop Banner</th>
                             <th>Mobile Banner</th>
+                            <th>Video Mp4</th>
+                            <th>Video Webm</th>
                             <th>Title</th>
                             <th>Description</th>
                             <th>Banner Url</th>
@@ -38,6 +40,16 @@
                                     <img src="{{ viewFile($homepageBanner->mobile_banner) }}" alt=""
                                         style="width:50px; height: 50px;">
                                 </td>
+                                <td>
+                                    <a href="{{ viewFile($homepageBanner->video_mp4) }}" target="_blank">View file</a>
+
+                                </td>
+                                <td>
+                                    <a href="{{ viewFile($homepageBanner->video_webm) }}" target="_blank">View
+                                        file</a>
+
+                                </td>
+
                                 <td>{{ $homepageBanner->title }}</td>
                                 <td>{{ Str::limit($homepageBanner->description, 50, '...') }}</td>
                                 <td>{{ $homepageBanner->banner_url }}</td>

@@ -17,6 +17,8 @@ class CreateHomepageBannersTable extends Migration
             $table->id();
             $table->string('desktop_banner')->nullable();
             $table->string('mobile_banner')->nullable();
+            $table->string('video_mp4')->nullable();
+            $table->string('video_webm')->nullable();
             $table->text('title')->nullable();
             $table->longText('description')->nullable();
             $table->text('banner_url')->nullable();
