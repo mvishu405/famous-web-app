@@ -9,4 +9,6 @@ Route::namespace('App\Http\Controllers\Frontend')
         Route::get('news', 'NewsController@index')->name('news.index');
         Route::get('blogs', 'BlogController@index')->name('blogs.index');
         Route::get('blogs/{slug}', 'BlogController@show')->name('blogs.inside');
+        Route::get('works', 'WorkController@index')->name('works.index');
+        Route::get('works/{slug}', 'WorkController@show')->name('works.show');
     });

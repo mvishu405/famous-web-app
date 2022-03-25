@@ -35,27 +35,12 @@
                         <li class="active">
                             <a href="javascript:void(0)" data-cat=".all_cat">All</a>
                         </li>
-                        <li class="">
-                            <a href="javascript:void(0)" data-cat=".cat2">TVCs</a>
-                        </li>
-                        <li class="">
-                            <a href="javascript:void(0)" data-cat=".cat3">Long Format / OTT</a>
-                        </li>
-                        <li class="">
-                            <a href="javascript:void(0)" data-cat=".cat4">Documentaries</a>
-                        </li>
-                        <li class="">
-                            <a href="javascript:void(0)" data-cat=".cat5">VFX</a>
-                        </li>
-                        <li class="">
-                            <a href="javascript:void(0)" data-cat=".cat6">Virtual Production</a>
-                        </li>
-                        <li class="">
-                            <a href="javascript:void(0)" data-cat=".cat7">Music Videos</a>
-                        </li>
-                        <li class="">
-                            <a href="javascript:void(0)" data-cat=".cat8">Visual Engineering</a>
-                        </li>
+                        @foreach ($work_categories as $workCategory)
+                            <li>
+                                <a href="javascript:void(0)"
+                                    data-cat=".{{ $workCategory->slug }}">{{ $workCategory->name }}</a>
+                            </li>
+                        @endforeach
                     </ul>
                 </div>
             </div>
@@ -64,110 +49,23 @@
         <section class="img_gallary">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 all_cat cat8">
-                        <a href="work-inside.php" class="work_listing_item fade_in">
-                            <div class="wls_inner">
-                                <div class="wls_img">
-                                    <img src="img/work_listing/work_img_1.jpg" alt="" class="img-responsive">
-                                </div>
-                                <div class="wls_cont">
-                                    <h2 class="wls_title text_md text_700">Yardley</h2>
-                                    <span class="wls_cat text_xs">TVCs</span>
-                                </div>
+                    @foreach ($work_categories as $workCategory)
+                        @foreach ($workCategory->works as $work)
+                            <div class="col-md-6 all_cat {{ $workCategory->slug }}">
+                                <a href="work-inside.php" class="work_listing_item fade_in">
+                                    <div class="wls_inner">
+                                        <div class="wls_img">
+                                            <img src="{{ viewFile($work->preview_image) }}" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="wls_cont">
+                                            <h2 class="wls_title text_md text_700">{{ $work->title }}</h2>
+                                            <span class="wls_cat text_xs">{{ $workCategory->name }}</span>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 all_cat cat2">
-                        <a href="work-inside.php" class="work_listing_item fade_in">
-                            <div class="wls_inner">
-                                <div class="wls_img">
-                                    <img src="img/work_listing/work_img_2.jpg" alt="" class="img-responsive">
-                                </div>
-                                <div class="wls_cont">
-                                    <h2 class="wls_title text_md text_700">Yardley</h2>
-                                    <span class="wls_cat text_xs">TVCs</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 all_cat cat3">
-                        <a href="work-inside.php" class="work_listing_item fade_in">
-                            <div class="wls_inner">
-                                <div class="wls_img">
-                                    <img src="img/work_listing/work_img_3.jpg" alt="" class="img-responsive">
-                                </div>
-                                <div class="wls_cont">
-                                    <h2 class="wls_title text_md text_700">Yardley</h2>
-                                    <span class="wls_cat text_xs">TVCs</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 all_cat cat4">
-                        <a href="work-inside.php" class="work_listing_item fade_in">
-                            <div class="wls_inner">
-                                <div class="wls_img">
-                                    <img src="img/work_listing/work_img_4.jpg" alt="" class="img-responsive">
-                                </div>
-                                <div class="wls_cont">
-                                    <h2 class="wls_title text_md text_700">Yardley</h2>
-                                    <span class="wls_cat text_xs">TVCs</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 all_cat cat5">
-                        <a href="work-inside.php" class="work_listing_item fade_in">
-                            <div class="wls_inner">
-                                <div class="wls_img">
-                                    <img src="img/work_listing/work_img_5.jpg" alt="" class="img-responsive">
-                                </div>
-                                <div class="wls_cont">
-                                    <h2 class="wls_title text_md text_700">Yardley</h2>
-                                    <span class="wls_cat text_xs">TVCs</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 all_cat cat6">
-                        <a href="work-inside.php" class="work_listing_item fade_in">
-                            <div class="wls_inner">
-                                <div class="wls_img">
-                                    <img src="img/work_listing/work_img_6.jpg" alt="" class="img-responsive">
-                                </div>
-                                <div class="wls_cont">
-                                    <h2 class="wls_title text_md text_700">Yardley</h2>
-                                    <span class="wls_cat text_xs">TVCs</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 all_cat cat7">
-                        <a href="work-inside.php" class="work_listing_item fade_in">
-                            <div class="wls_inner">
-                                <div class="wls_img">
-                                    <img src="img/work_listing/work_img_7.jpg" alt="" class="img-responsive">
-                                </div>
-                                <div class="wls_cont">
-                                    <h2 class="wls_title text_md text_700">Yardley</h2>
-                                    <span class="wls_cat text_xs">TVCs</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 all_cat cat8">
-                        <a href="work-inside.php" class="work_listing_item fade_in">
-                            <div class="wls_inner">
-                                <div class="wls_img">
-                                    <img src="img/work_listing/work_img_8.jpg" alt="" class="img-responsive">
-                                </div>
-                                <div class="wls_cont">
-                                    <h2 class="wls_title text_md text_700">Yardley</h2>
-                                    <span class="wls_cat text_xs">TVCs</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                        @endforeach
+                    @endforeach
                 </div>
             </div>
         </section>

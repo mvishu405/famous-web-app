@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers\Backend;
 
-use Carbon\Carbon;
-use App\Models\Work;
-use App\Models\WorkGallery;
-use App\Models\WorkCategory;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Work;
+use App\Models\WorkCategory;
+use App\Models\WorkGallery;
+use Carbon\Carbon;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
 class WorkController extends Controller
@@ -103,6 +103,7 @@ class WorkController extends Controller
         if ($data->hasFile('inside_image')) {
             $work->inside_image = Storage::putFile(config('constants.uploads.image'), $data->inside_image);
         }
+        $work->description = $data->description;
         if ($data->hasFile('before_image')) {
             $work->before_image = Storage::putFile(config('constants.uploads.image'), $data->before_image);
         }
@@ -122,11 +123,15 @@ class WorkController extends Controller
             $work->published_at = null;
         }
         $work->save();
-        foreach ($data->gallery_images as $gallery_image) {
-            $workGallery = new WorkGallery();
-            $workGallery->image = Storage::putFile(config('constants.uploads.image'), $gallery_image);
-            $work->galleryImages()->save($workGallery);
+
+        if (isset($data->gallery_images) > 0) {
+            foreach ($data->gallery_images as $gallery_image) {
+                $workGallery = new WorkGallery();
+                $workGallery->image = Storage::putFile(config('constants.uploads.image'), $gallery_image);
+                $work->galleryImages()->save($workGallery);
+            }
         }
+
     }
 
     public function deleteWorkGallery($id)

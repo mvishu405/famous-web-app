@@ -2,9 +2,10 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use App\Models\Work;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
 class WorkCategory extends Model
 {
@@ -19,5 +20,10 @@ class WorkCategory extends Model
                 'source' => 'name',
             ],
         ];
+    }
+
+    public function works()
+    {
+        return $this->hasMany(Work::class, 'work_category_id', 'id')->whereNotNull('published_at')->orderBy('order_column');
     }
 }

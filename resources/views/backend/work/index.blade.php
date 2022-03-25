@@ -22,6 +22,7 @@
                             <th>Homepage Image</th>
                             <th>Inside Video Link</th>
                             <th>Inside Image</th>
+                            <th>Description</th>
                             <th>Before Image</th>
                             <th>After Image</th>
                             <th>Show On Homepage</th>
@@ -53,6 +54,7 @@
                                     <img src="{{ viewFile($work->inside_image) }}" alt=""
                                         style="width:50px; height: 50px;">
                                 </td>
+                                <td>{{ Str::limit($work->description, 50, '...') }}</td>
                                 <td>
                                     <a href="{{ viewFile($work->before_image) }}">View file</a>
                                     <img src="{{ viewFile($work->before_image) }}" alt=""

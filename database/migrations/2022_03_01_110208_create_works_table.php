@@ -23,9 +23,11 @@ class CreateWorksTable extends Migration
             $table->string('homepage_image')->nullable();
             $table->text('inside_video_link')->nullable();
             $table->string('inside_image')->nullable();
+            $table->longText('description')->nullable();
             $table->string('before_image')->nullable();
             $table->string('after_image')->nullable();
             $table->dateTime('show_on_homepage')->nullable();
+            $table->string('slug')->unique();
             $table->bigInteger('order_column')->nullable();
             $table->dateTime('published_at')->nullable();
             $table->timestamps();

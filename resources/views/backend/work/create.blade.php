@@ -98,6 +98,16 @@
 
                         <div class="col-sm-12">
                             <div class="form-group">
+                                <label>Description</label>
+                                <textarea class="form-control tmce" name="description" cols="30" rows="10">{{ old('description') }}</textarea>
+                                @if($errors->has('description'))
+                                    <div class="text-danger">{{ $errors->first('description') }}</div>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="form-group">
                                 <label>Before Image</label>
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input" name="before_image">
