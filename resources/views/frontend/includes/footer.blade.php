@@ -8,14 +8,14 @@
                     </div>
                     <div class="footer_links">
                         <div class="links_item">
-                            <a href="about.php">About</a>
+                            <a href="{{ route('frontend.about.index') }}">About</a>
                             <a href="production.php">Services</a>
-                            <a href="work.php">Work</a>
+                            <a href="{{ route('frontend.works.index') }}">Work</a>
                         </div>
                         <div class="links_item">
-                            <a href="blog.php">Blogs</a>
-                            <a href="news.php">News</a>
-                            <a href="contact.php">Connect</a>
+                            <a href="{{ route('frontend.blogs.index') }}">Blogs</a>
+                            <a href="{{ route('frontend.news.index') }}">News</a>
+                            <a href="{{ route('frontend.contact.index') }}">Connect</a>
                         </div>
                         <div class="links_item">
                             <a href="">Careers</a>

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateHomepageBannersTable extends Migration
+class CreateTeamsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,13 @@ class CreateHomepageBannersTable extends Migration
      */
     public function up()
     {
-        Schema::create('homepage_banners', function (Blueprint $table) {
+        Schema::create('teams', function (Blueprint $table) {
             $table->id();
-            $table->string('desktop_banner')->nullable();
-            $table->string('mobile_banner')->nullable();
-            $table->string('video_mp4')->nullable();
-            $table->string('video_webm')->nullable();
-            $table->text('title')->nullable();
+            $table->string('name')->nullable();
+            $table->string('image')->nullable();
+            $table->string('designation')->nullable();
             $table->longText('description')->nullable();
-            $table->text('banner_url')->nullable();
+            $table->mediumText('link')->nullable();
             $table->bigInteger('order_column')->nullable();
             $table->dateTime('published_at')->nullable();
             $table->timestamps();
@@ -35,6 +33,6 @@ class CreateHomepageBannersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('homepage_banners');
+        Schema::dropIfExists('teams');
     }
 }

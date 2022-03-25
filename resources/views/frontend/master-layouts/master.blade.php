@@ -24,6 +24,8 @@
     <meta property="og:image" content="https://tingprojects.in/projects/famous/img/og-image.jpg" />
     <meta property="og:image:secure_url" content="https://tingprojects.in/projects/famous/img/og-image.jpg" />
 
+    <base href="{{ env('APP_URL') }}">
+
     <title>@yield('title')</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
     <link rel="stylesheet" href="dist/css/app.min.css" />

@@ -49,6 +49,38 @@
 
                         <div class="col-sm-12">
                             <div class="form-group">
+                                <label>Video Mp4</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" name="video_mp4">
+                                    <label class="custom-file-label" for="video_mp4">Choose file</label>
+                                </div>
+                                @if($errors->has('video_mp4'))
+                                    <div class="text-danger">{{ $errors->first('video_mp4') }}</div>
+                                @endif
+                            </div>
+                            <div class="form-group">
+                                <a href="{{ viewFile($homepageBanner->video_mp4) }}" target="_blank">Video</a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label>Video Webm</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" name="video_webm">
+                                    <label class="custom-file-label" for="video_webm">Choose file</label>
+                                </div>
+                                @if($errors->has('video_webm'))
+                                    <div class="text-danger">{{ $errors->first('video_webm') }}</div>
+                                @endif
+                            </div>
+                            <div class="form-group">
+                                <a href="{{ viewFile($homepageBanner->video_webm) }}" target="_blank">Video</a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="form-group">
                                 <label>Title</label>
                                 <input type="text" class="form-control" name="title"
                                     value="{{ $homepageBanner->title }}">
@@ -61,8 +93,7 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label>Description</label>
-                                <textarea class="form-control" name="description" cols="30"
-                                    rows="10">{{ $homepageBanner->description }}</textarea>
+                                <textarea class="form-control" name="description" cols="30" rows="10">{{ $homepageBanner->description }}</textarea>
                                 @if ($errors->has('description'))
                                     <div class="text-danger">{{ $errors->first('description') }}</div>
                                 @endif

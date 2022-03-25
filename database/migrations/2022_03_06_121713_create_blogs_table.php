@@ -20,6 +20,7 @@ class CreateBlogsTable extends Migration
             $table->string('cover_image')->nullable();
             $table->dateTime('blog_date')->nullable();
             $table->string('read_time')->nullable();
+            $table->longText('description')->nullable();
             $table->string('meta_title')->nullable();
             $table->longText('meta_keywords')->nullable();
             $table->string('meta_image')->nullable();
@@ -35,6 +36,7 @@ class CreateBlogsTable extends Migration
             $table->string('twitter_site')->nullable();
             $table->string('twitter_image')->nullable();
             $table->longText('twitter_description')->nullable();
+            $table->string('slug')->unique();
 
             $table->bigInteger('order_column')->nullable();
             $table->dateTime('published_at')->nullable();

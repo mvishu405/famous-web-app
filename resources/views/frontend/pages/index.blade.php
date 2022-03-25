@@ -20,30 +20,16 @@
         <section id="banner_section" class="">
             <div class="banner_bg_image" style="background-image:url(img/home/banner.jpg)">
                 <div class="video_slider">
-                    <div class="video_slider_item">
-                        <video width="100%" height="100%" autoplay loop playsinline muted>
-                            <source src="videos/Unacademy_1280x720.webm" data-desktop-src="Unacademy_1280x720.webm"
-                                type="video/webm">
-                            <source src="videos/Unacademy_1280x720.mp4" data-desktop-src="Unacademy_1280x720.mp4"
-                                type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="video_slider_item">
-                        <video width="100%" height="100%" autoplay loop playsinline muted>
-                            <source src="videos/Yardley_1280x720.webm" data-desktop-src="Yardley_1280x720.webm"
-                                type="video/webm">
-                            <source src="videos/Yardley_1280x720.mp4" data-desktop-src="Yardley_1280x720.mp4"
-                                type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="video_slider_item">
-                        <video width="100%" height="100%" autoplay loop playsinline muted>
-                            <source src="videos/Bajaj-Almond-Oil-1280x720.webm"
-                                data-desktop-src="videos/Bajaj-Almond-Oil-1280x720.webm" type="video/webm">
-                            <source src="videos/Bajaj-Almond-Oil-1280x720.mp4"
-                                data-desktop-src="videos/Bajaj-Almond-Oil-1280x720.mp4" type=" video/mp4">
-                        </video>
-                    </div>
+                    @foreach ($homepageBanners as $homepageBanner)
+                        <div class="video_slider_item">
+                            <video width="100%" height="100%" autoplay loop playsinline muted>
+                                <source src="{{ viewFile($homepageBanner->video_webm) }}"
+                                    data-desktop-src="{{ viewFile($homepageBanner->video_webm) }}" type="video/webm">
+                                <source src="{{ viewFile($homepageBanner->video_mp4) }}"
+                                    data-desktop-src="{{ viewFile($homepageBanner->video_mp4) }}" type="video/mp4">
+                            </video>
+                        </div>
+                    @endforeach
                 </div>
                 <div class="grid_lines">
                     <div class="grid_line_item"></div>
@@ -71,7 +57,7 @@
                             <p class="col-xs-12 col-md-6 no_pad banner_text">with award winning talent,
                                 cutting-edge technology & infrastructure that unlock, inspire, and nurture the
                                 imagination of storytellers.</p>
-                            <a href="work.php" class="btn_default">Explore more</a>
+                            <a href="{{ route('frontend.works.index') }}" class="btn_default">Explore more</a>
                         </div>
                     </div>
                 </div>
@@ -123,7 +109,7 @@
                             fuelling stories with the help of innovation, infrastructure, technology, and
                             an
                             incredibly talented team. </p>
-                        <a href="about.php" class="btn_default fade_in">Discover more</a>
+                        <a href="{{ route('frontend.about.index') }}" class="btn_default fade_in">Discover more</a>
                     </div>
                 </div>
             </div>
@@ -140,66 +126,28 @@
             </div>
             <div class="work_listing_slider_wrap">
                 <div class="work_listing_slider addDragCursor">
-                    <div class="work_listing_item">
-                        <div class="wls_inner">
-                            <div class="wls_img">
-                                <img src="img/home/work-placeholder.jpg" alt="" class="placeholder_img img-responsive">
-                                <div class="wls_actual">
-                                    <img src="img/home/vg1.jpg" alt="" class="img-responsive">
+                    @foreach ($works as $work)
+                        <div class="work_listing_item">
+                            <div class="wls_inner">
+                                <div class="wls_img">
+                                    <img src="img/home/work-placeholder.jpg" alt="" class="placeholder_img img-responsive">
+                                    <div class="wls_actual">
+                                        @if (isset($work->video_file))
+                                            <video playsinline="" muted="" loop="">
+                                                <source src="{{ $work->video_file }}" type="video/mp4">
+                                            </video>
+                                        @else
+                                            <img src="{{ viewFile($work->preview_image) }}" alt="" class="img-responsive">
+                                        @endif
+                                    </div>
+                                </div>
+                                <div class="wls_cont">
+                                    <h2 class="wls_title text_md text_700">{{ $work->title }}</h2>
+                                    <span class="wls_cat text_xs">{{ $work->workCategory->name }}</span>
                                 </div>
                             </div>
-                            <div class="wls_cont">
-                                <h2 class="wls_title text_md text_700">Yardley</h2>
-                                <span class="wls_cat text_xs">TVCs</span>
-                            </div>
                         </div>
-                    </div>
-                    <div class="work_listing_item">
-                        <div class="wls_inner">
-                            <div class="wls_img">
-                                <img src="img/home/work-placeholder.jpg" alt="" class="placeholder_img img-responsive">
-                                <div class="wls_actual">
-                                    <video playsinline muted loop>
-                                        <source src="videos/work1.mp4" type="video/mp4">
-                                    </video>
-                                </div>
-                            </div>
-                            <div class="wls_cont">
-                                <h2 class="wls_title text_md text_700">Yardley</h2>
-                                <span class="wls_cat text_xs">TVCs</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work_listing_item">
-                        <div class="wls_inner">
-                            <div class="wls_img">
-                                <img src="img/home/work-placeholder.jpg" alt="" class="placeholder_img img-responsive">
-                                <div class="wls_actual">
-                                    <img src="img/home/vg3.jpg" alt="" class="img-responsive">
-                                </div>
-                            </div>
-                            <div class="wls_cont">
-                                <h2 class="wls_title text_md text_700">Yardley</h2>
-                                <span class="wls_cat text_xs">TVCs</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work_listing_item">
-                        <div class="wls_inner">
-                            <div class="wls_img">
-                                <img src="img/home/work-placeholder.jpg" alt="" class="placeholder_img img-responsive">
-                                <div class="wls_actual">
-                                    <video playsinline muted loop>
-                                        <source src="videos/work2.mp4" type="video/mp4">
-                                    </video>
-                                </div>
-                            </div>
-                            <div class="wls_cont">
-                                <h2 class="wls_title text_md text_700">Yardley</h2>
-                                <span class="wls_cat text_xs">TVCs</span>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
                 <div class="arrow_wrap">
                     <div class="arrow_item arrow_left">
@@ -210,7 +158,7 @@
                     </div>
                 </div>
                 <div class="text_center">
-                    <a href="about.php" class="btn_default fade_in">View more</a>
+                    <a href="{{ route('frontend.works.index') }}" class="btn_default fade_in">View more</a>
                 </div>
             </div>
 
@@ -364,21 +312,12 @@
 
         <section id="testimonial_section" class="section_spacing">
             <div class="thumb_imgs">
-                <div class="thumb_img_item">
-                    <img data-lazy-src="img/home/testi_img1.jpg" alt="" class="img_responsive">
-                </div>
-                <div class="thumb_img_item">
-                    <img data-lazy-src="img/home/testi_img2.jpg" alt="" class="img_responsive">
-                </div>
-                <div class="thumb_img_item">
-                    <img data-lazy-src="img/home/testi_img3.jpg" alt="" class="img_responsive">
-                </div>
-                <div class="thumb_img_item">
-                    <img data-lazy-src="img/home/testi_img1.jpg" alt="" class="img_responsive">
-                </div>
-                <div class="thumb_img_item">
-                    <img data-lazy-src="img/home/testi_img2.jpg" alt="" class="img_responsive">
-                </div>
+                @foreach ($testimonials->take(5) as $testimonial)
+                    <div class="thumb_img_item">
+                        <img data-lazy-src="{{ viewFile($testimonial->image) }}" alt="" class="img_responsive">
+                    </div>
+                @endforeach
+
             </div>
             <div class="ts_inner">
                 <div class="container">
@@ -392,108 +331,28 @@
                                 <div class="row">
                                     <div class="col-sm-12 col-md-5">
                                         <div id="testi_image_slider" class="testi_image">
-                                            <div class="testi_image_item">
-                                                <img src="img/home/cc_img1.jpg" alt="" class="img-responsive">
-                                            </div>
-                                            <div class="testi_image_item">
-                                                <img src="img/home/cc_img2.jpg" alt="" class="img-responsive">
-                                            </div>
-                                            <div class="testi_image_item">
-                                                <img src="img/home/cc_img3.jpg" alt="" class="img-responsive">
-                                            </div>
-                                            <div class="testi_image_item">
-                                                <img src="img/home/cc_img1.jpg" alt="" class="img-responsive">
-                                            </div>
-                                            <div class="testi_image_item">
-                                                <img src="img/home/cc_img2.jpg" alt="" class="img-responsive">
-                                            </div>
+                                            @foreach ($testimonials as $testimonial)
+                                                <div class="testi_image_item">
+                                                    <img src="{{ viewFile($testimonial->image) }}" alt=""
+                                                        class="img-responsive">
+                                                </div>
+                                            @endforeach
                                         </div>
                                     </div>
                                     <div class="col-sm-12 col-md-7">
                                         <div id="testi_content_slider" class="testi_content">
-                                            <div class="testi_content_item">
-                                                <div class="testi_desc">
-                                                    <p>1 Lorem ipsum dolor sit amet, consetetur
-                                                        sadipscing elitr, sed diam nonumy eirmod
-                                                        tempor invidunt ut labore et dolore magna
-                                                        aliquyam erat, sed diam voluptua. At vero
-                                                        eos et accusam et justo duo
-                                                        dolores et ea.</p>
+                                            @foreach ($testimonials as $testimonial)
+                                                <div class="testi_content_item">
+                                                    <div class="testi_desc">
+                                                        {!! $testimonial->description !!}
+                                                    </div>
+                                                    <h3 class="testi_name text_md text_700">{{ $testimonial->name }}
+                                                    </h3>
+                                                    <span
+                                                        class="testi_desg text_sm text_itatic">{{ $testimonial->designation }}</span>
                                                 </div>
-                                                <h3 class="testi_name text_md text_700">Larissa D'sa
-                                                </h3>
-                                                <span class="testi_desg text_sm text_itatic">Loreal
-                                                    Paris Ad film shoot</span>
-                                            </div>
-                                            <div class="testi_content_item">
-                                                <div class="testi_desc">
-                                                    <p>2 Lorem ipsum dolor sit amet, consetetur
-                                                        sadipscing elitr, sed diam nonumy eirmod
-                                                        tempor invidunt ut labore et dolore magna
-                                                        aliquyam erat, sed diam voluptua. At vero
-                                                        eos et accusam et justo duo dsdas
-                                                        dasdasdas sadsadasdsa sadsdsad
-                                                        dfsafdasd sadsa bddsad sadasda sdasd
-                                                        dolores et ea.</p>
-                                                </div>
-                                                <h3 class="testi_name text_md text_700">Larissa D'sa
-                                                </h3>
-                                                <span class="testi_desg text_sm text_itatic">Loreal
-                                                    Paris Ad film shoot</span>
-                                            </div>
-                                            <div class="testi_content_item">
-                                                <div class="testi_desc">
-                                                    <p>3 Lorem ipsum dolor sit amet, consetetur
-                                                        sadipscing elitr, sed diam nonumy eirmod
-                                                        tempor invidunt ut labore et dolore magna
-                                                        aliquyam erat, sed diam voluptua. At vero
-                                                        eos et accusam et justo duo
-                                                        dolores et ea.</p>
-                                                </div>
-                                                <h3 class="testi_name text_md text_700">Larissa D'sa
-                                                </h3>
-                                                <span class="testi_desg text_sm text_itatic">Loreal
-                                                    Paris Ad film shoot</span>
-                                            </div>
-                                            <div class="testi_content_item">
-                                                <div class="testi_desc">
-                                                    <p>4 Lorem ipsum dolor sit amet, consetetur
-                                                        sadipscing elitr, sed diam nonumy eirmod
-                                                        tempor invidunt ut labore et dolore magna
-                                                        aliquyam erat, sed diam voluptua. At vero
-                                                        eos et accusam et justo duo dsdas
-                                                        dasdasdas sadsadasdsa sadsdsad
-                                                        dfsafdasd sadsa bddsad sadasda sdasd
-                                                        dolores et ea.</p>
-                                                </div>
-                                                <h3 class="testi_name text_md text_700">Larissa D'sa
-                                                </h3>
-                                                <span class="testi_desg text_sm text_itatic">Loreal
-                                                    Paris Ad film shoot</span>
-                                            </div>
-                                            <div class="testi_content_item">
-                                                <div class="testi_desc">
-                                                    <p>5 Lorem ipsum dolor sit amet, consetetur
-                                                        sadipscing elitr, sed diam nonumy eirmod
-                                                        tempor invidunt ut labore et dolore magna
-                                                        aliquyam erat, sed diam voluptua. At vero
-                                                        eos et accusam et justo duo
-                                                        dolores et ea.</p>
-                                                </div>
-                                                <h3 class="testi_name text_md text_700">Larissa D'sa
-                                                </h3>
-                                                <span class="testi_desg text_sm text_itatic">Loreal
-                                                    Paris Ad film shoot</span>
-                                            </div>
+                                            @endforeach
                                         </div>
-                                        <!-- <div class="custom_slider_arrows" data-slider="#testi_content_slider">
-                                                <div class="cs_arrows arrow_left">
-                                                    <img data-lazy-src="img/arrow_left.svg" alt="" class="img-responsive">
-                                                </div>
-                                                <div class="cs_arrows arrow_right">
-                                                    <img data-lazy-src="img/arrow_right.svg" alt="" class="img-responsive">
-                                                </div>
-                                            </div> -->
                                         <div class="arrow_wrap">
                                             <div class="arrow_item arrow_left">
                                                 <img data-lazy-src="img/arrow_left.svg" alt="" class="img-responsive">
@@ -516,144 +375,81 @@
                 <div class="blog_area col-sm-12 col-md-5 no_pad">
                     <h2 class=" section_title fade_in">blogs</h2>
                     <div class="blog_wrap">
-                        <div class="blog_item fade_in">
-                            <div class="blog_content">
-                                <div class="blog_header">
-                                    <div class="date_min_read text_xs">
-                                        <span class="date">Sep 2021</span>
-                                        <span class="dot"></span>
-                                        <span class="min_read">2min read</span>
-                                    </div>
-                                    <div class="social_icon">
-                                        <div class="social_links_area">
-                                            <a href="#"><img src="img/blog_inside/facebook-icon.png" alt=""></a>
-                                            <a href="#"><img src="img/blog_inside/twitter-icon.png" alt=""></a>
-                                            <a href="#"><img src="img/blog_inside/linkedin-icon.png" alt=""></a>
-                                            <a href="#"><img src="img/blog_inside/feather-icon.png" alt=""></a>
+                        @foreach ($blogs as $blog)
+                            <div class="blog_item fade_in">
+                                <div class="blog_content">
+                                    <div class="blog_header">
+                                        <div class="date_min_read text_xs">
+                                            <span
+                                                class="date">{{ Carbon\Carbon::parse($blog->blog_date)->toFormattedDateString() }}</span>
+                                            <span class="dot"></span>
+                                            <span class="min_read">{{ $blog->read_time }}</span>
                                         </div>
-                                        <a href="#" class="share-icon">
-                                            <img src="img/blog_inside/share-icon.png" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <h2 class="blog_title text_sm">Lorem ipsum dolor sit amet, consetetur
-                                    sadipscing elitr.</h2>
-                                <a class="continue_reading text_xs" target="_blank">Continue Reading
-                                    +</a>
-                            </div>
-                        </div>
-                        <div class="blog_item fade_in">
-                            <div class="blog_content">
-                                <div class="blog_header">
-                                    <div class="date_min_read text_xs">
-                                        <span class="date">Sep 2021</span>
-                                        <span class="dot"></span>
-                                        <span class="min_read">2min read</span>
-                                    </div>
-                                    <div class="social_icon">
-                                        <div class="social_links_area">
-                                            <a href="#"><img src="img/blog_inside/facebook-icon.png" alt=""></a>
-                                            <a href="#"><img src="img/blog_inside/twitter-icon.png" alt=""></a>
-                                            <a href="#"><img src="img/blog_inside/linkedin-icon.png" alt=""></a>
-                                            <a href="#"><img src="img/blog_inside/feather-icon.png" alt=""></a>
+                                        <div class="social_icon">
+                                            <div class="social_links_area">
+                                                <a href="#"><img src="img/blog_inside/facebook-icon.png" alt=""></a>
+                                                <a href="#"><img src="img/blog_inside/twitter-icon.png" alt=""></a>
+                                                <a href="#"><img src="img/blog_inside/linkedin-icon.png" alt=""></a>
+                                                <a href="#"><img src="img/blog_inside/feather-icon.png" alt=""></a>
+                                            </div>
+                                            <a href="#" class="share-icon">
+                                                <img src="img/blog_inside/share-icon.png" alt="">
+                                            </a>
                                         </div>
-                                        <a href="#" class="share-icon">
-                                            <img src="img/blog_inside/share-icon.png" alt="">
-                                        </a>
                                     </div>
+                                    <h2 class="blog_title text_sm">{{ $blog->title }}</h2>
+                                    <a class="continue_reading text_xs"
+                                        href="{{ route('frontend.blogs.inside', ['slug' => $blog->slug]) }}">Continue
+                                        Reading
+                                        +</a>
                                 </div>
-                                <h2 class="blog_title text_sm">Lorem ipsum dolor sit amet, consetetur
-                                    sadipscing elitr.</h2>
-                                <a class="continue_reading text_xs" target="_blank">Continue Reading
-                                    +</a>
                             </div>
-                        </div>
-                        <div class="blog_item fade_in">
-                            <div class="blog_content">
-                                <div class="blog_header">
-                                    <div class="date_min_read text_xs">
-                                        <span class="date">Sep 2021</span>
-                                        <span class="dot"></span>
-                                        <span class="min_read">2min read</span>
-                                    </div>
-                                    <div class="social_icon">
-                                        <div class="social_links_area">
-                                            <a href="#"><img src="img/blog_inside/facebook-icon.png" alt=""></a>
-                                            <a href="#"><img src="img/blog_inside/twitter-icon.png" alt=""></a>
-                                            <a href="#"><img src="img/blog_inside/linkedin-icon.png" alt=""></a>
-                                            <a href="#"><img src="img/blog_inside/feather-icon.png" alt=""></a>
-                                        </div>
-                                        <a href="#" class="share-icon">
-                                            <img src="img/blog_inside/share-icon.png" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <h2 class="blog_title text_sm">Lorem ipsum dolor sit amet, consetetur
-                                    sadipscing elitr.</h2>
-                                <a class="continue_reading text_xs" target="_blank">Continue Reading
-                                    +</a>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
-                    <a href="blog.php" class="btn_default fade_in rem_link_style">Read more</a>
+                    <a href="{{ route('frontend.blogs.index') }}" class="btn_default fade_in rem_link_style">Read
+                        more</a>
                 </div>
                 <div class="news_area col-sm-12 col-md-7">
                     <h2 class=" section_title fade_in">in the news</h2>
                     <div class="news_wrap row">
-                        <div class="news_item col-sm-6 fade_in">
-                            <div class="news_item_inner">
-                                <div class="news_image">
-                                    <img data-lazy-src="img/home/news1.jpg" alt="" class="img-responsive">
-                                </div>
-                                <div class="news_content">
-                                    <div class="blog_header">
-                                        <div class="date_min_read text_xs">
-                                            <span class="date">November 2021</span>
-                                            <span class="dot"></span>
-                                            <span class="min_read">Work</span>
+                        @forelse ($news as $ns)
+                            <div class="news_item col-sm-6 fade_in">
+                                <a href="{{ $ns->news_link }}" class="news_item_inner" target="_blank">
+                                    <div class="news_item_inner">
+                                        <div class="news_image">
+                                            <img data-lazy-src="{{ viewFile($ns->preview_image) }}" alt=""
+                                                class="img-responsive">
                                         </div>
-                                        <a href="javascript:void(0)" class="share_icon">
+                                        <div class="news_content">
+                                            <div class="blog_header">
+                                                <div class="date_min_read text_xs">
+                                                    <span
+                                                        class="date">{{ Carbon\Carbon::parse($ns->news_date)?->toFormattedDateString() }}</span>
+                                                    <span class="dot"></span>
+                                                    <span class="min_read">Press</span>
+                                                </div>
+                                                {{-- <a href="javascript:void(0)" class="share_icon">
                                             <img data-lazy-src="img/share_icon.svg" alt="" class="img-responsive">
-                                        </a>
-                                    </div>
-                                    <h2 class="blog_title text_sm">Famous Studios keeps pace with the
-                                        moving screens.
-                                        How Mumbai’s Famous Studios, set up in pre-Partition days,
-                                        is reinventing itself
-                                        for the streaming entertainment sector.</h2>
-                                </div>
-                                <div class="news_source">
-                                    <img data-lazy-src="img/home/news_source.png" alt="" class="img-responsive">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="news_item col-sm-6 fade_in">
-                            <div class="news_item_inner">
-                                <div class="news_image">
-                                    <img data-lazy-src="img/home/news2.jpg" alt="" class="img-responsive">
-                                </div>
-                                <div class="news_content">
-                                    <div class="blog_header">
-                                        <div class="date_min_read text_xs">
-                                            <span class="date">November 2021</span>
-                                            <span class="dot"></span>
-                                            <span class="min_read">Press</span>
+                                        </a> --}}
+                                            </div>
+                                            <h2 class="blog_title text_sm">
+                                                {!! $ns->description !!}
+                                            </h2>
                                         </div>
-                                        <a href="javascript:void(0)" class="share_icon">
-                                            <img data-lazy-src="img/share_icon.svg" alt="" class="img-responsive">
-                                        </a>
+                                        <div class="news_source">
+                                            <img data-lazy-src="{{ viewFile($ns->news_logo) }}" alt=""
+                                                class="img-responsive">
+                                        </div>
                                     </div>
-                                    <h2 class="blog_title text_sm">Anant Roongta, Managing Director at
-                                        Famous Studios,
-                                        on the Way Forward in Entertainment.</h2>
-                                </div>
-                                <div class="news_source">
-                                    <img data-lazy-src="img/home/news_source.png" alt="" class="img-responsive">
-                                </div>
+                                </a>
                             </div>
-                        </div>
+
+                        @empty
+                        @endforelse
+
                     </div>
-                    <a href="news.php" class="btn_default fade_in rem_link_style">Read more</a>
+                    <a href="{{ route('frontend.news.index') }}" class="btn_default fade_in rem_link_style">Read
+                        more</a>
                 </div>
             </div>
         </section>
@@ -666,143 +462,32 @@
                             <div class="mot_left">
                                 <h2 class="section_title fade_in">meet our talent</h2>
                                 <!-- <a href="about.php" class="btn_default fade_in rem_link_style hidden_xs">Know Them
-                                        better</a> -->
+                                                                                                        better</a> -->
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-8">
                             <div class="mot_right fade_in">
                                 <div class="team_wrap team_slider">
-                                    <a href="#team_member1" class="team_item inline_popup">
-                                        <div class="team_item_inner">
-                                            <div class="team_image">
-                                                <img src="img/team/anant.jpg" alt="" class="img-responsive">
-                                                <div class="team_img_overlay">
-                                                    <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
-                                                </div>
-                                            </div>
-                                            <div class="team_detail">
-                                                <p class="member_name text_md text_500">Anant
-                                                    Roongta</p>
-                                                <p class="member_desg text_sm">Managing Director</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#team_member2" class="team_item inline_popup">
-                                        <div class="team_item_inner">
-                                            <div class="team_image">
-                                                <img src="img/team/arun.jpg" alt="" class="img-responsive">
-                                                <div class="team_img_overlay">
-                                                    <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
-                                                </div>
-                                            </div>
-                                            <div class="team_detail">
-                                                <p class="member_name text_md text_500">Arun
-                                                    Roongta</p>
-                                                <p class="member_desg text_sm">Chairman</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#team_member3" class="team_item inline_popup">
-                                        <div class="team_item_inner">
-                                            <div class="team_image">
-                                                <img src="img/team/Ravi-Kumar.jpg" alt="" class="img-responsive">
-                                                <div class="team_img_overlay">
-                                                    <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
-                                                </div>
-                                            </div>
-                                            <div class="team_detail">
-                                                <p class="member_name text_md text_500">Ravi Sharma</p>
-                                                <p class="member_desg text_sm">Senior Flame Artist & Supervisor</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#team_member4" class="team_item inline_popup">
-                                        <div class="team_item_inner">
-                                            <div class="team_image">
-                                                <img src="img/team/Raju-Reddy.jpg" alt="" class="img-responsive">
-                                                <div class="team_img_overlay">
-                                                    <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
-                                                </div>
-                                            </div>
-                                            <div class="team_detail">
-                                                <p class="member_name text_md text_500">Raju Reddy</p>
-                                                <p class="member_desg text_sm">Senior Online Artist</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#team_member5" class="team_item inline_popup">
-                                        <div class="team_item_inner">
-                                            <div class="team_image">
-                                                <img src="img/team/Vishal-Sinha.jpg" alt="" class="img-responsive">
-                                                <div class="team_img_overlay">
-                                                    <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
-                                                </div>
-                                            </div>
-                                            <div class="team_detail">
-                                                <p class="member_name text_md text_500">Vishal Sinha</p>
-                                                <p class="member_desg text_sm">Senior Online Artist</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#team_member6" class="team_item inline_popup">
-                                        <div class="team_item_inner">
-                                            <div class="team_image">
-                                                <img src="img/team/Abhilesh-Shivalkar.jpg" alt="" class="img-responsive">
-                                                <div class="team_img_overlay">
-                                                    <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
-                                                </div>
-                                            </div>
-                                            <div class="team_detail">
-                                                <p class="member_name text_md text_500">Abhilesh Shivalkar</p>
-                                                <p class="member_desg text_sm">Offline Editor and Online Artist</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#team_member7" class="team_item inline_popup">
-                                        <div class="team_item_inner">
-                                            <div class="team_image">
-                                                <img src="img/team/Avinash-Shukla.jpg" alt="" class="img-responsive">
-                                                <div class="team_img_overlay">
-                                                    <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
-                                                </div>
-                                            </div>
-                                            <div class="team_detail">
-                                                <p class="member_name text_md text_500">Avinash Shukla</p>
-                                                <p class="member_desg text_sm">Sr. Colourist</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#team_member8" class="team_item inline_popup">
-                                        <div class="team_item_inner">
-                                            <div class="team_image">
-                                                <img src="img/team/Swapnil-Patole.jpg" alt="" class="img-responsive">
-                                                <div class="team_img_overlay">
-                                                    <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
-                                                </div>
-                                            </div>
-                                            <div class="team_detail">
-                                                <p class="member_name text_md text_500">Swapnil Patole</p>
-                                                <p class="member_desg text_sm">Chief Colourist</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#team_member9" class="team_item inline_popup">
-                                        <div class="team_item_inner">
-                                            <div class="team_image">
-                                                <img src="img/team/Jarvis-Marcedo.jpg" alt="" class="img-responsive">
-                                                <div class="team_img_overlay">
-                                                    <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
-                                                </div>
-                                            </div>
-                                            <div class="team_detail">
-                                                <p class="member_name text_md text_500">Jarvis Marcedo</p>
-                                                <p class="member_desg text_sm">Senior Sound Engineer</p>
-                                            </div>
-                                        </div>
-                                    </a>
 
 
-
+                                    @foreach ($teams as $team)
+                                        <a href="#team_member{{ $loop->index }}" class="team_item inline_popup">
+                                            <div class="team_item_inner">
+                                                <div class="team_image">
+                                                    <img src="{{ viewFile($team->image) }}" alt=""
+                                                        class="img-responsive">
+                                                    <div class="team_img_overlay">
+                                                        <img src="img/plus_icon.svg" alt=""
+                                                            class="img-responsive plus_icon">
+                                                    </div>
+                                                </div>
+                                                <div class="team_detail">
+                                                    <p class="member_name text_md text_500">{{ $team->name }}</p>
+                                                    <p class="member_desg text_sm">{{ $team->designation }}</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    @endforeach
 
                                 </div>
                                 <div class="arrow_wrap">
@@ -830,9 +515,58 @@
 
     {{-- End Body Content --}}
 
-    @include('frontend.includes.team-data')
+    @foreach ($teams as $team)
+        <div id="team_member{{ $loop->index }}" class="white-popup mfp-hide">
+            {!! $team->description !!}
+            @isset($team->link)
+                <a href="{{ $team->link }}" class="btn_default">work link</a>
+            @endisset
+        </div>
+    @endforeach
+
+
     @include('frontend.includes.footer')
 @endsection
 
 @push('scripts')
+    <script>
+        ScrollOut({
+            targets: ".your_dream_title",
+            cssProps: {
+                viewportY: true,
+            }
+        });
+        ScrollOut({
+            targets: ".solution_item",
+            cssProps: {
+                visibleY: true,
+            }
+        });
+
+        //script for you dream we fulfil text
+        // $(window).scroll(function() {
+        //     var getDreamPos = getComputedStyle(document.querySelector('.your_dream_title'))
+        //         .getPropertyValue('--viewport-y');
+
+        //     if (getDreamPos < 0) {
+        //         $('.your_dream_title span:nth-child(1)').css({
+        //             transform: "translateX(calc(" + getDreamPos + " * -100%))",
+        //             opacity: "calc(1 - (" + (getDreamPos * getDreamPos) + "))"
+        //         })
+        //         $('.your_dream_title span:nth-child(2)').css({
+        //             transform: "translateX(calc(" + getDreamPos + " * 100%))",
+        //             opacity: "calc(1 - (" + (getDreamPos * getDreamPos) + "))"
+        //         })
+        //     } else {
+        //         $('.your_dream_title span:nth-child(1)').css({
+        //             transform: "translateX(0)",
+        //             opacity: "1"
+        //         })
+        //         $('.your_dream_title span:nth-child(2)').css({
+        //             transform: "translateX(0)",
+        //             opacity: "1"
+        //         })
+        //     }
+        // })
+    </script>
 @endpush

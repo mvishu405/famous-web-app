@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Models\HomepageBanner;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-use Carbon\Carbon;
-use App\Models\HomepageBanner;
 
 class HomepageBannerController extends Controller
 {
@@ -90,6 +90,12 @@ class HomepageBannerController extends Controller
         }
         if ($data->hasFile('mobile_banner')) {
             $homepageBanner->mobile_banner = Storage::putFile(config('constants.uploads.image'), $data->mobile_banner);
+        }
+        if ($data->hasFile('video_mp4')) {
+            $homepageBanner->video_mp4 = Storage::putFile(config('constants.uploads.image'), $data->video_mp4);
+        }
+        if ($data->hasFile('video_webm')) {
+            $homepageBanner->video_webm = Storage::putFile(config('constants.uploads.image'), $data->video_webm);
         }
         $homepageBanner->title = $data->title;
         $homepageBanner->description = $data->description;

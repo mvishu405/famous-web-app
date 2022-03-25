@@ -114,7 +114,7 @@ $('.toastrDefaultWarning').click(function () {
 
 
 
-// Tiny mce 
+// Tiny mce
 
 var useDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
@@ -131,6 +131,7 @@ tinymce.init({
     autosave_restore_when_empty: false,
     autosave_retention: '2m',
     image_advtab: true,
+    valid_elements: "*[*]",
     link_list: [{
         title: 'My page 1',
         value: 'https://www.tiny.cloud'
@@ -206,7 +207,7 @@ tinymce.init({
     contextmenu: 'link image imagetools table',
     skin: useDarkMode ? 'oxide-dark' : 'oxide',
     content_css: useDarkMode ? 'dark' : 'default',
-    content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
+    // content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
 });
 
 // Pikaday

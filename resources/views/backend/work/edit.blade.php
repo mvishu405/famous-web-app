@@ -18,7 +18,9 @@
                                 <label>Work Categories</label>
                                 <select name="work_category_id" class="form-control select2">
                                     @foreach ($work_categories as $workCategory)
-                                        <option value="{{ $workCategory->id }}" {{ $workCategory->id === $work->workCategory->id ? 'selected' : '' }}>{{ $workCategory->name}}</option>
+                                        <option value="{{ $workCategory->id }}"
+                                            {{ $workCategory->id === $work->workCategory->id ? 'selected' : '' }}>
+                                            {{ $workCategory->name }}</option>
                                     @endforeach
                                 </select>
                                 @if ($errors->has('title'))
@@ -76,7 +78,24 @@
                                 @endif
                             </div>
                             <div class="form-group">
-                                <img src="{{ viewFile($work->homepage_image) }}" style="width: 50px; height: 50px;" />
+                                <img src="{{ viewFile($work->homepage_image) }}"
+                                    style="width: 50px; height: 50px;" />
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label>Video File</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" name="video_file">
+                                    <label class="custom-file-label" for="video_file">Choose file</label>
+                                </div>
+                                @if($errors->has('video_file'))
+                                    <div class="text-danger">{{ $errors->first('video_file') }}</div>
+                                @endif
+                            </div>
+                            <div class="form-group">
+                                <a href="{{ viewFile($work->video_file) }}">Video File</a>
                             </div>
                         </div>
 
@@ -104,6 +123,16 @@
                             </div>
                             <div class="form-group">
                                 <img src="{{ viewFile($work->inside_image) }}" style="width: 50px; height: 50px;" />
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label>Description</label>
+                                <textarea class="form-control tmce" name="description" cols="30" rows="10">{{ $work->description }}</textarea>
+                                @if ($errors->has('description'))
+                                    <div class="text-danger">{{ $errors->first('description') }}</div>
+                                @endif
                             </div>
                         </div>
 
@@ -166,8 +195,10 @@
                         </div>
 
                         @foreach ($work->galleryImages as $galleryImage)
-                            <img src="{{ viewFile($galleryImage->image) }}" alt="" style="width: 50px; height: 50px;">
-                            <a href="{{ route('backend.work-gallery.delete', ['id' => $galleryImage->id]) }}">delete</a>
+                            <img src="{{ viewFile($galleryImage->image) }}" alt=""
+                                style="width: 50px; height: 50px;">
+                            <a
+                                href="{{ route('backend.work-gallery.delete', ['id' => $galleryImage->id]) }}">delete</a>
                         @endforeach
 
                         <div class="col-sm-12">

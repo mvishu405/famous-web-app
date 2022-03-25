@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Blog;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-use Carbon\Carbon;
-use App\Models\Blog;
 
 class BlogController extends Controller
 {
@@ -20,7 +20,9 @@ class BlogController extends Controller
 
     public function create()
     {
-        return view('backend.blog.create');
+        return view('backend.blog.create')->with([
+            'related_blogs' => Blog::select('id', 'title')->get(),
+        ]);
     }
 
     public function store(Request $request)
@@ -45,6 +47,7 @@ class BlogController extends Controller
         $blog = Blog::findOrFail($id);
         return view('backend.blog.edit')->with([
             'blog' => $blog,
+            'related_blogs' => Blog::select('id', 'title')->get()->except($blog->id),
         ]);
     }
 
@@ -94,6 +97,7 @@ class BlogController extends Controller
         }
         $blog->blog_date = Carbon::parse($data->blog_date);
         $blog->read_time = $data->read_time;
+        $blog->description = $data->description;
         $blog->meta_title = $data->meta_title;
         $blog->meta_keywords = $data->meta_keywords;
         if ($data->hasFile('meta_image')) {
@@ -122,5 +126,6 @@ class BlogController extends Controller
             $blog->published_at = null;
         }
         $blog->save();
+        $blog->relatedBlogs()->sync($data->related_blog_ids);
     }
 }

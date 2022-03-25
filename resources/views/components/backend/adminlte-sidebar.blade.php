@@ -109,7 +109,7 @@
                         class="nav-link {{ request()->routeIs('backend.homepage-sliders.*') ? 'active' : '' }}">
                         <i class="far fa-circle nav-icon"></i>
                         <p>
-                            Homepage Slider
+                            Testimonial Slider
                         </p>
                     </a>
                 </li>
@@ -120,6 +120,16 @@
                         <i class="far fa-circle nav-icon"></i>
                         <p>
                             Blog
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="{{ route('backend.teams.index') }}"
+                        class="nav-link {{ request()->routeIs('backend.teams.*') ? 'active' : '' }}">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>
+                            Team
                         </p>
                     </a>
                 </li>

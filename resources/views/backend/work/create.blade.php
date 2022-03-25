@@ -74,6 +74,19 @@
 
                         <div class="col-sm-12">
                             <div class="form-group">
+                                <label>Video File</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" name="video_file">
+                                    <label class="custom-file-label" for="video_file">Choose file</label>
+                                </div>
+                                @if($errors->has('video_file'))
+                                    <div class="text-danger">{{ $errors->first('video_file') }}</div>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="form-group">
                                 <label>Inside Video Link</label>
                                 <input type="text" class="form-control" name="inside_video_link"
                                     value="{{ old('inside_video_link') }}">
@@ -92,6 +105,16 @@
                                 </div>
                                 @if ($errors->has('inside_image'))
                                     <div class="text-danger">{{ $errors->first('inside_image') }}</div>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label>Description</label>
+                                <textarea class="form-control tmce" name="description" cols="30" rows="10">{{ old('description') }}</textarea>
+                                @if($errors->has('description'))
+                                    <div class="text-danger">{{ $errors->first('description') }}</div>
                                 @endif
                             </div>
                         </div>
