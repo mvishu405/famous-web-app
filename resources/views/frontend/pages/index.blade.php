@@ -130,7 +130,8 @@
                         <div class="work_listing_item">
                             <div class="wls_inner">
                                 <div class="wls_img">
-                                    <img src="{{ viewFile($work->preview_image) }}" alt="" class="placeholder_img img-responsive">
+                                    <img src="{{ viewFile($work->preview_image) }}" alt=""
+                                        class="placeholder_img img-responsive">
                                     <div class="wls_actual">
                                         <img src="img/home/vg1.jpg" alt="" class="img-responsive">
                                     </div>
@@ -340,7 +341,8 @@
                                                     <div class="testi_desc">
                                                         {!! $testimonial->description !!}
                                                     </div>
-                                                    <h3 class="testi_name text_md text_700">{{ $testimonial->name }}</h3>
+                                                    <h3 class="testi_name text_md text_700">{{ $testimonial->name }}
+                                                    </h3>
                                                     <span
                                                         class="testi_desg text_sm text_itatic">{{ $testimonial->designation }}</span>
                                                 </div>
@@ -455,143 +457,32 @@
                             <div class="mot_left">
                                 <h2 class="section_title fade_in">meet our talent</h2>
                                 <!-- <a href="about.php" class="btn_default fade_in rem_link_style hidden_xs">Know Them
-                                                                            better</a> -->
+                                                                                                better</a> -->
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-8">
                             <div class="mot_right fade_in">
                                 <div class="team_wrap team_slider">
-                                    <a href="#team_member1" class="team_item inline_popup">
-                                        <div class="team_item_inner">
-                                            <div class="team_image">
-                                                <img src="img/team/anant.jpg" alt="" class="img-responsive">
-                                                <div class="team_img_overlay">
-                                                    <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
-                                                </div>
-                                            </div>
-                                            <div class="team_detail">
-                                                <p class="member_name text_md text_500">Anant
-                                                    Roongta</p>
-                                                <p class="member_desg text_sm">Managing Director</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#team_member2" class="team_item inline_popup">
-                                        <div class="team_item_inner">
-                                            <div class="team_image">
-                                                <img src="img/team/arun.jpg" alt="" class="img-responsive">
-                                                <div class="team_img_overlay">
-                                                    <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
-                                                </div>
-                                            </div>
-                                            <div class="team_detail">
-                                                <p class="member_name text_md text_500">Arun
-                                                    Roongta</p>
-                                                <p class="member_desg text_sm">Chairman</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#team_member3" class="team_item inline_popup">
-                                        <div class="team_item_inner">
-                                            <div class="team_image">
-                                                <img src="img/team/Ravi-Kumar.jpg" alt="" class="img-responsive">
-                                                <div class="team_img_overlay">
-                                                    <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
-                                                </div>
-                                            </div>
-                                            <div class="team_detail">
-                                                <p class="member_name text_md text_500">Ravi Sharma</p>
-                                                <p class="member_desg text_sm">Senior Flame Artist & Supervisor</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#team_member4" class="team_item inline_popup">
-                                        <div class="team_item_inner">
-                                            <div class="team_image">
-                                                <img src="img/team/Raju-Reddy.jpg" alt="" class="img-responsive">
-                                                <div class="team_img_overlay">
-                                                    <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
-                                                </div>
-                                            </div>
-                                            <div class="team_detail">
-                                                <p class="member_name text_md text_500">Raju Reddy</p>
-                                                <p class="member_desg text_sm">Senior Online Artist</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#team_member5" class="team_item inline_popup">
-                                        <div class="team_item_inner">
-                                            <div class="team_image">
-                                                <img src="img/team/Vishal-Sinha.jpg" alt="" class="img-responsive">
-                                                <div class="team_img_overlay">
-                                                    <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
-                                                </div>
-                                            </div>
-                                            <div class="team_detail">
-                                                <p class="member_name text_md text_500">Vishal Sinha</p>
-                                                <p class="member_desg text_sm">Senior Online Artist</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#team_member6" class="team_item inline_popup">
-                                        <div class="team_item_inner">
-                                            <div class="team_image">
-                                                <img src="img/team/Abhilesh-Shivalkar.jpg" alt="" class="img-responsive">
-                                                <div class="team_img_overlay">
-                                                    <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
-                                                </div>
-                                            </div>
-                                            <div class="team_detail">
-                                                <p class="member_name text_md text_500">Abhilesh Shivalkar</p>
-                                                <p class="member_desg text_sm">Offline Editor and Online Artist</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#team_member7" class="team_item inline_popup">
-                                        <div class="team_item_inner">
-                                            <div class="team_image">
-                                                <img src="img/team/Avinash-Shukla.jpg" alt="" class="img-responsive">
-                                                <div class="team_img_overlay">
-                                                    <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
-                                                </div>
-                                            </div>
-                                            <div class="team_detail">
-                                                <p class="member_name text_md text_500">Avinash Shukla</p>
-                                                <p class="member_desg text_sm">Sr. Colourist</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#team_member8" class="team_item inline_popup">
-                                        <div class="team_item_inner">
-                                            <div class="team_image">
-                                                <img src="img/team/Swapnil-Patole.jpg" alt="" class="img-responsive">
-                                                <div class="team_img_overlay">
-                                                    <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
-                                                </div>
-                                            </div>
-                                            <div class="team_detail">
-                                                <p class="member_name text_md text_500">Swapnil Patole</p>
-                                                <p class="member_desg text_sm">Chief Colourist</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#team_member9" class="team_item inline_popup">
-                                        <div class="team_item_inner">
-                                            <div class="team_image">
-                                                <img src="img/team/Jarvis-Marcedo.jpg" alt="" class="img-responsive">
-                                                <div class="team_img_overlay">
-                                                    <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
-                                                </div>
-                                            </div>
-                                            <div class="team_detail">
-                                                <p class="member_name text_md text_500">Jarvis Marcedo</p>
-                                                <p class="member_desg text_sm">Senior Sound Engineer</p>
-                                            </div>
-                                        </div>
-                                    </a>
 
 
-
+                                    @foreach ($teams as $team)
+                                        <a href="#team_member{{ $loop->index }}" class="team_item inline_popup">
+                                            <div class="team_item_inner">
+                                                <div class="team_image">
+                                                    <img src="{{ viewFile($team->image) }}" alt=""
+                                                        class="img-responsive">
+                                                    <div class="team_img_overlay">
+                                                        <img src="img/plus_icon.svg" alt=""
+                                                            class="img-responsive plus_icon">
+                                                    </div>
+                                                </div>
+                                                <div class="team_detail">
+                                                    <p class="member_name text_md text_500">{{ $team->name }}</p>
+                                                    <p class="member_desg text_sm">{{ $team->designation }}</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    @endforeach
 
                                 </div>
                                 <div class="arrow_wrap">
@@ -619,9 +510,58 @@
 
     {{-- End Body Content --}}
 
-    @include('frontend.includes.team-data')
+    @foreach ($teams as $team)
+        <div id="team_member{{ $loop->index }}" class="white-popup mfp-hide">
+            {!! $team->description !!}
+            @isset($team->link)
+                <a href="{{ $team->link }}" class="btn_default">work link</a>
+            @endisset
+        </div>
+    @endforeach
+
+
     @include('frontend.includes.footer')
 @endsection
 
 @push('scripts')
+    <script>
+        ScrollOut({
+            targets: ".your_dream_title",
+            cssProps: {
+                viewportY: true,
+            }
+        });
+        ScrollOut({
+            targets: ".solution_item",
+            cssProps: {
+                visibleY: true,
+            }
+        });
+
+        //script for you dream we fulfil text
+        // $(window).scroll(function() {
+        //     var getDreamPos = getComputedStyle(document.querySelector('.your_dream_title'))
+        //         .getPropertyValue('--viewport-y');
+
+        //     if (getDreamPos < 0) {
+        //         $('.your_dream_title span:nth-child(1)').css({
+        //             transform: "translateX(calc(" + getDreamPos + " * -100%))",
+        //             opacity: "calc(1 - (" + (getDreamPos * getDreamPos) + "))"
+        //         })
+        //         $('.your_dream_title span:nth-child(2)').css({
+        //             transform: "translateX(calc(" + getDreamPos + " * 100%))",
+        //             opacity: "calc(1 - (" + (getDreamPos * getDreamPos) + "))"
+        //         })
+        //     } else {
+        //         $('.your_dream_title span:nth-child(1)').css({
+        //             transform: "translateX(0)",
+        //             opacity: "1"
+        //         })
+        //         $('.your_dream_title span:nth-child(2)').css({
+        //             transform: "translateX(0)",
+        //             opacity: "1"
+        //         })
+        //     }
+        // })
+    </script>
 @endpush

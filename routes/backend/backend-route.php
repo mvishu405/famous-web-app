@@ -24,4 +24,6 @@ Route::namespace ('App\Http\Controllers\Backend')->prefix('backend')->name('back
 
     Route::resource('blogs', BlogController::class);
 
+    Route::resource('teams', TeamController::class);
+
 });
