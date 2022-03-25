@@ -57,7 +57,7 @@
                             <p class="col-xs-12 col-md-6 no_pad banner_text">with award winning talent,
                                 cutting-edge technology & infrastructure that unlock, inspire, and nurture the
                                 imagination of storytellers.</p>
-                            <a href="work.php" class="btn_default">Explore more</a>
+                            <a href="{{ route('frontend.works.index') }}" class="btn_default">Explore more</a>
                         </div>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
                             fuelling stories with the help of innovation, infrastructure, technology, and
                             an
                             incredibly talented team. </p>
-                        <a href="about.php" class="btn_default fade_in">Discover more</a>
+                        <a href="{{ route('frontend.about.index') }}" class="btn_default fade_in">Discover more</a>
                     </div>
                 </div>
             </div>

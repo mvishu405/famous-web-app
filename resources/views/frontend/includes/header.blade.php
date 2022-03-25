@@ -1,7 +1,7 @@
 <header class="header">
     <div class="container">
         <nav class="navbar">
-            <a href="index.php" class="brand">
+            <a href="{{ route('frontend.homepage') }}" class="brand">
                 <img src="img/Logo.svg" alt="" class="img-responsive" />
             </a>
             <button type="button" class="burger" id="burger">
@@ -13,16 +13,16 @@
             <div class="menu" id="menu">
                 <ul class="menu-block">
                     <li class="menu-item">
-                        <a class="menu-link" href="about.php">About</a>
+                        <a class="menu-link" href="{{ route('frontend.about.index') }}">About</a>
                     </li>
                     <li class="menu-item">
                         <a class="menu-link" href="production.php">Services</a>
                     </li>
                     <li class="menu-item">
-                        <a class="menu-link" href="work.php">Work</a>
+                        <a class="menu-link" href="{{ route('frontend.works.index') }}">Work</a>
                     </li>
                     <li class="menu-item">
-                        <a class="menu-link" href="blog.php">Blogs</a>
+                        <a class="menu-link" href="{{ route('frontend.blogs.index') }}">Blogs</a>
                     </li>
                     <li class="menu-item">
                         <a class="menu-link" href="{{ route('frontend.news.index') }}">News</a>
@@ -31,7 +31,7 @@
                         <a class="menu-link" href="careers.php">Careers</a>
                     </li>
                     <li class="menu-item">
-                        <a class="menu-link" href="contact.php">Connect</a>
+                        <a class="menu-link" href="{{ route('frontend.contact.index') }}">Connect</a>
                     </li>
                 </ul>
             </div>
