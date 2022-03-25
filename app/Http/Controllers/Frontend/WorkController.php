@@ -17,8 +17,11 @@ class WorkController extends Controller
 
     public function show($slug)
     {
+        $work = Work::with('workCategory')->whereNotNull('published_at')->where('slug', $slug)->firstOrFail();
+        $relatedWorks = $work->workCategory->works;
         return view('frontend.pages.work-inside')->with([
             'work' => Work::whereNotNull('published_at')->where('slug', $slug)->firstOrFail(),
+            'related_works' => $relatedWorks,
         ]);
     }
 }

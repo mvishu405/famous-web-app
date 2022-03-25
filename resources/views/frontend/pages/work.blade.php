@@ -52,7 +52,7 @@
                     @foreach ($work_categories as $workCategory)
                         @foreach ($workCategory->works as $work)
                             <div class="col-md-6 all_cat {{ $workCategory->slug }}">
-                                <a href="work-inside.php" class="work_listing_item fade_in">
+                                <a href="{{ route('frontend.works.show', ['slug' => $work->slug]) }}" class="work_listing_item fade_in">
                                     <div class="wls_inner">
                                         <div class="wls_img">
                                             <img src="{{ viewFile($work->preview_image) }}" alt="" class="img-responsive">

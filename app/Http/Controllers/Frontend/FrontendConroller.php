@@ -7,6 +7,7 @@ use App\Models\Blog;
 use App\Models\HomepageBanner;
 use App\Models\HomepageSlider;
 use App\Models\News;
+use App\Models\Work;
 
 class FrontendConroller extends Controller
 {
@@ -17,6 +18,7 @@ class FrontendConroller extends Controller
             'testimonials' => HomepageSlider::whereNotNull('published_at')->orderBy('order_column')->get(),
             'news' => News::whereNotNull('published_at')->orderBy('news_date', 'desc')->take(2)->get(),
             'blogs' => Blog::whereNotNull('published_at')->orderBy('blog_date', 'desc')->take(3)->get(),
+            'works' => Work::whereNotNull('published_at')->whereNotNull('show_on_homepage')->orderBy('order_column')->get(),
         ]);
     }
 }

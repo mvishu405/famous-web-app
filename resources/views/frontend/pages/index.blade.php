@@ -126,66 +126,22 @@
             </div>
             <div class="work_listing_slider_wrap">
                 <div class="work_listing_slider addDragCursor">
-                    <div class="work_listing_item">
-                        <div class="wls_inner">
-                            <div class="wls_img">
-                                <img src="img/home/work-placeholder.jpg" alt="" class="placeholder_img img-responsive">
-                                <div class="wls_actual">
-                                    <img src="img/home/vg1.jpg" alt="" class="img-responsive">
+                    @foreach ($works as $work)
+                        <div class="work_listing_item">
+                            <div class="wls_inner">
+                                <div class="wls_img">
+                                    <img src="{{ viewFile($work->preview_image) }}" alt="" class="placeholder_img img-responsive">
+                                    <div class="wls_actual">
+                                        <img src="img/home/vg1.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="wls_cont">
+                                    <h2 class="wls_title text_md text_700">{{ $work->title }}</h2>
+                                    <span class="wls_cat text_xs">{{ $work->workCategory->name }}</span>
                                 </div>
                             </div>
-                            <div class="wls_cont">
-                                <h2 class="wls_title text_md text_700">Yardley</h2>
-                                <span class="wls_cat text_xs">TVCs</span>
-                            </div>
                         </div>
-                    </div>
-                    <div class="work_listing_item">
-                        <div class="wls_inner">
-                            <div class="wls_img">
-                                <img src="img/home/work-placeholder.jpg" alt="" class="placeholder_img img-responsive">
-                                <div class="wls_actual">
-                                    <video playsinline muted loop>
-                                        <source src="videos/work1.mp4" type="video/mp4">
-                                    </video>
-                                </div>
-                            </div>
-                            <div class="wls_cont">
-                                <h2 class="wls_title text_md text_700">Yardley</h2>
-                                <span class="wls_cat text_xs">TVCs</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work_listing_item">
-                        <div class="wls_inner">
-                            <div class="wls_img">
-                                <img src="img/home/work-placeholder.jpg" alt="" class="placeholder_img img-responsive">
-                                <div class="wls_actual">
-                                    <img src="img/home/vg3.jpg" alt="" class="img-responsive">
-                                </div>
-                            </div>
-                            <div class="wls_cont">
-                                <h2 class="wls_title text_md text_700">Yardley</h2>
-                                <span class="wls_cat text_xs">TVCs</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work_listing_item">
-                        <div class="wls_inner">
-                            <div class="wls_img">
-                                <img src="img/home/work-placeholder.jpg" alt="" class="placeholder_img img-responsive">
-                                <div class="wls_actual">
-                                    <video playsinline muted loop>
-                                        <source src="videos/work2.mp4" type="video/mp4">
-                                    </video>
-                                </div>
-                            </div>
-                            <div class="wls_cont">
-                                <h2 class="wls_title text_md text_700">Yardley</h2>
-                                <span class="wls_cat text_xs">TVCs</span>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
                 <div class="arrow_wrap">
                     <div class="arrow_item arrow_left">
@@ -196,7 +152,7 @@
                     </div>
                 </div>
                 <div class="text_center">
-                    <a href="about.php" class="btn_default fade_in">View more</a>
+                    <a href="{{ route('frontend.works.index') }}" class="btn_default fade_in">View more</a>
                 </div>
             </div>
 
@@ -417,7 +373,8 @@
                                 <div class="blog_content">
                                     <div class="blog_header">
                                         <div class="date_min_read text_xs">
-                                            <span class="date">{{ Carbon\Carbon::parse($blog->blog_date)->toFormattedDateString() }}</span>
+                                            <span
+                                                class="date">{{ Carbon\Carbon::parse($blog->blog_date)->toFormattedDateString() }}</span>
                                             <span class="dot"></span>
                                             <span class="min_read">{{ $blog->read_time }}</span>
                                         </div>
@@ -434,13 +391,16 @@
                                         </div>
                                     </div>
                                     <h2 class="blog_title text_sm">{{ $blog->title }}</h2>
-                                    <a class="continue_reading text_xs" href="{{ route('frontend.blogs.inside', ['slug' => $blog->slug]) }}">Continue Reading
+                                    <a class="continue_reading text_xs"
+                                        href="{{ route('frontend.blogs.inside', ['slug' => $blog->slug]) }}">Continue
+                                        Reading
                                         +</a>
                                 </div>
                             </div>
                         @endforeach
                     </div>
-                    <a href="{{ route('frontend.blogs.index') }}" class="btn_default fade_in rem_link_style">Read more</a>
+                    <a href="{{ route('frontend.blogs.index') }}" class="btn_default fade_in rem_link_style">Read
+                        more</a>
                 </div>
                 <div class="news_area col-sm-12 col-md-7">
                     <h2 class=" section_title fade_in">in the news</h2>
@@ -495,7 +455,7 @@
                             <div class="mot_left">
                                 <h2 class="section_title fade_in">meet our talent</h2>
                                 <!-- <a href="about.php" class="btn_default fade_in rem_link_style hidden_xs">Know Them
-                                                                    better</a> -->
+                                                                            better</a> -->
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-8">
