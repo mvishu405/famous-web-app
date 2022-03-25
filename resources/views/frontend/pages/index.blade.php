@@ -130,10 +130,15 @@
                         <div class="work_listing_item">
                             <div class="wls_inner">
                                 <div class="wls_img">
-                                    <img src="{{ viewFile($work->preview_image) }}" alt=""
-                                        class="placeholder_img img-responsive">
+                                    <img src="img/home/work-placeholder.jpg" alt="" class="placeholder_img img-responsive">
                                     <div class="wls_actual">
-                                        <img src="img/home/vg1.jpg" alt="" class="img-responsive">
+                                        @if (isset($work->video_file))
+                                            <video playsinline="" muted="" loop="">
+                                                <source src="{{ $work->video_file }}" type="video/mp4">
+                                            </video>
+                                        @else
+                                            <img src="{{ viewFile($work->preview_image) }}" alt="" class="img-responsive">
+                                        @endif
                                     </div>
                                 </div>
                                 <div class="wls_cont">
@@ -457,7 +462,7 @@
                             <div class="mot_left">
                                 <h2 class="section_title fade_in">meet our talent</h2>
                                 <!-- <a href="about.php" class="btn_default fade_in rem_link_style hidden_xs">Know Them
-                                                                                                better</a> -->
+                                                                                                        better</a> -->
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-8">

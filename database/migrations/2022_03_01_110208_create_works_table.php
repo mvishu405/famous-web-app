@@ -21,6 +21,7 @@ class CreateWorksTable extends Migration
             $table->longText('sub_title')->nullable();
             $table->string('preview_image')->nullable();
             $table->string('homepage_image')->nullable();
+            $table->string('video_file')->nullable();
             $table->text('inside_video_link')->nullable();
             $table->string('inside_image')->nullable();
             $table->longText('description')->nullable();

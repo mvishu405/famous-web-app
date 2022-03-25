@@ -20,6 +20,7 @@
                             <th>Sub Title</th>
                             <th>Preview Image</th>
                             <th>Homepage Image</th>
+                            <th>Video File</th>
                             <th>Inside Video Link</th>
                             <th>Inside Image</th>
                             <th>Description</th>
@@ -47,6 +48,9 @@
                                     <a href="{{ viewFile($work->homepage_image) }}">View file</a>
                                     <img src="{{ viewFile($work->homepage_image) }}" alt=""
                                         style="width:50px; height: 50px;">
+                                </td>
+                                <td>
+                                    <a href="{{ viewFile($work->video_file) }}">Video file</a>
                                 </td>
                                 <td>{{ $work->inside_video_link }}</td>
                                 <td>

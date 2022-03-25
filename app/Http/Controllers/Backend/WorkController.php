@@ -99,6 +99,9 @@ class WorkController extends Controller
         if ($data->hasFile('homepage_image')) {
             $work->homepage_image = Storage::putFile(config('constants.uploads.image'), $data->homepage_image);
         }
+        if ($data->hasFile('video_file')) {
+            $work->video_file = Storage::putFile(config('constants.uploads.image'), $data->video_file);
+        }
         $work->inside_video_link = $data->inside_video_link;
         if ($data->hasFile('inside_image')) {
             $work->inside_image = Storage::putFile(config('constants.uploads.image'), $data->inside_image);

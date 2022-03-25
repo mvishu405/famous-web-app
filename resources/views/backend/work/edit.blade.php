@@ -85,6 +85,22 @@
 
                         <div class="col-sm-12">
                             <div class="form-group">
+                                <label>Video File</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" name="video_file">
+                                    <label class="custom-file-label" for="video_file">Choose file</label>
+                                </div>
+                                @if($errors->has('video_file'))
+                                    <div class="text-danger">{{ $errors->first('video_file') }}</div>
+                                @endif
+                            </div>
+                            <div class="form-group">
+                                <a href="{{ viewFile($work->video_file) }}">Video File</a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="form-group">
                                 <label>Inside Video Link</label>
                                 <input type="text" class="form-control" name="inside_video_link"
                                     value="{{ $work->inside_video_link }}">
