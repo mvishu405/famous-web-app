@@ -26,4 +26,6 @@ Route::namespace ('App\Http\Controllers\Backend')->prefix('backend')->name('back
 
     Route::resource('teams', TeamController::class);
 
+    Route::get('career', CareerController::class)->name('career.index');
+
 });
