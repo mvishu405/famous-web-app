@@ -12,5 +12,7 @@ Route::namespace('App\Http\Controllers\Frontend')
         Route::get('blogs/{slug}', 'BlogController@show')->name('blogs.inside');
         Route::get('works', 'WorkController@index')->name('works.index');
         Route::get('works/{slug}', 'WorkController@show')->name('works.show');
+        Route::view('career', 'frontend.pages.career')->name('career.index');
+        Route::post('career', 'FrontendConroller@storeCareer')->name('career.post');
         Route::view('contact', 'frontend.pages.contact')->name('contact.index');
     });

@@ -18,7 +18,7 @@
                             <a href="{{ route('frontend.contact.index') }}">Connect</a>
                         </div>
                         <div class="links_item">
-                            <a href="">Careers</a>
+                            <a href="{{ route('frontend.career.index') }}">Careers</a>
                             <a href="">Terms and conditions</a>
                             <a href="">Privacy Policy</a>
                         </div>
