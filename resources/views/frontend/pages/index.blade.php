@@ -137,7 +137,7 @@
                                                 <source src="{{ $work->video_file }}" type="video/mp4">
                                             </video>
                                         @else
-                                            <img src="{{ viewFile($work->preview_image) }}" alt="" class="img-responsive">
+                                            <img src="{{ viewFile($work->homepage_image) }}" alt="" class="img-responsive">
                                         @endif
                                     </div>
                                 </div>
