@@ -128,7 +128,7 @@
                 <div class="work_listing_slider addDragCursor">
                     @foreach ($works as $work)
                         <div class="work_listing_item">
-                            <div class="wls_inner">
+                            <a class="wls_inner" href="{{ route('frontend.works.show', ['slug' => $work->slug]) }}">
                                 <div class="wls_img">
                                     <img src="img/home/work-placeholder.jpg" alt="" class="placeholder_img img-responsive">
                                     <div class="wls_actual">
@@ -145,7 +145,7 @@
                                     <h2 class="wls_title text_md text_700">{{ $work->title }}</h2>
                                     <span class="wls_cat text_xs">{{ $work->workCategory->name }}</span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     @endforeach
                 </div>
