@@ -184,7 +184,7 @@
                             </span>
                         </p>
                         <div class="solution_wrap row">
-                            <a href="production.php" class="solution_item col-md-4 col-xs-6">
+                            <a href="{{ route('frontend.service.production') }}" class="solution_item col-md-4 col-xs-6">
                                 <div class="solution_item_inner">
                                     <span class="solution_index text_xs text_500">01</span>
                                     <div class="solution_image">
@@ -196,7 +196,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="production.php" class="solution_item col-md-4 col-xs-6">
+                            <a href="{{ route('frontend.service.specialized-production') }}" class="solution_item col-md-4 col-xs-6">
                                 <div class="solution_item_inner">
                                     <span class="solution_index text_xs text_500">02</span>
                                     <div class="solution_image">
@@ -209,7 +209,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="production.php" class="solution_item col-md-4 col-xs-6">
+                            <a href="{{ route('frontend.service.specialized-production') }}" class="solution_item col-md-4 col-xs-6">
                                 <div class="solution_item_inner">
                                     <span class="solution_index text_xs text_500">03</span>
                                     <div class="solution_image">
@@ -222,7 +222,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="production.php" class="solution_item col-md-4 col-xs-6">
+                            <a href="{{ route('frontend.service.shooting-event-floor') }}" class="solution_item col-md-4 col-xs-6">
                                 <div class="solution_item_inner">
                                     <span class="solution_index text_xs text_500">04</span>
                                     <div class="solution_image">
@@ -235,7 +235,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="production.php" class="solution_item col-md-4 col-xs-6">
+                            <a href="{{ route('frontend.service.post-production') }}" class="solution_item col-md-4 col-xs-6">
                                 <div class="solution_item_inner">
                                     <span class="solution_index text_xs text_500">05</span>
                                     <div class="solution_image">
@@ -248,7 +248,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="production.php" class="solution_item col-md-4 col-xs-6">
+                            <a href="{{ route('frontend.service.fhoa') }}" class="solution_item col-md-4 col-xs-6">
                                 <div class="solution_item_inner">
                                     <span class="solution_index text_xs text_500">06</span>
                                     <div class="solution_image">
@@ -260,7 +260,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="production.php" class="solution_item col-md-4 col-xs-6">
+                            <a href="{{ route('frontend.service.production') }}" class="solution_item col-md-4 col-xs-6">
                                 <div class="solution_item_inner">
                                     <span class="solution_index text_xs text_500">07</span>
                                     <div class="solution_image">
@@ -273,7 +273,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="production.php" class="solution_item col-md-4 col-xs-6">
+                            <a href="{{ route('frontend.service.fwc') }}" class="solution_item col-md-4 col-xs-6">
                                 <div class="solution_item_inner">
                                     <span class="solution_index text_xs text_500">08</span>
                                     <div class="solution_image">
@@ -286,7 +286,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="production.php" class="solution_item col-md-4 col-xs-6">
+                            <a href="{{ route('frontend.homepage') }}#meet_out_team_section" class="solution_item col-md-4 col-xs-6">
                                 <div class="solution_item_inner">
                                     <span class="solution_index text_xs text_500">09</span>
                                     <div class="solution_image">
