@@ -16,7 +16,7 @@
                         <a class="menu-link" href="{{ route('frontend.about.index') }}">About</a>
                     </li>
                     <li class="menu-item">
-                        <a class="menu-link" href="production.php">Services</a>
+                        <a class="menu-link" href="{{ route('frontend.service.production') }}">Services</a>
                     </li>
                     <li class="menu-item">
                         <a class="menu-link" href="{{ route('frontend.works.index') }}">Work</a>

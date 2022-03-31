@@ -9,7 +9,7 @@
                     <div class="footer_links">
                         <div class="links_item">
                             <a href="{{ route('frontend.about.index') }}">About</a>
-                            <a href="production.php">Services</a>
+                            <a href="{{ route('frontend.service.production') }}">Services</a>
                             <a href="{{ route('frontend.works.index') }}">Work</a>
                         </div>
                         <div class="links_item">
