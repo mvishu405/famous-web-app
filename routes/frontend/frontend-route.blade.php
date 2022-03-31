@@ -16,4 +16,13 @@ Route::namespace('App\Http\Controllers\Frontend')
         Route::post('career', 'FrontendConroller@storeCareer')->name('career.post');
         Route::view('contact', 'frontend.pages.contact')->name('contact.index');
         Route::post('contact', 'FrontendConroller@storeContact')->name('contact.post');
+
+        //-------
+        Route::view('production', 'frontend.pages.production')->name('service.production');
+        Route::view('specialized-production', 'frontend.pages.specialized-production')->name('service.specialized-production');
+        Route::view('post-production', 'frontend.pages.post-production')->name('service.post-production');
+        Route::view('fhoa', 'frontend.pages.fhoa')->name('service.fhoa');
+        Route::view('shooting-event-floor', 'frontend.pages.shooting-event-floor')->name('service.shooting-event-floor');
+        Route::view('ready-to-shoot', 'frontend.pages.ready-to-shoot')->name('service.ready-to-shoot');
+        Route::view('fwc', 'frontend.pages.fwc')->name('service.fwc');
     });
