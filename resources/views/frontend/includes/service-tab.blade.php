@@ -1,24 +1,24 @@
 <ul class="service_tabs">
     <li class="makeProductionActive">
-        <a href="production.php">Production</a>
+        <a href="{{ route('frontend.service.production') }}">Production</a>
     </li>
     <li class="makeSpecializedProductionActive">
-        <a href="specialized-production.php">Specialized Production Services </a>
+        <a href="{{ route('frontend.service.specialized-production') }}">Specialized Production Services </a>
     </li>
     <li class="makePostProductionActive">
-        <a href="post-production.php">Post-Production</a>
+        <a href="{{ route('frontend.service.post-production') }}">Post-Production</a>
     </li>
     <li class="makeFhoaActive">
-        <a href="FHOA.php">VFX by FHOA</a>
+        <a href="{{ route('frontend.service.fhoa') }}">VFX by FHOA</a>
     </li>
     <li class="makeShootingEventActive">
-        <a href="shooting-event-floor.php">Shooting & Event Floors</a>
+        <a href="{{ route('frontend.service.shooting-event-floor') }}">Shooting & Event Floors</a>
     </li>
     <li class="makeReadyToShootActive">
-        <a href="ready-to-shoot.php">Ready to Shoot Sets</a>
+        <a href="{{ route('frontend.service.ready-to-shoot') }}">Ready to Shoot Sets</a>
     </li>
     <li class="makeFwcActive">
-        <a href="FWC.php">Famous Working Company</a>
+        <a href="{{ route('frontend.service.fwc') }}">Famous Working Company</a>
     </li>
 
 </ul>

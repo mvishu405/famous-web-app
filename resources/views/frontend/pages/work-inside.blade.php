@@ -109,7 +109,7 @@
 
                     @foreach ($related_works as $relatedWork)
                         <div class="work_listing_item">
-                            <div class="wls_inner">
+                            <a class="wls_inner" href="{{ route('frontend.works.show', ['slug' => $relatedWork->slug]) }}">
                                 <div class="wls_img">
                                     <img src="{{ viewFile($relatedWork->preview_image) }}" alt="" class="img-responsive">
                                 </div>
@@ -117,7 +117,7 @@
                                     <h2 class="wls_title text_md text_700">{{ $relatedWork->title }}</h2>
                                     <span class="wls_cat text_xs">{{ $relatedWork->workCategory->name }}</span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     @endforeach
 

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use App\Models\Blog;
 use App\Models\CareerEnquiry;
+use App\Models\ContactEnquiry;
 use App\Models\HomepageBanner;
 use App\Models\HomepageSlider;
 use App\Models\News;
@@ -46,5 +47,19 @@ class FrontendConroller extends Controller
         $careerEnquiry->save();
         return response()->json(['message' => 'saved']);
 
+    }
+
+    public function storeContact(Request $request)
+    {
+        $request->validate([
+
+        ]);
+        $contactEnquiry = new ContactEnquiry();
+        $contactEnquiry->name = $request->name;
+        $contactEnquiry->mobile_number = $request->mobile_number;
+        $contactEnquiry->emailId = $request->emailId;
+        $contactEnquiry->message = $request->message;
+        $contactEnquiry->save();
+        return response()->json(['message' => 'saved']);
     }
 }
