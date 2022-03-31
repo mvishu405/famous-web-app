@@ -15,4 +15,5 @@ Route::namespace('App\Http\Controllers\Frontend')
         Route::view('career', 'frontend.pages.career')->name('career.index');
         Route::post('career', 'FrontendConroller@storeCareer')->name('career.post');
         Route::view('contact', 'frontend.pages.contact')->name('contact.index');
+        Route::post('contact', 'FrontendConroller@storeContact')->name('contact.post');
     });
