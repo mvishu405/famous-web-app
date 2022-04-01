@@ -519,7 +519,7 @@
         <div id="team_member{{ $loop->index }}" class="white-popup mfp-hide">
             {!! $team->description !!}
             @isset($team->link)
-                <a href="{{ $team->link }}" class="btn_default">Showreel link</a>
+                <a href="{{ $team->link }}" class="btn_default">showreel link</a>
             @endisset
         </div>
     @endforeach
