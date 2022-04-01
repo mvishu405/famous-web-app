@@ -45,7 +45,7 @@ class FrontendConroller extends Controller
             $careerEnquiry->cv = Storage::putFile(config('constants.uploads.image'), $request->cv);
         }
         $careerEnquiry->save();
-        return response()->json(['message' => 'saved']);
+        return response()->json(['message' => 'Thank you for contacting us. We will get back to you shortly.']);
 
     }
 
@@ -60,6 +60,6 @@ class FrontendConroller extends Controller
         $contactEnquiry->emailId = $request->emailId;
         $contactEnquiry->message = $request->message;
         $contactEnquiry->save();
-        return response()->json(['message' => 'saved']);
+        return response()->json(['message' => 'Thank you for contacting us. We will get back to you shortly.']);
     }
 }

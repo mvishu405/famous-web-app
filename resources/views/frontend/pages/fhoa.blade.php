@@ -15,7 +15,7 @@
     {{-- Start Body Content --}}
 
     <!--  insert body content  -->
-    <main id="service_page" class="smooth_scroll_pages service_inside_pages">
+    <main id="service_page" class="smooth_scroll_pages service_inside_pages" data-active-id=".makeFhoaActive">
         <section id="inside_page_banner_section">
             <div class="banner_image">
                 <picture>
