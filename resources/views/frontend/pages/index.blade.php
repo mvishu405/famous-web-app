@@ -460,7 +460,7 @@
                     <div class="row mot_wrap">
                         <div class="col-xs-12 col-md-4">
                             <div class="mot_left">
-                                <h2 class="section_title fade_in">meet our talent</h2>
+                                <h2 class="section_title fade_in">meet our team</h2>
                                 <!-- <a href="about.php" class="btn_default fade_in rem_link_style hidden_xs">Know Them
                                                                                                         better</a> -->
                             </div>
@@ -519,7 +519,7 @@
         <div id="team_member{{ $loop->index }}" class="white-popup mfp-hide">
             {!! $team->description !!}
             @isset($team->link)
-                <a href="{{ $team->link }}" class="btn_default">work link</a>
+                <a href="{{ $team->link }}" class="btn_default">Showreel link</a>
             @endisset
         </div>
     @endforeach
