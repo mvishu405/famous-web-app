@@ -21,8 +21,8 @@
                     <div class="banner_content_inner">
                         <h1 class="text_xxl text_700 banner_title">careers
                         </h1>
-                        <p class="banner_desc">Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been</p>
+                        <p class="banner_desc">Come, let's create magic together. Join us and be a part of our super
+                            talented team!</p>
                     </div>
                 </div>
             </div>

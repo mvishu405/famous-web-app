@@ -26,7 +26,8 @@
 
     <base href="{{ env('APP_URL') }}">
 
-    <title>@yield('title')</title>
+    {{-- <title>@yield('title')</title> --}}
+    <title>Famous</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
     <link rel="stylesheet" href="dist/css/app.min.css" />
     @stack('styles')
