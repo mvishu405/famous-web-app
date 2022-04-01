@@ -22,8 +22,7 @@
                 <div class="container">
                     <div class="banner_content_inner">
                         <h1 class="text_xxl text_700 banner_title">blogs</h1>
-                        <p class="banner_desc">Our range of end to end creative and technical services enable
-                            storytellers to realize those dreams</p>
+                        <p class="banner_desc">Everything you need to know about thriving in the creative field</p>
                     </div>
                 </div>
             </div>
