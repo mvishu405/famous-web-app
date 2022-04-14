@@ -92,7 +92,7 @@
                     </div>
                     <div class="input-field">
                         <label for="mobile_number">mobile number</label>
-                        <input class="text_xs" name="mobile_number" type="text" required />
+                        <input class="text_xs" name="mobile_number" type="number" required />
                     </div>
                     <div class="input-field">
                         <label for="emailId">email id</label>
