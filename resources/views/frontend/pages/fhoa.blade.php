@@ -130,7 +130,7 @@
                 </div>
             </div>
         </section>
-        <section class="other_projects section_spacing">
+        {{-- <section class="other_projects section_spacing">
             <h2 class="section_title text_center">featured projects</h2>
             <div class="other_project_slider_wrap">
                 <div class="other_project_slider addDragCursor" id="feature_projects_slider">
@@ -191,7 +191,7 @@
             <div class="text_center">
                 <button class="btn_default fade_in">View more</button>
             </div>
-        </section>
+        </section> --}}
     </main>
     <!--  end body content -->
 

@@ -38,14 +38,18 @@
                     </div>
                     <div class="social_links">
                         <p class="social_icons">
-                            <a class="rem_link_style" href="javascript:void(0)" target="_blank">
+                            <a class="rem_link_style" href="https://www.instagram.com/famous_1945/" target="_blank">
                                 <img src="img/social_icons/instagram.png" alt="" class="img-responsive" />
                             </a>
-                            <a class="rem_link_style" href="javascript:void(0)" target="_blank">
+                            <a class="rem_link_style" href="https://www.facebook.com/famous1945" target="_blank">
                                 <img src="img/social_icons/facebook.png" alt="" class="img-responsive" />
                             </a>
-                            <a class="rem_link_style" href="javascript:void(0)" target="_blank">
-                                <img src="img/social_icons/youtube.png" alt="" class="img-responsive" />
+                            <a class="rem_link_style" href="https://www.linkedin.com/company/famous-studios"
+                                target="_blank">
+                                <img src="img/social_icons/linkedin-in.png" alt="" class="img-responsive" />
+                            </a>
+                            <a class="rem_link_style" href="https://twitter.com/Famous_Studios" target="_blank">
+                                <img src="img/social_icons/twitter.png" alt="" class="img-responsive" />
                             </a>
                         </p>
                     </div>

@@ -51,12 +51,10 @@
                         </div>
                         <div class="col-md-4">
                             <div class="ti_content">
-                                <h3 class="text_lg text_700 fade_in">Shooting Floors and Event Spaces</h3>
-                                <p class="text_sm fade_in">A range of shooting floors with a dedicated green screen
-                                    stage,
-                                    Ready-to-shoot sets
-                                    with makeup rooms, and 60-seater Preview Theater with Barco 2K 8S Projector and
-                                    Dolby Surround 7.1, ideal for content production and live events. </p>
+                                <h3 class="text_lg text_700 fade_in">Shooting Floors & Event Spaces</h3>
+                                <p class="text_sm fade_in">A range of shooting floors with dedicated green screen stage,
+                                    ready-to-shoot sets with makeup rooms, ideal for
+                                    content production and live events.</p>
                             </div>
                         </div>
                     </div>
@@ -108,6 +106,22 @@
                                     Animation service provider with a talented team of artists delivering high end
                                     VFX/CGI projects across the globe and an end-to-end capacity to deliver content from
                                     conceptualization to final delivery. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_img_item" data-id="preview-theatre">
+                        <div class="col-md-7">
+                            <div class="ti_image fade_in">
+                                <img src="img/about/preview_theater.jpg" alt="" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="ti_content">
+                                <h3 class="text_lg text_700 fade_in">Preview Theatre</h3>
+                                <p class="text_sm fade_in">We offer splendid spaces where you can proudly showcase your
+                                    work. Our state-of-the-art 60-seater Preview Theater with Barco 2K 8S Projector and
+                                    Dolby Surround 7.1 is every content producer's dream. Whether it’s a special
+                                    screening or a private preview, our theater has everything you need.</p>
                             </div>
                         </div>
                     </div>
@@ -201,7 +215,8 @@
                                 </div>
                                 <div class="value_content">
                                     <h3 class="text_md text_700">Courage</h3>
-                                    <p class="text_sm">Demonstrating grace under pressure by taking the circumstances
+                                    <p class="text_sm">Demonstrating grace under pressure by taking the
+                                        circumstances
                                         to
                                         your stride.</p>
                                 </div>
@@ -253,142 +268,142 @@
         </section>
 
         <!-- <section class="team_section section_spacing">
-                    <div class="container">
-                        <h2 class="section_title text_center fade_in">meet our talent</h2>
-                        <div class="team_wrap row fade_in about_team_slider">
-                            <a href="#team_member1" class="team_item col-md-3 col-xs-12 inline_popup">
-                                <div class="team_item_inner">
-                                    <div class="team_image">
-                                        <img src="img/home/anant.jpg" alt="" class="img-responsive">
-                                        <div class="team_img_overlay">
-                                            <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
+                        <div class="container">
+                            <h2 class="section_title text_center fade_in">meet our talent</h2>
+                            <div class="team_wrap row fade_in about_team_slider">
+                                <a href="#team_member1" class="team_item col-md-3 col-xs-12 inline_popup">
+                                    <div class="team_item_inner">
+                                        <div class="team_image">
+                                            <img src="img/home/anant.jpg" alt="" class="img-responsive">
+                                            <div class="team_img_overlay">
+                                                <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
+                                            </div>
+                                        </div>
+                                        <div class="team_detail">
+                                            <p class="member_name text_md text_500">Anant
+                                                Roongta</p>
+                                            <p class="member_desg text_sm">Managing
+                                                Director, Famous Studios</p>
                                         </div>
                                     </div>
-                                    <div class="team_detail">
-                                        <p class="member_name text_md text_500">Anant
-                                            Roongta</p>
-                                        <p class="member_desg text_sm">Managing
-                                            Director, Famous Studios</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#team_member2" class="team_item col-md-3 col-xs-12 inline_popup">
-                                <div class="team_item_inner">
-                                    <div class="team_image">
-                                        <img src="img/home/anant.jpg" alt="" class="img-responsive">
-                                        <div class="team_img_overlay">
-                                            <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
+                                </a>
+                                <a href="#team_member2" class="team_item col-md-3 col-xs-12 inline_popup">
+                                    <div class="team_item_inner">
+                                        <div class="team_image">
+                                            <img src="img/home/anant.jpg" alt="" class="img-responsive">
+                                            <div class="team_img_overlay">
+                                                <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
+                                            </div>
+                                        </div>
+                                        <div class="team_detail">
+                                            <p class="member_name text_md text_500">Anant
+                                                Roongta</p>
+                                            <p class="member_desg text_sm">Managing
+                                                Director, Famous Studios</p>
                                         </div>
                                     </div>
-                                    <div class="team_detail">
-                                        <p class="member_name text_md text_500">Anant
-                                            Roongta</p>
-                                        <p class="member_desg text_sm">Managing
-                                            Director, Famous Studios</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#team_member3" class="team_item col-md-3 col-xs-12 inline_popup">
-                                <div class="team_item_inner">
-                                    <div class="team_image">
-                                        <img src="img/home/anant.jpg" alt="" class="img-responsive">
-                                        <div class="team_img_overlay">
-                                            <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
+                                </a>
+                                <a href="#team_member3" class="team_item col-md-3 col-xs-12 inline_popup">
+                                    <div class="team_item_inner">
+                                        <div class="team_image">
+                                            <img src="img/home/anant.jpg" alt="" class="img-responsive">
+                                            <div class="team_img_overlay">
+                                                <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
+                                            </div>
+                                        </div>
+                                        <div class="team_detail">
+                                            <p class="member_name text_md text_500">Anant
+                                                Roongta</p>
+                                            <p class="member_desg text_sm">Managing
+                                                Director, Famous Studios</p>
                                         </div>
                                     </div>
-                                    <div class="team_detail">
-                                        <p class="member_name text_md text_500">Anant
-                                            Roongta</p>
-                                        <p class="member_desg text_sm">Managing
-                                            Director, Famous Studios</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#team_member4" class="team_item col-md-3 col-xs-12 inline_popup">
-                                <div class="team_item_inner">
-                                    <div class="team_image">
-                                        <img src="img/home/anant.jpg" alt="" class="img-responsive">
-                                        <div class="team_img_overlay">
-                                            <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
+                                </a>
+                                <a href="#team_member4" class="team_item col-md-3 col-xs-12 inline_popup">
+                                    <div class="team_item_inner">
+                                        <div class="team_image">
+                                            <img src="img/home/anant.jpg" alt="" class="img-responsive">
+                                            <div class="team_img_overlay">
+                                                <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
+                                            </div>
+                                        </div>
+                                        <div class="team_detail">
+                                            <p class="member_name text_md text_500">Anant
+                                                Roongta</p>
+                                            <p class="member_desg text_sm">Managing
+                                                Director, Famous Studios</p>
                                         </div>
                                     </div>
-                                    <div class="team_detail">
-                                        <p class="member_name text_md text_500">Anant
-                                            Roongta</p>
-                                        <p class="member_desg text_sm">Managing
-                                            Director, Famous Studios</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#team_member5" class="team_item col-md-3 col-xs-12 inline_popup">
-                                <div class="team_item_inner">
-                                    <div class="team_image">
-                                        <img src="img/home/anant.jpg" alt="" class="img-responsive">
-                                        <div class="team_img_overlay">
-                                            <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
+                                </a>
+                                <a href="#team_member5" class="team_item col-md-3 col-xs-12 inline_popup">
+                                    <div class="team_item_inner">
+                                        <div class="team_image">
+                                            <img src="img/home/anant.jpg" alt="" class="img-responsive">
+                                            <div class="team_img_overlay">
+                                                <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
+                                            </div>
+                                        </div>
+                                        <div class="team_detail">
+                                            <p class="member_name text_md text_500">Anant
+                                                Roongta</p>
+                                            <p class="member_desg text_sm">Managing
+                                                Director, Famous Studios</p>
                                         </div>
                                     </div>
-                                    <div class="team_detail">
-                                        <p class="member_name text_md text_500">Anant
-                                            Roongta</p>
-                                        <p class="member_desg text_sm">Managing
-                                            Director, Famous Studios</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#team_member6" class="team_item col-md-3 col-xs-12 inline_popup">
-                                <div class="team_item_inner">
-                                    <div class="team_image">
-                                        <img src="img/home/anant.jpg" alt="" class="img-responsive">
-                                        <div class="team_img_overlay">
-                                            <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
+                                </a>
+                                <a href="#team_member6" class="team_item col-md-3 col-xs-12 inline_popup">
+                                    <div class="team_item_inner">
+                                        <div class="team_image">
+                                            <img src="img/home/anant.jpg" alt="" class="img-responsive">
+                                            <div class="team_img_overlay">
+                                                <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
+                                            </div>
+                                        </div>
+                                        <div class="team_detail">
+                                            <p class="member_name text_md text_500">Anant
+                                                Roongta</p>
+                                            <p class="member_desg text_sm">Managing
+                                                Director, Famous Studios</p>
                                         </div>
                                     </div>
-                                    <div class="team_detail">
-                                        <p class="member_name text_md text_500">Anant
-                                            Roongta</p>
-                                        <p class="member_desg text_sm">Managing
-                                            Director, Famous Studios</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#team_member7" class="team_item col-md-3 col-xs-12 inline_popup">
-                                <div class="team_item_inner">
-                                    <div class="team_image">
-                                        <img src="img/home/anant.jpg" alt="" class="img-responsive">
-                                        <div class="team_img_overlay">
-                                            <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
+                                </a>
+                                <a href="#team_member7" class="team_item col-md-3 col-xs-12 inline_popup">
+                                    <div class="team_item_inner">
+                                        <div class="team_image">
+                                            <img src="img/home/anant.jpg" alt="" class="img-responsive">
+                                            <div class="team_img_overlay">
+                                                <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
+                                            </div>
+                                        </div>
+                                        <div class="team_detail">
+                                            <p class="member_name text_md text_500">Anant
+                                                Roongta</p>
+                                            <p class="member_desg text_sm">Managing
+                                                Director, Famous Studios</p>
                                         </div>
                                     </div>
-                                    <div class="team_detail">
-                                        <p class="member_name text_md text_500">Anant
-                                            Roongta</p>
-                                        <p class="member_desg text_sm">Managing
-                                            Director, Famous Studios</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#team_member8" class="team_item col-md-3 col-xs-12 inline_popup">
-                                <div class="team_item_inner">
-                                    <div class="team_image">
-                                        <img src="img/home/anant.jpg" alt="" class="img-responsive">
-                                        <div class="team_img_overlay">
-                                            <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
+                                </a>
+                                <a href="#team_member8" class="team_item col-md-3 col-xs-12 inline_popup">
+                                    <div class="team_item_inner">
+                                        <div class="team_image">
+                                            <img src="img/home/anant.jpg" alt="" class="img-responsive">
+                                            <div class="team_img_overlay">
+                                                <img src="img/plus_icon.svg" alt="" class="img-responsive plus_icon">
+                                            </div>
+                                        </div>
+                                        <div class="team_detail">
+                                            <p class="member_name text_md text_500">Anant
+                                                Roongta</p>
+                                            <p class="member_desg text_sm">Managing
+                                                Director, Famous Studios</p>
                                         </div>
                                     </div>
-                                    <div class="team_detail">
-                                        <p class="member_name text_md text_500">Anant
-                                            Roongta</p>
-                                        <p class="member_desg text_sm">Managing
-                                            Director, Famous Studios</p>
-                                    </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </section> -->
+                    </section> -->
 
-        <section class="awards_section section_spacing">
+        {{-- <section class="awards_section section_spacing">
             <div class="container">
                 <h2 class="section_title text_center fade_in">awards <br> and recognitions</h2>
                 <div class="award_wrap">
@@ -464,7 +479,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
     </main>
     <!--  end body content -->
