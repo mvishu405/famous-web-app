@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+	<title>icons8-down-24</title>
+	<defs>
+		<image  width="24" height="16" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAMAAAA7+k+nAAAAAXNSR0IB2cksfwAAAM9QTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////y0Y0tQAAAEV0Uk5TAD/hOzzz//AzLu71QusqJejkIUP33BoW2PlJR/gXFNT6TVH7zxEOy/xYXf3GCwnA/mNnt251fHuFjYuSAZifAqOqAwSpwnqXfAAAAKtJREFUeJxl0GUTgzAMBuAAW+YCM+buxmA+pvD/f9NoelyRfGneJ9erAIAkKxAqRZbYkkhiKh30TBZzeXLEQlF4qeyBN5GRlar5rqkEMlSq1NTq3Bs6xWYLoN2hVu8y7/UpDIYsjMYUJlOA2ZzaxZJvX60pbra7PTXGwT/QNAgsi7sprnjEQJ2CjzoLv4S/4er7DSJ15/6IOthP5i87NoD3B/H7izuA47qOSH90MA2mEdMJIQAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="4"/>
+</svg>

@@ -176,8 +176,8 @@
                                         </div>
                                     </div>
                                     <div class="accordian_content">
-                                        <p>Flexible Dolby Vision 4K HDR grading solutions with a combination of
-                                            Baselight and DaVinci Resolve. Baselight Suite equipped with:</p>
+                                        {{-- <p>Flexible Dolby Vision 4K HDR grading solutions with a combination of
+                                            Baselight and DaVinci Resolve. Baselight Suite equipped with:</p> --}}
                                         <ul>
                                             <li> Dubbing, Voice Over & Mixing capabilities in 60+ languages
                                             </li>

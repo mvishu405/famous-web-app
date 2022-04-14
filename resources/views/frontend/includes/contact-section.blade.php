@@ -24,11 +24,22 @@
                                     Mumbai-400054
                                 </p>
                                 <br />
+                                <h2 class="ldi_title text_xs">Phone No.</h2>
                                 <p class="ldi_cont">
-                                    <strong>FHOA, Famous Studios</strong>
+                                    <a href="tel:022 6232 6000">022 6232 6000</a>
+                                </p>
+                            </div>
+                            <div class="ldi_item_inner">
+                                <p class="ldi_cont">
+                                    <strong>Famous House of Artists (FHOA), Famous Studios</strong>
                                     Span Center, 45-A, 6th Floor, <br />
                                     Linking Rd, Santacruz (W),<br />
                                     Mumbai-400054
+                                </p>
+                                <br />
+                                <h2 class="ldi_title text_xs">Phone No.</h2>
+                                <p class="ldi_cont">
+                                    <a href="tel:022 6153 7475">022 6153 7475</a>
                                 </p>
                             </div>
                         </div>
@@ -36,15 +47,7 @@
                             <div class="ldi_item_inner">
                                 <h2 class="ldi_title text_xs">Email Id</h2>
                                 <p class="ldi_cont">
-                                    <a href="mailto:info@famousworkingcompany.com">info@famousworkingcompany.com</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="ldi_item">
-                            <div class="ldi_item_inner">
-                                <h2 class="ldi_title text_xs">Phone No.</h2>
-                                <p class="ldi_cont">
-                                    <a href="tel:+66 8546 13504">+66 8546 13504</a>
+                                    <a href="mailto:info@famousstudios.com">info@famousstudios.com</a>
                                 </p>
                             </div>
                         </div>
@@ -65,7 +68,7 @@
                             <div class="ldi_item_inner">
                                 <h2 class="ldi_title text_xs">Email Id</h2>
                                 <p class="ldi_cont">
-                                    <a href="mailto:info@famousworkingcompany.com">info@famousworkingcompany.com</a>
+                                    <a href="mailto:info@famousstudios.com">info@famousstudios.com</a>
                                 </p>
                             </div>
                         </div>
@@ -73,7 +76,7 @@
                             <div class="ldi_item_inner">
                                 <h2 class="ldi_title text_xs">Phone No.</h2>
                                 <p class="ldi_cont">
-                                    <a href="tel:+02261531111">+022 6153 1111</a>
+                                    <a href="tel:02261531111">022 6153 1111</a>
                                 </p>
                             </div>
                         </div>

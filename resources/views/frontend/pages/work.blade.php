@@ -20,7 +20,7 @@
             <div class=" banner_content">
                 <div class="container">
                     <div class="banner_content_inner">
-                        <h1 class="text_xxl text_700 banner_title">The Famous Portfolio of diverse creative solutions
+                        <h1 class="text_xxl text_700 banner_title">the famous portfolio of diverse creative solutions
                         </h1>
                         <p class="banner_desc">Here's a peek at some of our creative projects by our talented team of
                             in-house experts across several verticals.</p>

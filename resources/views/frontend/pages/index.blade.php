@@ -260,7 +260,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="{{ route('frontend.service.production') }}" class="solution_item col-md-4 col-xs-6">
+                            <a href="{{ route('frontend.about.index') }}#preview-theatre" class="solution_item col-md-4 col-xs-6">
                                 <div class="solution_item_inner">
                                     <span class="solution_index text_xs text_500">07</span>
                                     <div class="solution_image">
@@ -516,8 +516,24 @@
     {{-- End Body Content --}}
 
     @foreach ($teams as $team)
+
+
         <div id="team_member{{ $loop->index }}" class="white-popup mfp-hide">
-            {!! $team->description !!}
+            
+
+            <div class="team_data_wrap">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3 hidden_xs">
+                        <img src=" {{ viewFile($team->image) }} " alt="" class="img-responsive">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-9">
+                        <h3 class="text_lg text_600">{{ $team->name }}</h3>
+                        <h4 class="text_500 text_blue team_popup_desc">{{ $team->designation }}</h4>
+                        {!! $team->description !!}
+                    </div>
+                </div>
+            </div>
+
             @isset($team->link)
                 <a href="{{ $team->link }}" class="btn_default">showreel link</a>
             @endisset
