@@ -47,52 +47,96 @@
                     </div>
                     <div class="career_option_details">
                         <div class="career_desc" id="producer">
-                            <h2 class="desc_title text_md text_700">Line Producer (DI)</h2>
-                            <p><strong>Job Description:</strong></p>
-                            <ul>
-                                <li>4 to 5 years’ experience in feature film post-production required.</li>
-                                <li>Must have supervised and executed feature films and OTT projects.</li>
-                                <li>Team-player who operates in a fast-paced team-oriented setting</li>
-                                <li>Strong written and verbal communication skills and the ability to multi-task.</li>
-                                <li>Familiar with the current trends and color-managed workflows for HDR, 4K, and
-                                    techniques, with a willingness to continue learning to ensure understanding of
-                                    current production and post-production processes.</li>
-                            </ul>
-                            <p><strong> Experience: </strong>4 to 5 Years</p>
-                            <a href="#team_form_popup" class="form_btn btn_default rem_link_style">apply now</a>
+                            <div class="accordian_item">
+                                <div class="accordian_head">
+                                    <div class="accordian_title text_md">Line Producer (DI)</div>
+                                    <div class="accordian_icon">
+                                        <div class="plus"></div>
+                                    </div>
+                                </div>
+                                <div class="accordian_content">
+                                    <p><strong>Job Description:</strong></p>
+                                    <ul>
+                                        <li>4 to 5 years’ experience in feature film post-production required.</li>
+                                        <li>Must have supervised and executed feature films and OTT projects.</li>
+                                        <li>Team-player who operates in a fast-paced team-oriented setting</li>
+                                        <li>Strong written and verbal communication skills and the ability to
+                                            multi-task.</li>
+                                        <li>Familiar with the current trends and color-managed workflows for HDR, 4K,
+                                            and
+                                            techniques, with a willingness to continue learning to ensure understanding
+                                            of
+                                            current production and post-production processes.</li>
+                                    </ul>
+                                    <p><strong> Experience: </strong>4 to 5 Years</p>
+                                    <a href="#team_form_popup" class="form_btn btn_default rem_link_style">apply now</a>
+                                </div>
+                            </div>
                         </div>
+
                         <div class="career_desc" id="master">
-                            <h2 class="desc_title text_md text_700">Mastering and QC Technician</h2>
-                            <p><strong>Job Description:</strong></p>
-                            <ul>
-                                <li>Expertise with all types of video and audio codecs</li>
-                                <li> Excellence in all SD and HD formats, timecode 2K, UHD, 4K, HDR and Dolby Vision
-                                    workflows experience.</li>
-                                <li>Expertise with any and all file-based workflows (IMF, DCP, HDR, J2K, ProRes etc.,)
-                                </li>
-                                <li>Experience using Davinci Resolve and Colorfront Transkoder</li>
-                                <li>Extensive experience in Theatrical/Long format/OTT Motion Pictures</li>
-                            </ul>
-                            <p><strong> Experience: </strong>4 to 5 Years</p>
-                            <a href="#team_form_popup" class="form_btn btn_default rem_link_style">apply now</a>
+                            <div class="accordian_item">
+                                <div class="accordian_head">
+                                    <div class="accordian_title text_md">Mastering and QC Technician</div>
+                                    <div class="accordian_icon">
+                                        <div class="plus"></div>
+                                    </div>
+                                </div>
+                                <div class="accordian_content">
+                                    <p><strong>Job Description:</strong></p>
+                                    <ul>
+                                        <li>Expertise with all types of video and audio codecs</li>
+                                        <li> Excellence in all SD and HD formats, timecode 2K, UHD, 4K, HDR and Dolby
+                                            Vision
+                                            workflows experience.</li>
+                                        <li>Expertise with any and all file-based workflows (IMF, DCP, HDR, J2K, ProRes
+                                            etc.,)
+                                        </li>
+                                        <li>Experience using Davinci Resolve and Colorfront Transkoder</li>
+                                        <li>Extensive experience in Theatrical/Long format/OTT Motion Pictures</li>
+                                    </ul>
+                                    <p><strong> Experience: </strong>4 to 5 Years</p>
+                                    <a href="#team_form_popup" class="form_btn btn_default rem_link_style">apply now</a>
+                                </div>
+                            </div>
                         </div>
+
                         <div class="career_desc" id="compositor">
-                            <h2 class="desc_title text_md text_700">Compositor</h2>
-                            <p><strong>Job Description:</strong></p>
-                            <ul>
-                                <li>Proficiency in Adobe After Effects</li>
-                            </ul>
-                            <p><strong> Experience: </strong>4 to 5 Years</p>
-                            <a href="#team_form_popup" class="form_btn btn_default rem_link_style">apply now</a>
+                            <div class="accordian_item">
+                                <div class="accordian_head">
+                                    <div class="accordian_title text_md">Compositor</div>
+                                    <div class="accordian_icon">
+                                        <div class="plus"></div>
+                                    </div>
+                                </div>
+                                <div class="accordian_content">
+                                    <p><strong>Job Description:</strong></p>
+                                    <ul>
+                                        <li>Proficiency in Adobe After Effects</li>
+                                    </ul>
+                                    <p><strong> Experience: </strong>4 to 5 Years</p>
+                                    <a href="#team_form_popup" class="form_btn btn_default rem_link_style">apply now</a>
+                                </div>
+                            </div>
                         </div>
+
                         <div class="career_desc" id="animator">
-                            <h2 class="desc_title text_md text_700">animator</h2>
-                            <p><strong>Job Description:</strong></p>
-                            <ul>
-                                <li>Proficiency in Maya</li>
-                            </ul>
-                            <p><strong> Experience: </strong>4 to 5 Years</p>
-                            <a href="#team_form_popup" class="form_btn btn_default rem_link_style">apply now</a>
+                            <div class="accordian_item">
+                                <div class="accordian_head">
+                                    <div class="accordian_title text_md">Animator</div>
+                                    <div class="accordian_icon">
+                                        <div class="plus"></div>
+                                    </div>
+                                </div>
+                                <div class="accordian_content">
+                                    <p><strong>Job Description:</strong></p>
+                                    <ul>
+                                        <li>Proficiency in Maya</li>
+                                    </ul>
+                                    <p><strong> Experience: </strong>4 to 5 Years</p>
+                                    <a href="#team_form_popup" class="form_btn btn_default rem_link_style">apply now</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
