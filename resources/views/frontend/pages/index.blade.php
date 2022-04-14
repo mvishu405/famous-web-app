@@ -157,9 +157,10 @@
                         <img data-lazy-src="img/arrow_right.svg" alt="" class="img-responsive">
                     </div>
                 </div>
-                <div class="text_center">
-                    <a href="{{ route('frontend.works.index') }}" class="btn_default fade_in">View more</a>
-                </div>
+            </div>
+
+            <div class="text_center">
+                <a href="{{ route('frontend.works.index') }}" class="btn_default fade_in">View more</a>
             </div>
 
 
