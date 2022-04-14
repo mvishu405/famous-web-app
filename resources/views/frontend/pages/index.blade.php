@@ -433,7 +433,7 @@
                                         </a> --}}
                                             </div>
                                             <h2 class="blog_title text_sm">
-                                                {{ strip_tags($ns->description) }}
+                                                <p>{{ strip_tags($ns->description) }}</p>
                                             </h2>
                                         </div>
                                         <div class="news_source">
