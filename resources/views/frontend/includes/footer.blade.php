@@ -19,8 +19,8 @@
                         </div>
                         <div class="links_item">
                             <a href="{{ route('frontend.career.index') }}">Careers</a>
-                            <a href="">Terms and conditions</a>
-                            <a href="">Privacy Policy</a>
+                            <a href="csr.php">CSR</a>
+                            <a href="">Legal</a>
                         </div>
                     </div>
                 </div>
