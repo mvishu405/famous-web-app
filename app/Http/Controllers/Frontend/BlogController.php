@@ -20,8 +20,13 @@ class BlogController extends Controller
     {
         $blog = Blog::whereNotNull('published_at')->where('slug', $slug)->firstOrFail();
         $previous = Blog::whereNotNull('published_at')->whereDate('blog_date', '<', Carbon::parse($blog->blog_date))->orderBy('blog_date', 'desc')->first();
-        // /dd($blog, $previous);
+        if (is_null($previous)) {
+            $previous = Blog::whereNotNull('published_at')->whereDate('blog_date', '=', Carbon::parse($blog->blog_date))->where('created_at', '<', Carbon::parse($blog->created_at))->orderBy('created_at', 'desc')->first();
+        }
         $next = Blog::whereNotNull('published_at')->whereDate('blog_date', '>', Carbon::parse($blog->blog_date))->orderBy('blog_date')->first();
+        if (is_null($next)) {
+            $next = Blog::whereNotNull('published_at')->whereDate('blog_date', '=', Carbon::parse($blog->blog_date))->where('created_at', '>', Carbon::parse($blog->created_at))->orderBy('created_at')->first();
+        }
 
         return view('frontend.pages.blog-inside')->with([
             'blog' => $blog,
