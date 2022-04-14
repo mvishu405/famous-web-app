@@ -25,4 +25,5 @@ Route::namespace('App\Http\Controllers\Frontend')
         Route::view('shooting-event-floor', 'frontend.pages.shooting-event-floor')->name('service.shooting-event-floor');
         Route::view('ready-to-shoot', 'frontend.pages.ready-to-shoot')->name('service.ready-to-shoot');
         Route::view('fwc', 'frontend.pages.fwc')->name('service.fwc');
+        Route::view('csr', 'frontend.pages.csr')->name('csr');
     });
