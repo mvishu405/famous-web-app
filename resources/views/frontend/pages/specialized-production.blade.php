@@ -20,8 +20,8 @@
         <section id="inside_page_banner_section">
             <div class="banner_image">
                 <picture>
-                    <source media="(min-width:768px)" srcset="img/service/service_banner.jpg">
-                    <img src="img/service/service_banner.jpg" alt="" class="img-responsive">
+                    <source media="(min-width:768px)" srcset="img/service/specialized_production_banner.jpg">
+                    <img src="img/service/specialized_production_banner.jpg" alt="" class="img-responsive">
                 </picture>
             </div>
             <div class="banner_content">
