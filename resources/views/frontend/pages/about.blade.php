@@ -120,8 +120,9 @@
                                 <h3 class="text_lg text_700 fade_in">Preview Theatre</h3>
                                 <p class="text_sm fade_in">We offer splendid spaces where you can proudly showcase your
                                     work. Our state-of-the-art 60-seater Preview Theater with Barco 2K 8S Projector and
-                                    Dolby Surround 7.1 is every content producer's dream. Whether it’s a special
-                                    screening or a private preview, our theater has everything you need.</p>
+                                    Dolby Atmos Surround 7.1 is every content creator's dream. Whether it's a
+                                    special screening or a private preview, our theater has everything you need.</p>
+
                             </div>
                         </div>
                     </div>
