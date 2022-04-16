@@ -60,7 +60,7 @@
                 <p class="text_center fade_in text_600">Pioneers in global visual effects with expertise in:</p>
                 <div class="sub_service_wrap">
                     <div class="accordian_wrap">
-                        <div class="row">
+                        <div class="row non_accordian">
                             <div class="col-xs-12 col-md-4">
                                 <div class="accordian_item fade_in">
                                     <div class="accordian_head">

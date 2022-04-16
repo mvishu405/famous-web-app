@@ -22,7 +22,7 @@
                     <source media="(min-width:768px)" srcset="img/service/production_banner.jpg">
                     <img src="img/service/production_banner.jpg" alt="" class="img-responsive">
                     </picture>
-                    
+
             </div>
             <div class="banner_content">
                 <div class="container">
@@ -51,7 +51,7 @@
             <div class="container">
                 <div class="sub_service_wrap">
                     <div class="accordian_wrap">
-                        <div class="row align_item_end">
+                        <div class="row non_accordian align_item_end">
                             <div class="col-xs-12 col-md-4">
                                 <div class="accordian_item fade_in">
                                     <div class="accordian_head">

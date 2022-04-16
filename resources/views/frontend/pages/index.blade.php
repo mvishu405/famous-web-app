@@ -282,7 +282,7 @@
                                             class="img-responsive">
                                         <div class="solution_img_overlay">
                                             <p class="solution_title text_med text_700">Famous Working
-                                                Company</p>
+                                                Company <br> <small>(co-working space)</small></p>
                                         </div>
                                     </div>
                                 </div>
@@ -500,7 +500,7 @@
                                     </div>
                                 </div>
                                 <div class="text_center visible_xs">
-                                    <a href="about.php" class="btn_default fade_in rem_link_style">Know Them better</a>
+                                    <a href="{{ route('frontend.about.index') }}" class="btn_default fade_in rem_link_style">Know Them better</a>
                                 </div>
                             </div>
                         </div>
@@ -520,7 +520,7 @@
 
 
         <div id="team_member{{ $loop->index }}" class="white-popup mfp-hide">
-            
+
 
             <div class="team_data_wrap">
                 <div class="row">
@@ -536,7 +536,7 @@
             </div>
 
             @isset($team->link)
-                <a href="{{ $team->link }}" class="btn_default">showreel link</a>
+                <a href="{{ $team->link }}" target="_blank" class="btn_default">showreel link</a>
             @endisset
         </div>
     @endforeach

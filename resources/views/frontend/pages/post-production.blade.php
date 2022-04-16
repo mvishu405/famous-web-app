@@ -38,7 +38,7 @@
         <section class="service_intro section_spacing">
             <div class="container">
                 <h2 class="section_title text_center fade_in">Post-production</h2>
-                <p class="service_desc text_center fade_in">Famous Studios’ Dolby Atmos and Dolby Vision certified audio
+                <p class="service_desc text_center fade_in">Famous Studios' Dolby Atmos and Dolby Vision certified audio
                     and
                     video creative post production services are designed to provide you with powerful tools to make your
                     work as innovative and breathtaking as you'd imagined it. </p>
@@ -115,7 +115,7 @@
                                         </div>
                                     </div>
                                     <div class="accordian_content">
-                                        <p>Our strong foundation is built on a vibrant and creative team of 30+ VFX/CGI
+                                        <p>Our strong foundation is built on a vibrant and creative team of 150+ VFX/CGI
                                             artists, consistently delivering global standard projects.</p>
                                         <p>Our standards for excellence, are structured by proficiency in Rotomation,
                                             Rigging, Compositing, Lighting, and Animation, using a blend of the latest
