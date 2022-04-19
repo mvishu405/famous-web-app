@@ -73,7 +73,7 @@
 
 
 
-        <section class="img_slider section_spacing">
+        {{-- <section class="img_slider section_spacing">
             <div class="work_listing_slider_wrap">
                 <div class="work_listing_slider addDragCursor">
 
@@ -100,7 +100,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
         <section class="other_projects section_spacing">
             <h2 class="section_title text_center">other projects</h2>

@@ -51,7 +51,7 @@
             <div class="container">
                 <div class="sub_service_wrap">
                     <div class="accordian_wrap">
-                        <div class="row non_accordian align_item_end">
+                        <div class="row non_accordian">
                             <div class="col-xs-12 col-md-4">
                                 <div class="accordian_item fade_in">
                                     <div class="accordian_head">
@@ -87,7 +87,7 @@
                             <div class="col-xs-12 col-md-4">
                                 <div class="accordian_item fade_in">
                                     <div class="accordian_head">
-                                        <div class="accordian_title">Conceptualizing, Treatment & Pre-Viz
+                                        <div class="accordian_title">Conceptualizing, Treatment & <br> Pre-Viz
                                         </div>
                                     </div>
                                 </div>
