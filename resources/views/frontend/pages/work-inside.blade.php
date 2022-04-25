@@ -21,7 +21,12 @@
 
         <div class="container">
             <div class="back_btn">
-                <a href="{{ route('frontend.works.index') }}" class="back_btn_inner">
+                {{-- <a href="{{ route('frontend.works.index') }}" class="back_btn_inner">
+                    <img src="img/work_inside/right-arrow.svg" alt="">
+                    <span class="back_text text_xs text_500">Back</span>
+                </a> --}}
+
+                <a href="javascript:void(0)" onclick="window.history.go(-1); return false;" class="back_btn_inner">
                     <img src="img/work_inside/right-arrow.svg" alt="">
                     <span class="back_text text_xs text_500">Back</span>
                 </a>
