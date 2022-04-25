@@ -37,7 +37,7 @@
                         </li>
                         @foreach ($work_categories as $workCategory)
                             <li>
-                                <a href="#{{ $workCategory->slug }}"
+                                <a href="{{ route('frontend.works.index') }}#{{ $workCategory->slug }}"
                                     data-cat=".{{ $workCategory->slug }}">{{ $workCategory->name }}</a>
                             </li>
                         @endforeach
