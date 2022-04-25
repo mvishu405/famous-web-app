@@ -4,11 +4,11 @@
         <div class="location_form_wrap row no_marg">
             <div class="location_wrap col-xs-12 col-sm-6 col-md-6">
                 <div class="location_heads">
-                    <div class="location_head_item" data-tab="#tab_1">
+                    <div class="location_head_item active" data-tab="#tab_1">
                         <p class="text_sm">Mahahlaxmi (HQ)</p>
                     </div>
 
-                    <div class="location_head_item active" data-tab="#tab_2">
+                    <div class="location_head_item " data-tab="#tab_2">
                         <p class="text_sm">Santacruz</p>
                     </div>
                     
