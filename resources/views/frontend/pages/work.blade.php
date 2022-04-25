@@ -37,7 +37,7 @@
                         </li>
                         @foreach ($work_categories as $workCategory)
                             <li>
-                                <a href="javascript:void(0)"
+                                <a href="#{{ $workCategory->slug }}"
                                     data-cat=".{{ $workCategory->slug }}">{{ $workCategory->name }}</a>
                             </li>
                         @endforeach
@@ -88,5 +88,12 @@
                 $($(this).find('a').attr('data-cat')).show();
             })
         })
+
+        $(window).on("load", function() {
+        var getHash = window.location.hash;
+        // console.log(getHash.split('#')[1]);
+        // console.log('.tab_section .service_tabs li[data-cat=".' + getHash.split('#')[1] + '"]');
+        $('.tab_section .service_tabs li a[data-cat=".' + getHash.split('#')[1] + '"]').trigger('click')
+    })
     </script>
 @endpush

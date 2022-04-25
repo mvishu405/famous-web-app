@@ -57,7 +57,15 @@
                                 <div class="accordian_content">
                                     <p><strong>Job Description:</strong></p>
                                     <ul>
-                                        <li>4 to 5 years’ experience in feature film post-production required.</li>
+
+
+                                        <li>Experience in feature film post-production required</li>
+                                        <li>Experience supervising and executing feature films and OTT projects</li>
+                                        <li>Team-player operating in a fast-paced, team-oriented setting</li>
+                                        <li>Strong written and verbal communication skills and the ability to multi-task</li>
+                                        <li>Familiar with the current trends and colour-managed workflows for HDR, 4K, and techniques, with a willingness to continue learning to ensure understanding of current production and post-production processes</li>
+
+                                        {{-- <li>4 to 5 years’ experience in feature film post-production required.</li>
                                         <li>Must have supervised and executed feature films and OTT projects.</li>
                                         <li>Team-player who operates in a fast-paced team-oriented setting</li>
                                         <li>Strong written and verbal communication skills and the ability to
@@ -66,7 +74,7 @@
                                             and
                                             techniques, with a willingness to continue learning to ensure understanding
                                             of
-                                            current production and post-production processes.</li>
+                                            current production and post-production processes.</li> --}}
                                     </ul>
                                     <p><strong> Experience: </strong>4 to 5 Years</p>
                                     <a href="#team_form_popup" class="form_btn btn_default rem_link_style">apply now</a>
@@ -85,7 +93,16 @@
                                 <div class="accordian_content">
                                     <p><strong>Job Description:</strong></p>
                                     <ul>
-                                        <li>Expertise with all types of video and audio codecs</li>
+
+
+                                        <li>Expertise in all types of video and audio codecs</li>
+                                        <li>Excellence in all SD and HD formats, timecode 2K, UHD, 4K, HDR, and Dolby Vision workflows</li>
+                                        <li>Expertise in any and all file-based workflows (IMF, DCP, HDR, J2K, ProRes etc.)</li>
+                                        <li>Experience using Davinci Resolve and Colorfront Transkoder</li>
+                                        <li>Extensive experience in Theatrical/Long format/OTT Motion Pictures</li>
+
+
+                                        {{-- <li>Expertise with all types of video and audio codecs</li>
                                         <li> Excellence in all SD and HD formats, timecode 2K, UHD, 4K, HDR and Dolby
                                             Vision
                                             workflows experience.</li>
@@ -93,7 +110,7 @@
                                             etc.,)
                                         </li>
                                         <li>Experience using Davinci Resolve and Colorfront Transkoder</li>
-                                        <li>Extensive experience in Theatrical/Long format/OTT Motion Pictures</li>
+                                        <li>Extensive experience in Theatrical/Long format/OTT Motion Pictures</li> --}}
                                     </ul>
                                     <p><strong> Experience: </strong>4 to 5 Years</p>
                                     <a href="#team_form_popup" class="form_btn btn_default rem_link_style">apply now</a>

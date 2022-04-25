@@ -37,10 +37,10 @@
         @include('frontend.includes.service-tab')
         <section class="service_intro section_spacing">
             <div class="container">
-                <h2 class="section_title text_center fade_in">Ready to Shoot Sets</h2>
+                <h2 class="section_title text_center fade_in">Ready-to-Shoot Sets</h2>
                 <p class="service_desc text_center fade_in">With different types of sets made available, Famous Studios
                     is always a few steps ahead when it comes to offering you an unparalleled shooting experience. Our
-                    ready-to shoot spaces can be customised and utilised as per your brand needs. Some of our spaces
+                    ready-to-shoot spaces can be customised and utilised as per your brand needs. Some of our spaces
                     are: </p>
             </div>
         </section>

@@ -21,7 +21,7 @@
                 <div class="container">
                     <div class="banner_content_inner">
                         <h1 class="text_xxl text_700 banner_title">in the news</h1>
-                        <p class="banner_desc">Special mentions of our range of end-to-end creative and technical services for story tellers, far and wide.</p>
+                        <p class="banner_desc">Special mentions of our range of end-to-end creative and technical services for storytellers, far and wide.</p>
                     </div>
                 </div>
             </div>
