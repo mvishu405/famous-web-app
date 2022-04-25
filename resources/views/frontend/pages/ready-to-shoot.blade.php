@@ -86,7 +86,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-6 col-xs-12">
+                    {{-- <div class="col-md-6 col-xs-12">
                         <a href="work-inside.php" class="work_listing_item fade_in">
                             <div class="wls_inner">
                                 <div class="wls_img">
@@ -98,7 +98,7 @@
                                 </div>
                             </div>
                         </a>
-                    </div>
+                    </div> --}}
                     <div class="col-md-6 col-xs-12">
                         <a href="work-inside.php" class="work_listing_item fade_in">
                             <div class="wls_inner">
@@ -119,7 +119,7 @@
                                     <img src="img/service/ready-to-shoot/terminal_img.jpg" alt="" class="img-responsive">
                                 </div>
                                 <div class="wls_cont">
-                                    <h2 class="wls_title text_md ">Beauty Terminal </h2>
+                                    <h2 class="wls_title text_md ">Living and Dining Area</h2>
 
                                 </div>
                             </div>
