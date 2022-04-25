@@ -28,7 +28,7 @@
                 <div class="container">
                     <div class="banner_content_inner">
                         <h1 class="text_xxl text_700 banner_title">we believe in the power of dreams</h1>
-                        <p class="banner_desc">Our range of end to end creative and technical services enable
+                        <p class="banner_desc">Our range of end-to-end creative and technical services enable
                             storytellers to realize those dreams</p>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
             <div class="container">
                 <h2 class="section_title text_center fade_in">Production</h2>
                 <p class="service_desc text_center fade_in">With over 75 years of experience in producing feature films,
-                    TV commercials and TV shows, we provide extensive and reliable pre - production and production
+                    TV commercials and TV shows, we provide extensive and reliable pre-production and production
                     services for all your content creation needs. From scripting to storyboarding and from treatment
                     notes to final execution, we provide the entire stage of content creation under one roof. </p>
                 <div class="service_img fade_in">
@@ -62,7 +62,7 @@
                             <div class="col-xs-12 col-md-4">
                                 <div class="accordian_item fade_in">
                                     <div class="accordian_head">
-                                        <div class="accordian_title">Ready made sets for bloggers, influencers and
+                                        <div class="accordian_title">Ready made sets for bloggers, influencers, &
                                             photographers
                                         </div>
                                     </div>
@@ -87,7 +87,7 @@
                             <div class="col-xs-12 col-md-4">
                                 <div class="accordian_item fade_in">
                                     <div class="accordian_head">
-                                        <div class="accordian_title">Conceptualizing, Treatment & <br> Pre-Viz
+                                        <div class="accordian_title">Conceptualising, Treatment & <br> Pre-Viz
                                         </div>
                                     </div>
                                 </div>
