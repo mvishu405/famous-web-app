@@ -31,11 +31,11 @@
                             <th>Og Site Name</th>
                             <th>Og Image</th>
                             <th>Og Description</th>
-                            <th>Twitter Title</th>
+                            {{-- <th>Twitter Title</th>
                             <th>Twitter Card</th>
                             <th>Twitter Site</th>
                             <th>Twitter Image</th>
-                            <th>Twitter Description</th>
+                            <th>Twitter Description</th> --}}
                             <th>Order</th>
                             <th>Published</th>
                             <th>Action</th>
@@ -77,7 +77,7 @@
                                         style="width:50px; height: 50px;">
                                 </td>
                                 <td>{{ Str::limit($blog->og_description, 50, '...') }}</td>
-                                <td>{{ $blog->twitter_title }}</td>
+                                {{-- <td>{{ $blog->twitter_title }}</td>
                                 <td>{{ $blog->twitter_card }}</td>
                                 <td>{{ $blog->twitter_site }}</td>
                                 <td>
@@ -85,7 +85,7 @@
                                     <img src="{{ viewFile($blog->twitter_image) }}" alt=""
                                         style="width:50px; height: 50px;">
                                 </td>
-                                <td>{{ Str::limit($blog->twitter_description, 50, '...') }}</td>
+                                <td>{{ Str::limit($blog->twitter_description, 50, '...') }}</td> --}}
                                 <td>{{ $blog->order_column }}</td>
                                 <td>{{ isset($blog->published_at) ? 'enabled' : 'disabled' }}</td>
                                 <td>

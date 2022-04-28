@@ -10,7 +10,7 @@
                 </div>
                 <div class="card-body">
                     <div class="row">
-
+{{-- 
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label>Desktop Banner</label>
@@ -35,7 +35,7 @@
                                     <div class="text-danger">{{ $errors->first('mobile_banner') }}</div>
                                 @endif
                             </div>
-                        </div>
+                        </div> --}}
 
                         <div class="col-sm-12">
                             <div class="form-group">
@@ -63,7 +63,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-12">
+                        {{-- <div class="col-sm-12">
                             <div class="form-group">
                                 <label>Title</label>
                                 <input type="text" class="form-control" name="title" value="{{ old('title') }}">
@@ -92,7 +92,7 @@
                                     <div class="text-danger">{{ $errors->first('banner_url') }}</div>
                                 @endif
                             </div>
-                        </div>
+                        </div> --}}
 
                         <div class="col-sm-12">
                             <div class="form-group">

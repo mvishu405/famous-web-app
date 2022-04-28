@@ -119,7 +119,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-12">
+                        {{-- <div class="col-sm-12">
                             <div class="form-group">
                                 <label>Before Image</label>
                                 <div class="custom-file">
@@ -143,7 +143,7 @@
                                     <div class="text-danger">{{ $errors->first('after_image') }}</div>
                                 @endif
                             </div>
-                        </div>
+                        </div> --}}
 
                         <div class="col-sm-12">
                             <div class="form-group">
@@ -159,7 +159,7 @@
                         </div>
 
 
-                        <div class="col-sm-12">
+                        {{-- <div class="col-sm-12">
                             <div class="form-group">
                                 <label>Gallery Images</label>
                                 <div class="custom-file">
@@ -170,7 +170,7 @@
                                     <div class="text-danger">{{ $errors->first('gallery_images') }}</div>
                                 @endif
                             </div>
-                        </div>
+                        </div> --}}
 
                         <div class="col-sm-12">
                             <div class="form-group">

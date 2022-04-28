@@ -136,7 +136,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-12">
+                        {{-- <div class="col-sm-12">
                             <div class="form-group">
                                 <label>Before Image</label>
                                 <div class="custom-file">
@@ -166,7 +166,7 @@
                             <div class="form-group">
                                 <img src="{{ viewFile($work->after_image) }}" style="width: 50px; height: 50px;" />
                             </div>
-                        </div>
+                        </div> --}}
 
                         <div class="col-sm-12">
                             <div class="form-group">
@@ -180,7 +180,7 @@
                                 @endif
                             </div>
                         </div>
-
+{{-- 
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label>Gallery Images</label>
@@ -199,7 +199,7 @@
                                 style="width: 50px; height: 50px;">
                             <a
                                 href="{{ route('backend.work-gallery.delete', ['id' => $galleryImage->id]) }}">delete</a>
-                        @endforeach
+                        @endforeach --}}
 
                         <div class="col-sm-12">
                             <div class="form-group">
