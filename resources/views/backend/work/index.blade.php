@@ -24,8 +24,8 @@
                             <th>Inside Video Link</th>
                             <th>Inside Image</th>
                             <th>Description</th>
-                            <th>Before Image</th>
-                            <th>After Image</th>
+                            {{-- <th>Before Image</th> --}}
+                            {{-- <th>After Image</th> --}}
                             <th>Show On Homepage</th>
                             <th>Order</th>
                             <th>Published</th>
@@ -59,7 +59,7 @@
                                         style="width:50px; height: 50px;">
                                 </td>
                                 <td>{{ Str::limit($work->description, 50, '...') }}</td>
-                                <td>
+                                {{-- <td>
                                     <a href="{{ viewFile($work->before_image) }}">View file</a>
                                     <img src="{{ viewFile($work->before_image) }}" alt=""
                                         style="width:50px; height: 50px;">
@@ -68,7 +68,7 @@
                                     <a href="{{ viewFile($work->after_image) }}">View file</a>
                                     <img src="{{ viewFile($work->after_image) }}" alt=""
                                         style="width:50px; height: 50px;">
-                                </td>
+                                </td> --}}
                                 <td>{{ isset($work->show_on_homepage) ? 'True' : 'False' }}</td>
                                 <td>{{ $work->order_column }}</td>
                                 <td>{{ isset($work->published_at) ? 'enabled' : 'disabled' }}</td>

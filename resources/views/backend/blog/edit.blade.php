@@ -219,7 +219,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-12">
+                        {{-- <div class="col-sm-12">
                             <div class="form-group">
                                 <label>Twitter Title</label>
                                 <input type="text" class="form-control" name="twitter_title"
@@ -277,7 +277,7 @@
                                     <div class="text-danger">{{ $errors->first('twitter_description') }}</div>
                                 @endif
                             </div>
-                        </div>
+                        </div> --}}
 
                         <div class="col-sm-12">
                             <div class="form-group">

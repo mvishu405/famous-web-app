@@ -16,13 +16,13 @@
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>Desktop Banner</th>
-                            <th>Mobile Banner</th>
+                            {{-- <th>Desktop Banner</th> --}}
+                            {{-- <th>Mobile Banner</th> --}}
                             <th>Video Mp4</th>
                             <th>Video Webm</th>
-                            <th>Title</th>
-                            <th>Description</th>
-                            <th>Banner Url</th>
+                            {{-- <th>Title</th> --}}
+                            {{-- <th>Description</th> --}}
+                            {{-- <th>Banner Url</th> --}}
                             <th>Order</th>
                             <th>Published</th>
                             <th>Action</th>
@@ -32,14 +32,14 @@
                         @foreach ($homepageBanners as $homepageBanner)
                             <tr>
                                 <td>{{ $homepageBanner->id }}</td>
-                                <td>
+                                {{-- <td>
                                     <img src="{{ viewFile($homepageBanner->desktop_banner) }}" alt=""
                                         style="width:50px; height: 50px;">
                                 </td>
                                 <td>
                                     <img src="{{ viewFile($homepageBanner->mobile_banner) }}" alt=""
                                         style="width:50px; height: 50px;">
-                                </td>
+                                </td> --}}
                                 <td>
                                     <a href="{{ viewFile($homepageBanner->video_mp4) }}" target="_blank">View file</a>
 
@@ -50,9 +50,9 @@
 
                                 </td>
 
-                                <td>{{ $homepageBanner->title }}</td>
-                                <td>{{ Str::limit($homepageBanner->description, 50, '...') }}</td>
-                                <td>{{ $homepageBanner->banner_url }}</td>
+                                {{-- <td>{{ $homepageBanner->title }}</td> --}}
+                                {{-- <td>{{ Str::limit($homepageBanner->description, 50, '...') }}</td> --}}
+                                {{-- <td>{{ $homepageBanner->banner_url }}</td> --}}
                                 <td>{{ $homepageBanner->order_column }}</td>
                                 <td>{{ isset($homepageBanner->published_at) ? 'enabled' : 'disabled' }}</td>
                                 <td>
