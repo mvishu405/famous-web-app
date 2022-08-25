@@ -11,7 +11,9 @@
                     <div class="location_head_item " data-tab="#tab_2">
                         <p class="text_sm">Santacruz</p>
                     </div>
-                    
+                    <div class="location_head_item" data-tab="#tab_3">
+                        <p class="text_sm">Andheri</p>
+                    </div>
                 </div>
                 <div class="location_details">
                     <div class="location_detail_item active" id="tab_1">
@@ -83,7 +85,25 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <div class="location_detail_item" id="tab_3">
+                        <div class="ldi_item">
+                            <div class="ldi_item_inner">
+                                <h2 class="ldi_title text_xs">Address</h2>
+                                <p class="ldi_cont">
+                                    <!-- <strong>Famous Digital Studios </strong> -->
+                                    7th Floor, Blue Wave Building, <br />
+                                    Off New Link Road, <br />Veera Desai Industrial Estate,<br />
+                                    Andheri West, Mumbai, <br />
+                                    Maharashtra - 400102
+                                </p>
+                                <br />
+                                <h2 class="ldi_title text_xs">Phone No.</h2>
+                                <p class="ldi_cont">
+                                    <a href="tel:02269522000">022 69522000</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="location_form col-xs-12 col-sm-6 col-md-6">
@@ -117,56 +137,56 @@
 
 
 @push('scripts')
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"
-        integrity="sha512-YUkaLm+KJ5lQXDBdqBqk7EVhJAdxRnVdT2vtCzwPHSweCzyMgYV/tgGF4/dCyqtCC2eCphz0lRQgatGVdfR0ww=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        $(document).ready(function() {
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"
+    integrity="sha512-YUkaLm+KJ5lQXDBdqBqk7EVhJAdxRnVdT2vtCzwPHSweCzyMgYV/tgGF4/dCyqtCC2eCphz0lRQgatGVdfR0ww=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+$(document).ready(function() {
 
-            $('.form_btn').magnificPopup({
-                type: 'inline'
-            });
+    $('.form_btn').magnificPopup({
+        type: 'inline'
+    });
 
-            //for letters only
-            $.validator.addMethod("lettersonly", function(value, element) {
-                return this.optional(element) || /^[a-zA-Z][a-zA-Z ]+$/i.test(value);
-            });
+    //for letters only
+    $.validator.addMethod("lettersonly", function(value, element) {
+        return this.optional(element) || /^[a-zA-Z][a-zA-Z ]+$/i.test(value);
+    });
 
-            //for email only
-            $.validator.addMethod("emailtest", function(value, element) {
-                return this.optional(element) || /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/i.test(value);
-            });
+    //for email only
+    $.validator.addMethod("emailtest", function(value, element) {
+        return this.optional(element) || /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/i.test(value);
+    });
 
-            $(".connect_form").validate({
-                rules: {
-                    name: "required",
-                    mobile_number: {
-                        required: true,
-                        digits: true,
-                        minlength: 10,
-                        maxlength: 10
-                    },
-                    emailId: "required",
-                },
-                message: {
-                    name: "This field is required",
-                    mobile_number: {
-                        required: "This field is required",
-                        minlength: "Please enter a valid mobile number",
-                        maxlength: "Please enter a valid mobile number",
-                        digits: "Please enter a digits only"
-                    },
-                    emailId: "This field is required",
-                },
-                errorElement: 'span'
-            });
+    $(".connect_form").validate({
+        rules: {
+            name: "required",
+            mobile_number: {
+                required: true,
+                digits: true,
+                minlength: 10,
+                maxlength: 10
+            },
+            emailId: "required",
+        },
+        message: {
+            name: "This field is required",
+            mobile_number: {
+                required: "This field is required",
+                minlength: "Please enter a valid mobile number",
+                maxlength: "Please enter a valid mobile number",
+                digits: "Please enter a digits only"
+            },
+            emailId: "This field is required",
+        },
+        errorElement: 'span'
+    });
 
 
-            $('.connect_form').ajaxForm(function(response) {
-                $("#msg").html(response.message).show();
-                $(".connect_form")[0].reset();
-            });
+    $('.connect_form').ajaxForm(function(response) {
+        $("#msg").html(response.message).show();
+        $(".connect_form")[0].reset();
+    });
 
-        });
-    </script>
+});
+</script>
 @endpush
