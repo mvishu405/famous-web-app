@@ -35,15 +35,15 @@
                         <div class="careers_title active">
                             <p class="title_text text_md text_700" data-id="#producer">Line Producer (DI)</p>
                         </div>
-                        <!-- <div class="careers_title">
+                        {{--<div class="careers_title">
                             <p class="title_text text_md text_700" data-id="#master">Mastering and QC Technician</p>
-                        </div> -->
+                        </div>--}}
                         <div class="careers_title">
                             <p class="title_text text_md text_700" data-id="#compositor">Compositor</p>
                         </div>
-                        <!-- <div class="careers_title">
+                        {{--<div class="careers_title">
                             <p class="title_text text_md text_700" data-id="#animator">Animator</p>
-                        </div> -->
+                        </div>--}}
                     </div>
                     <div class="career_option_details">
                         <div class="career_desc" id="producer">
@@ -82,7 +82,7 @@
                             </div>
                         </div>
 
-                        <div class="career_desc" id="master">
+                        {{--<div class="career_desc" id="master">
                             <div class="accordian_item">
                                 <div class="accordian_head">
                                     <div class="accordian_title text_md">Mastering and QC Technician</div>
@@ -116,7 +116,7 @@
                                     <a href="#team_form_popup" class="form_btn btn_default rem_link_style">apply now</a>
                                 </div>
                             </div>
-                        </div>
+                        </div>--}}
 
                         <div class="career_desc" id="compositor">
                             <div class="accordian_item">
@@ -137,7 +137,7 @@
                             </div>
                         </div>
 
-                        <div class="career_desc" id="animator">
+                        {{--<div class="career_desc" id="animator">
                             <div class="accordian_item">
                                 <div class="accordian_head">
                                     <div class="accordian_title text_md">Animator</div>
@@ -154,7 +154,7 @@
                                     <a href="#team_form_popup" class="form_btn btn_default rem_link_style">apply now</a>
                                 </div>
                             </div>
-                        </div>
+                        </div>--}}
                     </div>
                 </div>
                 <div class="team_form white-popup mfp-hide" id="team_form_popup">
