@@ -1,9 +1,14 @@
 <header class="header">
     <div class="container">
         <nav class="navbar">
-            <a href="{{ route('frontend.homepage') }}" class="brand">
-                <img src="img/Logo.svg" alt="" class="img-responsive" />
-            </a>
+            <div class="header_img">
+                <a href="{{ route('frontend.homepage') }}" class="brand">
+                    <img src="img/Logo.svg" alt="" class="img-responsive" />
+                </a>
+                <a href="javascript:void(0)" class="brand">
+                    <img src="img/tpn-homepage-banner-1280x640-2.png" alt="" class="img-responsive"/>
+                </a>
+            </div>
             <button type="button" class="burger" id="burger">
                 <span class="burger-line"></span>
                 <span class="burger-line"></span>

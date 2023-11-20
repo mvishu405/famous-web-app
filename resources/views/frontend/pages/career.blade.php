@@ -35,15 +35,15 @@
                         <div class="careers_title active">
                             <p class="title_text text_md text_700" data-id="#producer">Line Producer (DI)</p>
                         </div>
-                        <div class="careers_title">
+                        {{--<div class="careers_title">
                             <p class="title_text text_md text_700" data-id="#master">Mastering and QC Technician</p>
-                        </div>
+                        </div>--}}
                         <div class="careers_title">
                             <p class="title_text text_md text_700" data-id="#compositor">Compositor</p>
                         </div>
-                        <div class="careers_title">
+                        {{--<div class="careers_title">
                             <p class="title_text text_md text_700" data-id="#animator">Animator</p>
-                        </div>
+                        </div>--}}
                     </div>
                     <div class="career_option_details">
                         <div class="career_desc" id="producer">
