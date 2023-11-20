@@ -14,9 +14,7 @@
                     <div class="location_head_item" data-tab="#tab_3">
                         <p class="text_sm">Andheri</p>
                     </div>
-                    <div class="location_head_item" data-tab="#tab_4">
-                        <p class="text_sm">Hyderabad</p>
-                    </div>
+                    
                 </div>
                 <div class="location_details">
                     <div class="location_detail_item active" id="tab_1">
@@ -105,21 +103,6 @@
                                     <a href="tel:02269522000">022 69522000</a>
                                 </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="location_detail_item" id="tab_4">
-                        <div class="ldi_item">
-                        <div class="ldi_item_inner">
-                            <h2 class="ldi_title text_xs">Address</h2>
-                            <p class="ldi_cont">
-                            <strong>Famous Digital Studios Priate Limited</strong>
-                            2nd Floor, A12, Lake View Coworking, <br />
-                            Durgam Cheruvu Road, <br />
-                            Madhapur, Hyderabad, Rangareddy, <br />
-                            Telangana - 500081
-                            <br />
-                            </p>
-                        </div>
                         </div>
                     </div>
                 </div>
