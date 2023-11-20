@@ -124,7 +124,7 @@
                     </div>
                 </div>
             </div>
-            <div class="location_form col-xs-12 col-sm-6 col-md-6">
+            <div class="location_form col-xs-12 col-md-6">
                 <form class="connect_form" method="POST" action="{{ route('frontend.contact.post') }}">
                     @csrf
                     <div class="input-field">
