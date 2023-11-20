@@ -14,7 +14,6 @@
                     <div class="location_head_item" data-tab="#tab_3">
                         <p class="text_sm">Andheri</p>
                     </div>
-                    
                 </div>
                 <div class="location_details">
                     <div class="location_detail_item active" id="tab_1">
