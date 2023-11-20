@@ -19,10 +19,10 @@
     {{-- Meta Tags --}}
     <meta property="og:title" content="Famous" />
     <meta property="og:description" content="Famous" />
-    <meta property="og:url" content="https://tingprojects.in/projects/famous/" />
+    <meta property="og:url" content="{{ URL::current() }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://tingprojects.in/projects/famous/img/og-image.jpg" />
-    <meta property="og:image:secure_url" content="https://tingprojects.in/projects/famous/img/og-image.jpg" />
+    <meta property="og:image" content="{{ asset('img/og-image.jpg') }}" />
+    <meta property="og:image:secure_url" content="{{ asset('img/og-image.jpg') }}" />
 
     <base href="{{ env('APP_URL') }}">
 
