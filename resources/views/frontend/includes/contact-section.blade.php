@@ -14,9 +14,9 @@
                     <div class="location_head_item" data-tab="#tab_3">
                         <p class="text_sm">Andheri</p>
                     </div>
-                    <div class="location_head_item" data-tab="#tab_4">
+                    <!-- <div class="location_head_item" data-tab="#tab_4">
                         <p class="text_sm">Hyderabad</p>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="location_details">
                     <div class="location_detail_item active" id="tab_1">
@@ -53,11 +53,12 @@
                             <div class="ldi_item_inner">
                                 <h2 class="ldi_title text_xs">Address</h2>
                                 <p class="ldi_cont">
-                                    <strong>Famous Digital Studios </strong>
-                                    Ramee Emerald II, <br />
-                                    4th & 5th Floor, Linking Rd, <br />
-                                    Opp. ICICI Bank, Santacruz (W), <br />
-                                    Mumbai-400054
+                                <strong
+                                >Famous House of Artists (FHOA), Famous Studios</strong
+                                >
+                                Span Center, 45-A, 6th Floor, <br />
+                                Linking Rd, Santacruz (W),<br />
+                                Mumbai-400054
                                 </p>
                                 <br />
                                 <h2 class="ldi_title text_xs">Phone No.</h2>
@@ -65,19 +66,21 @@
                                     <a href="tel:022 6232 6000">022 6232 6000</a>
                                 </p>
                             </div>
-                            <div class="ldi_item_inner">
-                                <p class="ldi_cont">
-                                    <strong>Famous House of Artists (FHOA), Famous Studios</strong>
-                                    Span Center, 45-A, 6th Floor, <br />
-                                    Linking Rd, Santacruz (W),<br />
-                                    Mumbai-400054
+                            <!-- <div class="ldi_item_inner">
+                            <p class="ldi_cont">
+                                <strong
+                                >Famous House of Artists (FHOA), Famous Studios</strong
+                                >
+                                Span Center, 45-A, 6th Floor, <br />
+                                Linking Rd, Santacruz (W),<br />
+                                Mumbai-400054
                                 </p>
                                 <br />
                                 <h2 class="ldi_title text_xs">Phone No.</h2>
                                 <p class="ldi_cont">
                                     <a href="tel:022 6153 7475">022 6153 7475</a>
                                 </p>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="ldi_item">
                             <div class="ldi_item_inner">
@@ -93,11 +96,11 @@
                             <div class="ldi_item_inner">
                                 <h2 class="ldi_title text_xs">Address</h2>
                                 <p class="ldi_cont">
-                                    <!-- <strong>Famous Digital Studios </strong> -->
-                                    7th Floor, Blue Wave Building, <br />
-                                    Off New Link Road, <br />Veera Desai Industrial Estate,<br />
-                                    Andheri West, Mumbai, <br />
-                                    Maharashtra - 400102
+                                <!-- <strong>Famous Digital Studios </strong> -->
+                                7th Floor, Blue Wave Building, <br />
+                                Off New Link Road, <br />Veera Desai Industrial Estate,<br />
+                                Andheri West, Mumbai, <br />
+                                Maharashtra - 400102
                                 </p>
                                 <br />
                                 <h2 class="ldi_title text_xs">Phone No.</h2>
@@ -111,14 +114,13 @@
                         <div class="ldi_item">
                         <div class="ldi_item_inner">
                             <h2 class="ldi_title text_xs">Address</h2>
-                            <p class="ldi_cont">
-                            <strong>Famous Digital Studios Priate Limited</strong>
-                            2nd Floor, A12, Lake View Coworking, <br />
-                            Durgam Cheruvu Road, <br />
-                            Madhapur, Hyderabad, Rangareddy, <br />
-                            Telangana - 500081
-                            <br />
-                            </p>
+                        <p class="ldi_cont">
+                        <!-- <strong>Famous Digital Studios </strong> -->
+                        7th Floor, Blue Wave Building, <br />
+                        Off New Link Road, <br />Veera Desai Industrial Estate,<br />
+                        Andheri West, Mumbai, <br />
+                        Maharashtra - 400102
+                        </p>
                         </div>
                         </div>
                     </div>

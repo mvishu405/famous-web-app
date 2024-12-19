@@ -29,14 +29,14 @@
     {{-- <title>@yield('title')</title> --}}
     <title>Famous</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
-    <link rel="stylesheet" href="dist/css/app.min.css" />
+    <link rel="stylesheet" href="{{ asset('dist/css/app.min.css')}}" />
     @stack('styles')
 
 </head>
 
 <body>
     @yield('content')
-    <script src="dist/js/app.min.js"></script>
+    <script src="{{ asset('dist/js/app.min.js')}}"></script>
     @stack('scripts')
 </body>
 

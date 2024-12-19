@@ -454,14 +454,33 @@
                 </div>
             </div>
         </section>
+        <div id="follow_famous" class="section_spacing">
+            <div class="container">
+                <div class="secondary_title section_title fade_in">
+                    <p>
+                        Follow Us On
+                    </p>
+                    <img src="{{ asset('img/social_icons/insta_icon_new.png')}}" class="instagram_icon" />
+                    <a href="https://www.instagram.com/famous_1945/" target="_blank">
+                        <span>
+                            @famous_1945
+                        </span>
+                    </a>
+                </div>
+                <div class="following_page">
+                    <iframe src="https://www.juicer.io/api/feeds/famous_1945/iframe" frameborder="0" width="100%"
+                        height="500" style="display:block;margin:0 auto;"></iframe>
+                </div>
 
+            </div>
+        </div>
         <section id="meet_out_team_section" class="section_spacing">
             <div class="mot_inner">
                 <div class="container-fluid">
                     <div class="row mot_wrap">
                         <div class="col-xs-12 col-md-4">
                             <div class="mot_left">
-                                <h2 class="section_title fade_in">meet our team</h2>
+                                <h2 class="section_title fade_in">Meet Our Leaders</h2>
                                 <!-- <a href="about.php" class="btn_default fade_in rem_link_style hidden_xs">Know Them
                                                                                                         better</a> -->
                             </div>
@@ -471,7 +490,7 @@
                                 <div class="team_wrap team_slider">
 
 
-                                    @foreach ($teams as $team)
+                                @foreach ($teams as $team)
                                         <a href="#team_member{{ $loop->index }}" class="team_item inline_popup">
                                             <div class="team_item_inner">
                                                 <div class="team_image">
