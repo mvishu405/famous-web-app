@@ -20,12 +20,44 @@
                     <li class="menu-item">
                         <a class="menu-link" href="{{ route('frontend.about.index') }}">About</a>
                     </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="{{ route('frontend.service.production') }}">Services</a>
+                    <li class="menu-item has-dropdown">
+                    <a class="menu-link">Services</a>
+                    <div class="dropdownArrow" onclick="toggleDropdown(this)"></div>
+                    <ul class="submenu">
+                    <li><a href="{{ route('frontend.service.production') }}">Production</a></li>
+                    <li>
+                    <a href="{{ route('frontend.service.specialized-production') }}">Specialized Production</a>
                     </li>
-                    <li class="menu-item">
+                    <li><a href="{{ route('frontend.service.post-production') }}">Post Production</a></li>
+                    <li><a href="{{ route('frontend.service.fhoa') }}">VFX by FHOA</a></li>
+                    <li>
+                    <a href="{{ route('frontend.service.shooting-event-floor') }}">Shooting Event Floor</a>
+                    </li>
+                    <li>
+                    <a href="{{ route('frontend.service.ready-to-shoot') }}">Ready to Shoot Sets</a>
+                    </li>
+                    <li>
+                    <a href="{{ route('frontend.service.fwc') }}">Famous Working Company</a>
+                    </li>
+                    </ul>
+                    </li>
+                                <li class="menu-item has-dropdown">
                         <a class="menu-link" href="{{ route('frontend.works.index') }}">Work</a>
+                        <div class="dropdownArrow" onclick="toggleDropdown(this)"></div>
+                    <?php
+    use App\Models\WorkCategory;
+
+   $work_categories = WorkCategory::whereNotNull('published_at')->orderBy('order_column', 'asc')->get();
+          ?>
+          <ul class="submenu">
+            @if(!empty($work_categories))
+    @foreach ($work_categories as $category)
+        <li><a href="{{ route('frontend.works.index') }}#{{ $category->slug }}">{{ $category->name }}</a></li>
+        @endforeach
+        @endif
+</ul>
                     </li>
+                   
                     <li class="menu-item">
                         <a class="menu-link" href="{{ route('frontend.blogs.index') }}">Blogs</a>
                     </li>
