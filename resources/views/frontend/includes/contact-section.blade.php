@@ -119,7 +119,7 @@
                         7th Floor, Blue Wave Building, <br />
                         Off New Link Road, <br />Veera Desai Industrial Estate,<br />
                         Andheri West, Mumbai, <br />
-                        Maharashtra - 400102
+                        Maharashtra - 400053
                         </p>
                         </div>
                         </div>
