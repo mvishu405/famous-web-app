@@ -549,7 +549,7 @@
                     <div class="col-xs-12 col-sm-6 col-md-9">
                         <h3 class="text_lg text_600">{{ $team->name }}</h3>
                         <h4 class="text_500 text_blue team_popup_desc">{{ $team->designation }}</h4>
-                        <div class="leader_content">
+                        <div class="leader_contant">
                          {!! $team->description !!}
                        </div>
                     </div>
