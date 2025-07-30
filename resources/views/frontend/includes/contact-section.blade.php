@@ -26,7 +26,7 @@
                                 <p class="ldi_cont">
                                     <strong>Famous Cine Building, </strong>
                                     20 Dr E Moses Road, <br />
-                                    Mahalakshmi, Mumbai-400 011
+                                    Mahalakshmi, Mumbai- 400 011
                                 </p>
                             </div>
                         </div>
