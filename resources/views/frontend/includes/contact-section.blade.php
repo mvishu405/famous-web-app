@@ -25,7 +25,7 @@
                                 <h2 class="ldi_title text_xs">Address</h2>
                                 <p class="ldi_cont">
                                     <strong>Famous Studios Ltd.</strong>,
-                                    <br/>Famous Cine Building, 
+                                    Famous Cine Building, 
                                     20 Dr E Moses Road, <br />
                                     Mahalaxmi,  Mumbai - 400 011
                                 </p>
