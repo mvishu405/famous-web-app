@@ -24,9 +24,9 @@
                             <div class="ldi_item_inner">
                                 <h2 class="ldi_title text_xs">Address</h2>
                                 <p class="ldi_cont">
-                                    <strong>Famous Cine Building, </strong>
+                                    <strong>Famous Cine Building,</strong>
                                     20 Dr E Moses Road, <br />
-                                    Mahalakshmi, Mumbai- 400 011
+                                    Mahalakshmi, Mumbai-400013
                                 </p>
                             </div>
                         </div>
