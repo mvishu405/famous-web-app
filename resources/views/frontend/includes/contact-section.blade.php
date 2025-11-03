@@ -28,7 +28,7 @@
                                     No. 401,  4th Floor,  Savoy Chambers, <br />
                                     Junction of Vithal Bhai Patel Road, <br />
                                     and Dattatray Road, Shastri Nagar, <br />
-                                    Santacruz West, Mumbai 400 054
+                                    Santacruz West, Mumbai 400054
                                 </p>
                             </div>
                         </div>
