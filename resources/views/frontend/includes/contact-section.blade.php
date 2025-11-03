@@ -5,14 +5,14 @@
             <div class="location_wrap col-xs-12 col-sm-6 col-md-6">
                 <div class="location_heads">
                     <div class="location_head_item active" data-tab="#tab_1">
-                        <p class="text_sm">Mahahlaxmi (HQ)</p>
+                        <p class="text_sm">Santacruz (HQ)</p>
                     </div>
 
                     <div class="location_head_item " data-tab="#tab_2">
                         <p class="text_sm">Santacruz</p>
                     </div>
                     <div class="location_head_item" data-tab="#tab_3">
-                        <p class="text_sm">Andheri</p>
+                        <p class="text_sm">Andheri (W)</p>
                     </div>
                     <!-- <div class="location_head_item" data-tab="#tab_4">
                         <p class="text_sm">Hyderabad</p>
@@ -25,9 +25,10 @@
                                 <h2 class="ldi_title text_xs">Address</h2>
                                 <p class="ldi_cont">
                                     <strong>Famous Studios Ltd.</strong>
-                                    Famous Cine Building, <br />
-                                    20 Dr E Moses Road, <br />
-                                    Mahalaxmi,  Mumbai - 400 011
+                                    No. 401,  4th Floor,  Savoy Chambers, <br />
+                                    Junction of Vithal Bhai Patel Road, <br />
+                                    and Dattatray Road, Shastri Nagar, <br />
+                                    Santacruz West, Mumbai 400 054
                                 </p>
                             </div>
                         </div>
