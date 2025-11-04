@@ -26,7 +26,7 @@
                                 <p class="ldi_cont">
                                     <strong>Famous Studios Ltd.</strong>
                                     No. 401,  4th Floor,  Savoy Chambers, <br />
-                                    Junction of Vithal Bhai Patel Road, <br />
+                                    Junction of Vithal Bhai Patel Road <br />
                                     and Dattatray Road, Shastri Nagar, <br />
                                     Santacruz West, Mumbai 400054
                                 </p>
