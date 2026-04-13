@@ -5,14 +5,14 @@
             <div class="location_wrap col-xs-12 col-sm-6 col-md-6">
                 <div class="location_heads">
                     <div class="location_head_item active" data-tab="#tab_1">
-                        <p class="text_sm">Santacruz (HQ)</p>
+                        <p class="text_sm">Santacruz(W)</p>
                     </div>
 
-                    <div class="location_head_item " data-tab="#tab_2">
+                    <!-- <div class="location_head_item " data-tab="#tab_2">
                         <p class="text_sm">Santacruz</p>
-                    </div>
+                    </div> -->
                     <div class="location_head_item" data-tab="#tab_3">
-                        <p class="text_sm">Andheri (W)</p>
+                        <p class="text_sm">Andheri (E)</p>
                     </div>
                     <!-- <div class="location_head_item" data-tab="#tab_4">
                         <p class="text_sm">Hyderabad</p>
@@ -24,11 +24,11 @@
                             <div class="ldi_item_inner">
                                 <h2 class="ldi_title text_xs">Address</h2>
                                 <p class="ldi_cont">
-                                    <strong>Famous Studios Ltd.</strong>
-                                    No. 401,  4th Floor,  Savoy Chambers, <br />
-                                    Junction of Vithal Bhai Patel Road <br />
-                                    and Dattatray Road, Shastri Nagar, <br />
-                                    Santacruz West, Mumbai 400054
+                                    <strong>Famous Studios</strong>
+
+                                    15th Floor, 81 Crest, A-1501, Linking Rd, <br />
+                                    Santacruz (West), Mumbai, <br />
+                                    Maharashtra 400054
                                 </p>
                             </div>
                         </div>
@@ -44,7 +44,7 @@
                             <div class="ldi_item_inner">
                                 <h2 class="ldi_title text_xs">Phone No.</h2>
                                 <p class="ldi_cont">
-                                    <a href="tel:02261531111">022 6153 1111</a>
+                                    <a href="tel:+912250333627">+91 22 5033 3627</a>
                                 </p>
                             </div>
                         </div>
@@ -97,16 +97,31 @@
                             <div class="ldi_item_inner">
                                 <h2 class="ldi_title text_xs">Address</h2>
                                 <p class="ldi_cont">
-                                <!-- <strong>Famous Digital Studios </strong> -->
-                                7th Floor, Blue Wave Building, <br />
-                                Off New Link Road, <br />Veera Desai Industrial Estate,<br />
-                                Andheri West, Mumbai, <br />
-                                Maharashtra - 400053
+                                <strong>Famous Digital Studios </strong>
+                                A2, Plot No, MIDC Central Rd, opp. MTNL Office,<br />
+                                Kondivita, Andheri East, Mumbai, <br />
+                               Maharashtra 400093 
                                 </p>
                                 <br />
-                                <h2 class="ldi_title text_xs">Phone No.</h2>
+                                <!-- <h2 class="ldi_title text_xs">Phone No.</h2>
                                 <p class="ldi_cont">
                                     <a href="tel:02269522000">022 69522000</a>
+                                </p> -->
+                            </div>
+                        </div>
+                        <div class="ldi_item">
+                            <div class="ldi_item_inner">
+                                <h2 class="ldi_title text_xs">Email Id</h2>
+                                <p class="ldi_cont">
+                                    <a href="mailto:info@famousstudios.com">info@famousstudios.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ldi_item">
+                            <div class="ldi_item_inner">
+                                <h2 class="ldi_title text_xs">Phone No.</h2>
+                                <p class="ldi_cont">
+                                    <a href="tel:+912250333627">+91 22 5033 3627</a>
                                 </p>
                             </div>
                         </div>
@@ -116,12 +131,11 @@
                         <div class="ldi_item_inner">
                             <h2 class="ldi_title text_xs">Address</h2>
                         <p class="ldi_cont">
-                        <!-- <strong>Famous Digital Studios </strong> -->
-                        7th Floor, Blue Wave Building, <br />
-                        Off New Link Road, <br />Veera Desai Industrial Estate,<br />
-                        Andheri West, Mumbai, <br />
-                        Maharashtra - 400053
-                        </p>
+                        <strong>Famous Digital Studios </strong>
+                                A2, Plot No, MIDC Central Rd, opp. MTNL Office,<br />
+                                Kondivita, Andheri East, Mumbai, <br />
+                               Maharashtra 400093 
+                                </p>
                         </div>
                         </div>
                     </div>

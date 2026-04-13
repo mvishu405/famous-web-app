@@ -11,7 +11,7 @@
                         </div>
                         <div class="logo_img">
                           <div class="all_logos img_300">
-                            <img src="img/Dolby_Atmos_Logo-1536x570.png" alt="" />
+                            <!-- <img src="img/Dolby_Atmos_Logo-1536x570.png" alt="" /> -->
                             <img src="img/Dolby_Vision_2021_logo.png" alt="" />
                             <img src="img/tpn-homepage-banner-1280x640-2.png" alt="" />
                           </div>

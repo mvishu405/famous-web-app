@@ -19,16 +19,15 @@
             <div class=" banner_content">
                 <div class="container">
                     <div class="banner_content_inner">
-                        <h1 class="text_xxl text_700 banner_title">careers
+                        <h1 class="text_xxl text_700 banner_title">Great work starts <br>with great people
                         </h1>
-                        <p class="banner_desc">Come, let's create magic together. Join us and be a part of our super
-                            talented team!</p>
+                        <p class="banner_desc">If you’re passionate about craft, creativity, and pushing ideas further, we’d love to<br> connect. Send us your portfolio and resume, and let’s create something amazing <br> together at <a href="mailto:careers@famousstudios.com"> careers@famousstudios.com</a></p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="careers_tabs_section" class="smooth_scroll_pages">
+        <!-- <section id="careers_tabs_section" class="smooth_scroll_pages">
             <div class="container">
                 <div class="careers_options">
                     <div class="careers_options_head">
@@ -200,7 +199,7 @@
                 </div>
             </div>
 
-        </section>
+        </section> -->
     </main>
     <!--  end body content -->
     {{-- End Body Content --}}
