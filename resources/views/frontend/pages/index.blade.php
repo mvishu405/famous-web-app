@@ -454,7 +454,7 @@
                 </div>
             </div>
         </section>
-        <div id="follow_famous" class="section_spacing">
+        <!-- <div id="follow_famous" class="section_spacing">
             <div class="container">
                 <div class="secondary_title section_title fade_in">
                     <p>
@@ -473,7 +473,7 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
         <section id="meet_out_team_section" class="section_spacing">
             <div class="mot_inner">
                 <div class="container-fluid">
